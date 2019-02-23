@@ -1,5 +1,5 @@
 [{
-    "returns":"float",
+    "returns":"int",
     "args":[{
         "type":"float"
       },{
