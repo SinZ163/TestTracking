@@ -7093,27 +7093,27 @@
             "value": 1749
         },
         {
-            "key": "ACT_DOTA_DISABLED_END",
+            "key": "ACD_DOTA_IDLE",
             "value": 1750
         },
         {
-            "key": "ACD_DOTA_IDLE",
+            "key": "ACT_DOTA_DISABLED_END",
             "value": 1751
         },
         {
-            "key": "ACT_DOTA_RELAX_IN",
+            "key": "ACT_DOTA_RADIANT_CREEP_HAMMER",
             "value": 1752
         },
         {
-            "key": "ACT_DOTA_RELAX_OUT",
+            "key": "ACT_DOTA_RELAX_IN",
             "value": 1753
         },
         {
-            "key": "ACT_DOTA_CAST_FENCE",
+            "key": "ACT_DOTA_RELAX_OUT",
             "value": 1754
         },
         {
-            "key": "ACT_DOTA_RADIANT_CREEP_HAMMER",
+            "key": "ACT_DOTA_CAST_FENCE",
             "value": 1755
         },
         {
@@ -7153,11 +7153,11 @@
             "value": 2048
         },
         {
-            "key": "DMG_NEVERGIB",
+            "key": "FCVAR_NEVER_AS_STRING",
             "value": 4096
         },
         {
-            "key": "FCVAR_NEVER_AS_STRING",
+            "key": "DMG_NEVERGIB",
             "value": 4096
         },
         {
@@ -7169,11 +7169,11 @@
             "value": 8192
         },
         {
-            "key": "FCVAR_CHEAT",
+            "key": "DMG_DROWN",
             "value": 16384
         },
         {
-            "key": "DMG_DROWN",
+            "key": "FCVAR_CHEAT",
             "value": 16384
         },
         {
@@ -7193,11 +7193,11 @@
             "value": 65536
         },
         {
-            "key": "FCVAR_DONTRECORD",
+            "key": "DMG_POISON",
             "value": 131072
         },
         {
-            "key": "DMG_POISON",
+            "key": "FCVAR_DONTRECORD",
             "value": 131072
         },
         {
