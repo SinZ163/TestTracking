@@ -27,6 +27,11 @@
                 "description": "Get the attachment id's origin vector.",
                 "return": "vector"
             },
+            "GetCycle": {
+                "args": [],
+                "description": "Get the cycle of the animation.",
+                "return": "float"
+            },
             "GetGraphParameter": {
                 "arg_names": [
                     "pszParam"
@@ -81,30 +86,6 @@
                 ],
                 "description": "Returns the duration in seconds of the given sequence name.",
                 "return": "float"
-            },
-            "SetBodygroup": {
-                "arg_names": [
-                    "iGroup",
-                    "iValue"
-                ],
-                "args": [
-                    "int",
-                    "int"
-                ],
-                "description": "Sets a bodygroup.",
-                "return": "void"
-            },
-            "SetBodygroupByName": {
-                "arg_names": [
-                    "pName",
-                    "iValue"
-                ],
-                "args": [
-                    "cstring",
-                    "int"
-                ],
-                "description": "Sets a bodygroup by name.",
-                "return": "void"
             },
             "SetGraphLookTarget": {
                 "arg_names": [
@@ -210,36 +191,6 @@
                 "description": "Set the specified pose parameter to the specified value.",
                 "return": "float"
             },
-            "SetProceduralIKTarget": {
-                "arg_names": [
-                    "pChainName",
-                    "pTargetName",
-                    "vTargetPosition",
-                    "qTargetRotation"
-                ],
-                "args": [
-                    "cstring",
-                    "cstring",
-                    "vector",
-                    "qangle"
-                ],
-                "description": "Sets the named procedural IK target.",
-                "return": "bool"
-            },
-            "SetProceduralIKTargetWeight": {
-                "arg_names": [
-                    "pChainName",
-                    "pTargetName",
-                    "flWeight"
-                ],
-                "args": [
-                    "cstring",
-                    "cstring",
-                    "float"
-                ],
-                "description": "Sets the named procedural IK targets weight: 0 = full animation, 1 = full IK.",
-                "return": "bool"
-            },
             "SetSequence": {
                 "arg_names": [
                     "pSequenceName"
@@ -248,16 +199,6 @@
                     "cstring"
                 ],
                 "description": "Sets the active sequence by name, keeping the current cycle.",
-                "return": "void"
-            },
-            "SetSkin": {
-                "arg_names": [
-                    "iSkin"
-                ],
-                "args": [
-                    "int"
-                ],
-                "description": "Set skin (int).",
                 "return": "void"
             },
             "StopAnimation": {
@@ -1037,6 +978,30 @@
                 "description": "GetRenderColor(): Get the render color of the entity.",
                 "return": "vector"
             },
+            "SetBodygroup": {
+                "arg_names": [
+                    "iGroup",
+                    "iValue"
+                ],
+                "args": [
+                    "int",
+                    "int"
+                ],
+                "description": "Sets a bodygroup.",
+                "return": "void"
+            },
+            "SetBodygroupByName": {
+                "arg_names": [
+                    "pName",
+                    "iValue"
+                ],
+                "args": [
+                    "cstring",
+                    "int"
+                ],
+                "description": "Sets a bodygroup by name.",
+                "return": "void"
+            },
             "SetLightGroup": {
                 "arg_names": [
                     "pLightGroup"
@@ -1140,6 +1105,16 @@
                     "vector"
                 ],
                 "return": "void"
+            },
+            "SetSkin": {
+                "arg_names": [
+                    "iSkin"
+                ],
+                "args": [
+                    "int"
+                ],
+                "description": "Set skin (int).",
+                "return": "void"
             }
         }
     },
@@ -1205,11 +1180,6 @@
                 "args": [],
                 "description": "Returns true if the SteamVR dashboard is showing for this player.",
                 "return": "bool"
-            },
-            "Quit": {
-                "args": [],
-                "description": "Quit the game from script.",
-                "return": "void"
             }
         }
     },
@@ -1365,7 +1335,7 @@
                     "cstring"
                 ],
                 "description": "( string TableName, string KeyName )",
-                "return": "handle"
+                "return": "variant"
             },
             "SetTableValue": {
                 "args": [
@@ -1423,6 +1393,10 @@
                 "args": [],
                 "description": "Clear the cooldown remaining on this ability.",
                 "return": "void"
+            },
+            "GetAOERadius": {
+                "args": [],
+                "return": "int"
             },
             "GetAbilityDamage": {
                 "args": [],
@@ -1563,6 +1537,15 @@
             },
             "GetDuration": {
                 "args": [],
+                "return": "float"
+            },
+            "GetEffectiveCooldown": {
+                "arg_names": [
+                    "iLevel"
+                ],
+                "args": [
+                    "int"
+                ],
                 "return": "float"
             },
             "GetGoldCost": {
@@ -1779,10 +1762,12 @@
             },
             "OnAbilityPinged": {
                 "arg_names": [
-                    "nPlayerID"
+                    "nPlayerID",
+                    "bCtrlHeld"
                 ],
                 "args": [
-                    "int"
+                    "int",
+                    "bool"
                 ],
                 "return": "void"
             },
@@ -2107,10 +2092,12 @@
             },
             "GetCustomAttributeDerivedStatValue": {
                 "arg_names": [
-                    "nDerivedStatType"
+                    "nDerivedStatType",
+                    "hHero"
                 ],
                 "args": [
-                    "int"
+                    "int",
+                    "handle"
                 ],
                 "description": "Get current derived stat value constant.",
                 "return": "float"
@@ -2129,6 +2116,11 @@
                 "args": [],
                 "description": "Allows definition of the max level heroes can achieve (default is 25).",
                 "return": "int"
+            },
+            "GetCustomScanCooldown": {
+                "args": [],
+                "description": "Get the current custom scan cooldown.",
+                "return": "float"
             },
             "GetFixedRespawnTime": {
                 "args": [],
@@ -2309,6 +2301,16 @@
                 "description": "Set a filter function to control the behavior when a bounty rune is picked up. (Modify the table and Return true to use new values, return false to cancel the event)",
                 "return": "void"
             },
+            "SetBountyRuneSpawnInterval": {
+                "arg_names": [
+                    "flInterval"
+                ],
+                "args": [
+                    "float"
+                ],
+                "description": "Set bounty rune spawn rate",
+                "return": "void"
+            },
             "SetBuybackEnabled": {
                 "arg_names": [
                     "bEnabled"
@@ -2382,13 +2384,20 @@
                 "return": "void"
             },
             "SetCustomHeroMaxLevel": {
-                "arg_names": [
-                    ""
-                ],
                 "args": [
                     "int"
                 ],
                 "description": "Allows definition of the max level heroes can achieve (default is 25).",
+                "return": "void"
+            },
+            "SetCustomScanCooldown": {
+                "arg_names": [
+                    "flCooldown"
+                ],
+                "args": [
+                    "float"
+                ],
+                "description": "Set a custom cooldown for team Scan ability.",
                 "return": "void"
             },
             "SetCustomTerrainWeatherEffect": {
@@ -2441,6 +2450,26 @@
                     "bool"
                 ],
                 "description": "Specify whether the full screen death overlay effect plays when the selected hero dies.",
+                "return": "void"
+            },
+            "SetDraftingBanningTimeOverride": {
+                "arg_names": [
+                    "flValue"
+                ],
+                "args": [
+                    "float"
+                ],
+                "description": "Set drafting hero banning time",
+                "return": "void"
+            },
+            "SetDraftingHeroPickSelectTimeOverride": {
+                "arg_names": [
+                    "flValue"
+                ],
+                "args": [
+                    "float"
+                ],
+                "description": "Set drafting hero pick time",
                 "return": "void"
             },
             "SetExecuteOrderFilter": {
@@ -2571,6 +2600,16 @@
                 "description": "Set a filter function to control what happens to items that are added to an inventory, return false to cancel the event",
                 "return": "void"
             },
+            "SetKillableTombstones": {
+                "arg_names": [
+                    "bEnabled"
+                ],
+                "args": [
+                    "bool"
+                ],
+                "description": "Set whether tombstones can be channeled to be removed by enemy heroes.",
+                "return": "void"
+            },
             "SetKillingSpreeAnnouncerDisabled": {
                 "arg_names": [
                     "bDisabled"
@@ -2655,6 +2694,26 @@
                     "handle"
                 ],
                 "description": "Set an override for the default selection entity, instead of each player's hero.",
+                "return": "void"
+            },
+            "SetPauseEnabled": {
+                "arg_names": [
+                    "bEnabled"
+                ],
+                "args": [
+                    "bool"
+                ],
+                "description": "Set pausing enabled/disabled",
+                "return": "void"
+            },
+            "SetPowerRuneSpawnInterval": {
+                "arg_names": [
+                    "flInterval"
+                ],
+                "args": [
+                    "float"
+                ],
+                "description": "Set power rune spawn rate",
                 "return": "void"
             },
             "SetRecommendedItemsDisabled": {
@@ -2815,6 +2874,16 @@
                 "description": "Turn on custom-defined XP values for hero level ups.  The table should be defined before switching this on.",
                 "return": "void"
             },
+            "SetUseDefaultDOTARuneSpawnLogic": {
+                "arg_names": [
+                    "bEnabled"
+                ],
+                "args": [
+                    "bool"
+                ],
+                "description": "If set to true, use current rune spawn rules.  Either setting respects custom spawn intervals.",
+                "return": "void"
+            },
             "SetWeatherEffectsDisabled": {
                 "arg_names": [
                     "bDisable"
@@ -2924,6 +2993,11 @@
                 "description": "Begin temporary night.",
                 "return": "void"
             },
+            "BotPopulate": {
+                "args": [],
+                "description": "Fills all the teams with bots if cheat mode is enabled.",
+                "return": "void"
+            },
             "Defeated": {
                 "args": [],
                 "description": "Kills the ancient, etc.",
@@ -3023,10 +3097,20 @@
                 "description": "(Preview/Unreleased) Gets the player's custom game account record, as it looked at the start of this session",
                 "return": "variant"
             },
+            "GetStateTransitionTime": {
+                "args": [],
+                "description": "Get time remaining between state changes.",
+                "return": "float"
+            },
             "GetTimeOfDay": {
                 "args": [],
                 "description": "Get the time of day",
                 "return": "float"
+            },
+            "GetWeatherWindDirection": {
+                "args": [],
+                "description": "Get Weather Wind Direction Vector",
+                "return": "vector"
             },
             "IsCheatMode": {
                 "args": [],
@@ -3046,6 +3130,11 @@
             "IsHeroRespawnEnabled": {
                 "args": [],
                 "description": "Returns whether hero respawn is enabled.",
+                "return": "bool"
+            },
+            "IsInBanPhase": {
+                "args": [],
+                "description": "Are we in the ban phase of hero pick?",
                 "return": "bool"
             },
             "IsNightstalkerNight": {
@@ -3274,6 +3363,13 @@
                 "description": "Control if the normal DOTA hero respawn rules apply.",
                 "return": "void"
             },
+            "SetHeroSelectPenaltyTime": {
+                "args": [
+                    "float"
+                ],
+                "description": "Sets amount of penalty time before randoming a hero",
+                "return": "void"
+            },
             "SetHeroSelectionTime": {
                 "args": [
                     "float"
@@ -3394,6 +3490,13 @@
                 "description": "When true, all items are available at as long as any shop is in range.",
                 "return": "void"
             },
+            "SetWeatherWindDirection": {
+                "args": [
+                    "vector"
+                ],
+                "description": "Set Weather Wind Direction Vector",
+                "return": "void"
+            },
             "State_Get": {
                 "args": [],
                 "description": "Get the current Gamerules state",
@@ -3439,6 +3542,16 @@
                     "float"
                 ],
                 "description": "(nMusicStatus, flIntensity) - Set the music status for this player, note this will only really apply if dota_music_battle_enable is off.",
+                "return": "void"
+            },
+            "SetSelectedHero": {
+                "arg_names": [
+                    "pszHeroName"
+                ],
+                "args": [
+                    "cstring"
+                ],
+                "description": "Sets this player's hero selection.",
                 "return": "void"
             }
         }
@@ -3727,6 +3840,11 @@
                 ],
                 "description": "(HSCRIPT hTarget) Determine whether an issued command on a target is valid.",
                 "return": "int"
+            },
+            "GetAOERadius": {
+                "args": [],
+                "description": "Controls the size of the AOE casting cursor.",
+                "return": "float"
             },
             "GetAssociatedPrimaryAbilities": {
                 "args": [],
@@ -4478,11 +4596,6 @@
                 "description": "Returns a random integer between the minimum and maximum base damage of the unit.",
                 "return": "int"
             },
-            "GetAttackRange": {
-                "args": [],
-                "description": "Gets this unit's attack range after all modifiers.",
-                "return": "float"
-            },
             "GetAttackRangeBuffer": {
                 "args": [],
                 "description": "Gets the attack range buffer.",
@@ -4508,6 +4621,10 @@
                     "handle"
                 ],
                 "description": "Returns the average value of the minimum and maximum damage values.",
+                "return": "int"
+            },
+            "GetBaseAttackRange": {
+                "args": [],
                 "return": "int"
             },
             "GetBaseAttackTime": {
@@ -4612,6 +4729,10 @@
                 "description": "Get the XP bounty on this unit.",
                 "return": "int"
             },
+            "GetEvasion": {
+                "args": [],
+                "return": "float"
+            },
             "GetForceAttackTarget": {
                 "args": [],
                 "return": "handle"
@@ -4663,6 +4784,11 @@
                 "description": "Returns the initial waypoint goal for this NPC.",
                 "return": "handle"
             },
+            "GetInitialGoalPosition": {
+                "args": [],
+                "description": "Get waypoint position for this NPC.",
+                "return": "vector"
+            },
             "GetItemInSlot": {
                 "arg_names": [
                     "i"
@@ -4709,11 +4835,6 @@
             },
             "GetManaRegen": {
                 "args": [],
-                "return": "float"
-            },
-            "GetManaRegenMultiplier": {
-                "args": [],
-                "description": "Returns mana regen rate per intelligence.",
                 "return": "float"
             },
             "GetMaxMana": {
@@ -4764,10 +4885,12 @@
             },
             "GetMoveSpeedModifier": {
                 "arg_names": [
-                    "flBaseSpeed"
+                    "flBaseSpeed",
+                    "bReturnUnslowed"
                 ],
                 "args": [
-                    "float"
+                    "float",
+                    "bool"
                 ],
                 "return": "float"
             },
@@ -4833,6 +4956,19 @@
                 "return": "cstring"
             },
             "GetSecondsPerAttack": {
+                "args": [],
+                "return": "float"
+            },
+            "GetSpellAmplification": {
+                "arg_names": [
+                    "bBaseOnly"
+                ],
+                "args": [
+                    "bool"
+                ],
+                "return": "float"
+            },
+            "GetStatusResistance": {
                 "args": [],
                 "return": "float"
             },
@@ -5558,6 +5694,11 @@
                 "description": "Respawns the target unit if it can be respawned.",
                 "return": "void"
             },
+            "Script_GetAttackRange": {
+                "args": [],
+                "description": "Gets this unit's attack range after all modifiers.",
+                "return": "float"
+            },
             "SellItem": {
                 "arg_names": [
                     "hItem"
@@ -5844,6 +5985,16 @@
                 "description": "Sets the initial waypoint goal for this NPC.",
                 "return": "void"
             },
+            "SetInitialGoalPosition": {
+                "arg_names": [
+                    "vPosition"
+                ],
+                "args": [
+                    "vector"
+                ],
+                "description": "Set waypoint position for this NPC.",
+                "return": "void"
+            },
             "SetMana": {
                 "arg_names": [
                     "flMana"
@@ -5974,6 +6125,15 @@
                     "float"
                 ],
                 "description": "sets the client side map reveal radius for this unit",
+                "return": "void"
+            },
+            "SetShouldDoFlyHeightVisual": {
+                "arg_names": [
+                    "bShouldVisuallyFly"
+                ],
+                "args": [
+                    "bool"
+                ],
                 "return": "void"
             },
             "SetStolenScepter": {
@@ -6306,6 +6466,16 @@
                 "description": "Set the move speed gained per level on this creature.",
                 "return": "void"
             },
+            "SetRequiresReachingEndPath": {
+                "arg_names": [
+                    "bRequiresReachingEndPath"
+                ],
+                "args": [
+                    "bool"
+                ],
+                "description": "Set whether creatures require reaching their end path before becoming idle",
+                "return": "void"
+            },
             "SetXPGain": {
                 "arg_names": [
                     "nXPGain"
@@ -6313,7 +6483,7 @@
                 "args": [
                     "int"
                 ],
-                "description": "Set the xp reward gained per level on this creature.",
+                "description": "Set the XP gained per level on this creature.",
                 "return": "void"
             }
         }
@@ -6435,7 +6605,6 @@
                 "return": "float"
             },
             "GetBuybackCost": {
-                "args": [],
                 "arg_names": [
                     "bReturnOldValues"
                 ],
@@ -6500,11 +6669,6 @@
                 "args": [],
                 "description": "Value is stored in PlayerResource.",
                 "return": "int"
-            },
-            "GetManaRegenMultiplier": {
-                "args": [],
-                "description": "Returns the intelligenced based mana regen multiplier.",
-                "return": "float"
             },
             "GetMostRecentDamageTime": {
                 "args": [],
@@ -6954,6 +7118,30 @@
             }
         }
     },
+    "CDOTA_BaseNPC_RotatableBuilding": {
+        "extends": "CDOTA_BaseNPC",
+        "functions": {}
+    },
+    "CDOTA_BaseNPC_Shop": {
+        "extends": "CDOTA_BaseNPC_Building",
+        "functions": {
+            "GetShopType": {
+                "args": [],
+                "description": "Get the DOTA_SHOP_TYPE",
+                "return": "int"
+            },
+            "SetShopType": {
+                "arg_names": [
+                    "eShopType"
+                ],
+                "args": [
+                    "int"
+                ],
+                "description": "Set the DOTA_SHOP_TYPE.",
+                "return": "void"
+            }
+        }
+    },
     "CDOTA_BaseNPC_Trap_Ward": {
         "extends": "CDOTA_BaseNPC_Creature",
         "functions": {
@@ -7188,6 +7376,11 @@
                 "args": [],
                 "description": "Gets whether item is unequipped or ready.",
                 "return": "int"
+            },
+            "GetParent": {
+                "args": [],
+                "description": "Get the parent for this item.",
+                "return": "handle"
             },
             "GetPurchaseTime": {
                 "args": [],
@@ -7801,7 +7994,7 @@
         "functions": {
             "CutDown": {
                 "arg_names": [
-                    "nTreeNumberKnownTo"
+                    "nTeamNumberKnownTo"
                 ],
                 "args": [
                     "int"
@@ -7839,6 +8032,10 @@
             "AllowIllusionDuplicate": {
                 "args": [],
                 "description": "True/false if this modifier is active on illusions.",
+                "return": "bool"
+            },
+            "CanParentBeAutoAttacked": {
+                "args": [],
                 "return": "bool"
             },
             "DestroyOnExpire": {
@@ -8611,6 +8808,15 @@
                 ],
                 "return": "int"
             },
+            "GetNetWorth": {
+                "arg_names": [
+                    "iPlayerID"
+                ],
+                "args": [
+                    "int"
+                ],
+                "return": "int"
+            },
             "GetNthCourierForTeam": {
                 "arg_names": [
                     "nCourierIndex",
@@ -8659,6 +8865,15 @@
                     "int"
                 ],
                 "return": "int"
+            },
+            "GetPartyID": {
+                "arg_names": [
+                    "iPlayerID"
+                ],
+                "args": [
+                    "int"
+                ],
+                "return": "uint64"
             },
             "GetPlayer": {
                 "arg_names": [
@@ -9195,6 +9410,28 @@
                 ],
                 "return": "int"
             },
+            "NumPlayers": {
+                "args": [],
+                "return": "int"
+            },
+            "NumTeamPlayers": {
+                "args": [],
+                "return": "int"
+            },
+            "RecordConsumableAbilityChargeChange": {
+                "arg_names": [
+                    "iPlayerID",
+                    "item_definition_index",
+                    "nChargeIncrementOrDecrement"
+                ],
+                "args": [
+                    "int",
+                    "int",
+                    "int"
+                ],
+                "description": "Increment or decrement consumable charges (nPlayerID, item_definition_index, nChargeIncrementOrDecrement)",
+                "return": "void"
+            },
             "ReplaceHeroWith": {
                 "arg_names": [
                     "iPlayerID",
@@ -9423,6 +9660,26 @@
             }
         }
     },
+    "CDOTA_ShopTrigger": {
+        "extends": "CBaseTrigger",
+        "functions": {
+            "GetShopType": {
+                "args": [],
+                "description": "Get the DOTA_SHOP_TYPE",
+                "return": "int"
+            },
+            "SetShopType": {
+                "arg_names": [
+                    "eShopType"
+                ],
+                "args": [
+                    "int"
+                ],
+                "description": "Set the DOTA_SHOP_TYPE.",
+                "return": "void"
+            }
+        }
+    },
     "CDOTA_SimpleObstruction": {
         "extends": "CBaseEntity",
         "functions": {
@@ -9477,449 +9734,6 @@
                 "args": [],
                 "description": "Is the Nian's tail broken?",
                 "return": "bool"
-            }
-        }
-    },
-    "CDebugOverlayScriptHelper": {
-        "functions": {
-            "Axis": {
-                "args": [
-                    "vector",
-                    "quaternion",
-                    "float",
-                    "bool",
-                    "float"
-                ],
-                "description": "Draws an axis. Specify origin + orientation in world space.",
-                "return": "void"
-            },
-            "Box": {
-                "args": [
-                    "vector",
-                    "vector",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "bool",
-                    "float"
-                ],
-                "description": "Draws a world-space axis-aligned box. Specify bounds in world space.",
-                "return": "void"
-            },
-            "BoxAngles": {
-                "args": [
-                    "vector",
-                    "vector",
-                    "vector",
-                    "quaternion",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "bool",
-                    "float"
-                ],
-                "description": "Draws an oriented box at the origin. Specify bounds in local space.",
-                "return": "void"
-            },
-            "Capsule": {
-                "args": [
-                    "vector",
-                    "quaternion",
-                    "float",
-                    "float",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "bool",
-                    "float"
-                ],
-                "description": "Draws a capsule. Specify base in world space.",
-                "return": "void"
-            },
-            "Circle": {
-                "args": [
-                    "vector",
-                    "quaternion",
-                    "float",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "bool",
-                    "float"
-                ],
-                "description": "Draws a circle. Specify center in world space.",
-                "return": "void"
-            },
-            "CircleScreenOriented": {
-                "args": [
-                    "vector",
-                    "float",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "bool",
-                    "float"
-                ],
-                "description": "Draws a circle oriented to the screen. Specify center in world space.",
-                "return": "void"
-            },
-            "Cone": {
-                "args": [
-                    "vector",
-                    "vector",
-                    "float",
-                    "float",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "bool",
-                    "float"
-                ],
-                "description": "Draws a wireframe cone. Specify endpoint and direction in world space.",
-                "return": "void"
-            },
-            "Cross": {
-                "args": [
-                    "vector",
-                    "float",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "bool",
-                    "float"
-                ],
-                "description": "Draws a screen-aligned cross. Specify origin in world space.",
-                "return": "void"
-            },
-            "Cross3D": {
-                "args": [
-                    "vector",
-                    "float",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "bool",
-                    "float"
-                ],
-                "description": "Draws a world-aligned cross. Specify origin in world space.",
-                "return": "void"
-            },
-            "Cross3DOriented": {
-                "args": [
-                    "vector",
-                    "quaternion",
-                    "float",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "bool",
-                    "float"
-                ],
-                "description": "Draws an oriented cross. Specify origin in world space.",
-                "return": "void"
-            },
-            "DrawTickMarkedLine": {
-                "args": [
-                    "vector",
-                    "vector",
-                    "float",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "bool",
-                    "float"
-                ],
-                "description": "Draws a dashed line. Specify endpoints in world space.",
-                "return": "void"
-            },
-            "EntityAttachments": {
-                "args": [
-                    "ehandle",
-                    "float",
-                    "float"
-                ],
-                "description": "Draws the attachments of the entity",
-                "return": "void"
-            },
-            "EntityAxis": {
-                "args": [
-                    "ehandle",
-                    "float",
-                    "bool",
-                    "float"
-                ],
-                "description": "Draws the axis of the entity origin",
-                "return": "void"
-            },
-            "EntityBounds": {
-                "args": [
-                    "ehandle",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "bool",
-                    "float"
-                ],
-                "description": "Draws bounds of an entity",
-                "return": "void"
-            },
-            "EntitySkeleton": {
-                "args": [
-                    "ehandle",
-                    "float"
-                ],
-                "description": "Draws the skeleton of the entity",
-                "return": "void"
-            },
-            "EntityText": {
-                "args": [
-                    "ehandle",
-                    "int",
-                    "cstring",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "float"
-                ],
-                "description": "Draws text on an entity",
-                "return": "void"
-            },
-            "FilledRect2D": {
-                "args": [
-                    "vector2d",
-                    "vector2d",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "float"
-                ],
-                "description": "Draws a screen-space filled 2D rectangle. Coordinates are in pixels.",
-                "return": "void"
-            },
-            "HorzArrow": {
-                "args": [
-                    "vector",
-                    "vector",
-                    "float",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "bool",
-                    "float"
-                ],
-                "description": "Draws a horizontal arrow. Specify endpoints in world space.",
-                "return": "void"
-            },
-            "Line": {
-                "args": [
-                    "vector",
-                    "vector",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "bool",
-                    "float"
-                ],
-                "description": "Draws a line between two points",
-                "return": "void"
-            },
-            "Line2D": {
-                "args": [
-                    "vector2d",
-                    "vector2d",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "float"
-                ],
-                "description": "Draws a line between two points in screenspace",
-                "return": "void"
-            },
-            "PopDebugOverlayScope": {
-                "args": [],
-                "description": "Pops the identifier used to group overlays. Overlays marked with this identifier can be deleted in a big batch.",
-                "return": "void"
-            },
-            "PushAndClearDebugOverlayScope": {
-                "args": [
-                    "utlstringtoken"
-                ],
-                "description": "Pushes an identifier used to group overlays. Deletes all existing overlays using this overlay id.",
-                "return": "void"
-            },
-            "PushDebugOverlayScope": {
-                "args": [
-                    "utlstringtoken"
-                ],
-                "description": "Pushes an identifier used to group overlays. Overlays marked with this identifier can be deleted in a big batch.",
-                "return": "void"
-            },
-            "RemoveAllInScope": {
-                "args": [
-                    "utlstringtoken"
-                ],
-                "description": "Removes all overlays marked with a specific identifier, regardless of their lifetime.",
-                "return": "void"
-            },
-            "SolidCone": {
-                "args": [
-                    "vector",
-                    "vector",
-                    "float",
-                    "float",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "bool",
-                    "float"
-                ],
-                "description": "Draws a solid cone. Specify endpoint and direction in world space.",
-                "return": "void"
-            },
-            "Sphere": {
-                "args": [
-                    "vector",
-                    "float",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "bool",
-                    "float"
-                ],
-                "description": "Draws a wireframe sphere. Specify center in world space.",
-                "return": "void"
-            },
-            "SweptBox": {
-                "args": [
-                    "vector",
-                    "vector",
-                    "vector",
-                    "vector",
-                    "quaternion",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "float"
-                ],
-                "description": "Draws a swept box. Specify endpoints in world space and the bounds in local space.",
-                "return": "void"
-            },
-            "Text": {
-                "args": [
-                    "vector",
-                    "int",
-                    "cstring",
-                    "float",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "float"
-                ],
-                "description": "Draws 2D text. Specify origin in world space.",
-                "return": "void"
-            },
-            "Texture": {
-                "args": [
-                    "cstring",
-                    "vector2d",
-                    "vector2d",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "vector2d",
-                    "vector2d",
-                    "float"
-                ],
-                "description": "Draws a screen-space texture. Coordinates are in pixels.",
-                "return": "void"
-            },
-            "Triangle": {
-                "args": [
-                    "vector",
-                    "vector",
-                    "vector",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "bool",
-                    "float"
-                ],
-                "description": "Draws a filled triangle. Specify vertices in world space.",
-                "return": "void"
-            },
-            "UnitTestCycleOverlayRenderType": {
-                "args": [],
-                "description": "Toggles the overlay render type, for unit tests",
-                "return": "void"
-            },
-            "VectorText3D": {
-                "args": [
-                    "vector",
-                    "quaternion",
-                    "cstring",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "bool",
-                    "float"
-                ],
-                "description": "Draws 3D text. Specify origin + orientation in world space.",
-                "return": "void"
-            },
-            "VertArrow": {
-                "args": [
-                    "vector",
-                    "vector",
-                    "float",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "bool",
-                    "float"
-                ],
-                "description": "Draws a vertical arrow. Specify endpoints in world space.",
-                "return": "void"
-            },
-            "YawArrow": {
-                "args": [
-                    "vector",
-                    "float",
-                    "float",
-                    "float",
-                    "int",
-                    "int",
-                    "int",
-                    "int",
-                    "bool",
-                    "float"
-                ],
-                "description": "Draws a arrow associated with a specific yaw. Specify endpoints in world space.",
-                "return": "void"
             }
         }
     },
@@ -10749,6 +10563,11 @@
                 "description": "Get hand ID",
                 "return": "int"
             },
+            "GetLiteralHandType": {
+                "args": [],
+                "description": "Get literal type for this hand",
+                "return": "int"
+            },
             "GetPlayer": {
                 "args": [],
                 "description": "Get the player for this hand",
@@ -11000,7 +10819,18 @@
                     "vector",
                     "vector"
                 ],
-                "description": "(int nFXIndex, int nPoint, vForward, vRight, vUp)",
+                "description": "(int nFXIndex, int nPoint, vForward, vRight, vUp) - Set the orientation for a control on a particle effect (NOTE: This is left handed -- bad!!)",
+                "return": "void"
+            },
+            "SetParticleControlOrientationFLU": {
+                "args": [
+                    "int",
+                    "int",
+                    "vector",
+                    "vector",
+                    "vector"
+                ],
+                "description": "(int nFXIndex, int nPoint, Vector vecForward, Vector vecLeft, Vector vecUp) - Set the orientation for a control on a particle effect",
                 "return": "void"
             },
             "SetParticleFoWProperties": {
@@ -11012,6 +10842,14 @@
                 ],
                 "description": "int nfxindex, int nPoint, int nPoint2, float flRadius",
                 "return": "void"
+            },
+            "SetParticleShouldCheckFoW": {
+                "args": [
+                    "int",
+                    "bool"
+                ],
+                "description": "int nfxindex, bool bCheckFoW",
+                "return": "bool"
             }
         }
     },
@@ -11030,6 +10868,244 @@
                 ],
                 "description": "Reads a spawn key",
                 "return": "variant"
+            }
+        }
+    },
+    "CTakeDamageInfo": {
+        "functions": {
+            "AddDamage": {
+                "arg_names": [
+                    "flAddAmount"
+                ],
+                "args": [
+                    "float"
+                ],
+                "return": "void"
+            },
+            "AddDamageType": {
+                "arg_names": [
+                    "bitsDamageType"
+                ],
+                "args": [
+                    "int"
+                ],
+                "return": "void"
+            },
+            "AllowFriendlyFire": {
+                "args": [],
+                "return": "bool"
+            },
+            "BaseDamageIsValid": {
+                "args": [],
+                "return": "bool"
+            },
+            "CanBeBlocked": {
+                "args": [],
+                "return": "bool"
+            },
+            "GetAmmoType": {
+                "args": [],
+                "return": "int"
+            },
+            "GetAttacker": {
+                "args": [],
+                "return": "handle"
+            },
+            "GetBaseDamage": {
+                "args": [],
+                "return": "float"
+            },
+            "GetDamage": {
+                "args": [],
+                "return": "float"
+            },
+            "GetDamageCustom": {
+                "args": [],
+                "return": "int"
+            },
+            "GetDamageForce": {
+                "args": [],
+                "return": "vector"
+            },
+            "GetDamagePosition": {
+                "args": [],
+                "return": "vector"
+            },
+            "GetDamageTaken": {
+                "args": [],
+                "return": "float"
+            },
+            "GetDamageType": {
+                "args": [],
+                "return": "int"
+            },
+            "GetInflictor": {
+                "args": [],
+                "return": "handle"
+            },
+            "GetMaxDamage": {
+                "args": [],
+                "return": "float"
+            },
+            "GetOriginalDamage": {
+                "args": [],
+                "return": "float"
+            },
+            "GetRadius": {
+                "args": [],
+                "return": "float"
+            },
+            "GetReportedPosition": {
+                "args": [],
+                "return": "vector"
+            },
+            "GetStabilityDamage": {
+                "args": [],
+                "return": "float"
+            },
+            "ScaleDamage": {
+                "arg_names": [
+                    "flScaleAmount"
+                ],
+                "args": [
+                    "float"
+                ],
+                "return": "void"
+            },
+            "SetAllowFriendlyFire": {
+                "arg_names": [
+                    "bAllow"
+                ],
+                "args": [
+                    "bool"
+                ],
+                "return": "void"
+            },
+            "SetAmmoType": {
+                "arg_names": [
+                    "iAmmoType"
+                ],
+                "args": [
+                    "int"
+                ],
+                "return": "void"
+            },
+            "SetAttacker": {
+                "arg_names": [
+                    "hAttacker"
+                ],
+                "args": [
+                    "handle"
+                ],
+                "return": "void"
+            },
+            "SetCanBeBlocked": {
+                "arg_names": [
+                    "bBlock"
+                ],
+                "args": [
+                    "bool"
+                ],
+                "return": "void"
+            },
+            "SetDamage": {
+                "arg_names": [
+                    "flDamage"
+                ],
+                "args": [
+                    "float"
+                ],
+                "return": "void"
+            },
+            "SetDamageCustom": {
+                "arg_names": [
+                    "iDamageCustom"
+                ],
+                "args": [
+                    "int"
+                ],
+                "return": "void"
+            },
+            "SetDamageForce": {
+                "arg_names": [
+                    "damageForce"
+                ],
+                "args": [
+                    "vector"
+                ],
+                "return": "void"
+            },
+            "SetDamagePosition": {
+                "arg_names": [
+                    "damagePosition"
+                ],
+                "args": [
+                    "vector"
+                ],
+                "return": "void"
+            },
+            "SetDamageTaken": {
+                "arg_names": [
+                    "nDamageTaken"
+                ],
+                "args": [
+                    "int"
+                ],
+                "return": "void"
+            },
+            "SetDamageType": {
+                "arg_names": [
+                    "bitsDamageType"
+                ],
+                "args": [
+                    "int"
+                ],
+                "return": "void"
+            },
+            "SetMaxDamage": {
+                "arg_names": [
+                    "flMaxDamage"
+                ],
+                "args": [
+                    "float"
+                ],
+                "return": "void"
+            },
+            "SetOriginalDamage": {
+                "arg_names": [
+                    "flOriginalDamage"
+                ],
+                "args": [
+                    "float"
+                ],
+                "return": "void"
+            },
+            "SetRadius": {
+                "arg_names": [
+                    "fRadius"
+                ],
+                "args": [
+                    "float"
+                ],
+                "return": "void"
+            },
+            "SetReportedPosition": {
+                "arg_names": [
+                    "reportedPosition"
+                ],
+                "args": [
+                    "vector"
+                ],
+                "return": "void"
+            },
+            "SetStabilityDamage": {
+                "arg_names": [
+                    "flStabilityDamage"
+                ],
+                "args": [
+                    "float"
+                ],
+                "return": "void"
             }
         }
     },
@@ -11302,8 +11378,17 @@
                     "vector",
                     "float"
                 ],
-                "description": "Create a temporary tree. (vLocation, flDuration).",
-                "return": "void"
+                "description": "Create a temporary tree, uses a default tree model. (vLocation, flDuration).",
+                "return": "handle"
+            },
+            "CreateTempTreeWithModel": {
+                "args": [
+                    "vector",
+                    "float",
+                    "cstring"
+                ],
+                "description": "Create a temporary tree, specifying the tree model name. (vLocation, flDuration, szModelName).",
+                "return": "handle"
             },
             "CreateTrigger": {
                 "args": [
@@ -11775,36 +11860,6 @@
                 "description": "Returns the engines current frame count",
                 "return": "int"
             },
-            "GetFrostyBoostAmount": {
-                "args": [
-                    "int",
-                    "int"
-                ],
-                "return": "float"
-            },
-            "GetFrostyPointsForRound": {
-                "args": [
-                    "int",
-                    "int",
-                    "int"
-                ],
-                "return": "int"
-            },
-            "GetGoldFrostyBoostAmount": {
-                "args": [
-                    "int",
-                    "int"
-                ],
-                "return": "float"
-            },
-            "GetGoldFrostyPointsForRound": {
-                "args": [
-                    "int",
-                    "int",
-                    "int"
-                ],
-                "return": "int"
-            },
             "GetGroundHeight": {
                 "args": [
                     "vector",
@@ -11846,6 +11901,11 @@
                 "description": "Get the local player on a listen server.",
                 "return": "handle"
             },
+            "GetLobbyEventGameDetails": {
+                "args": [],
+                "description": "( )",
+                "return": "variant"
+            },
             "GetMapName": {
                 "args": [],
                 "description": "Get the name of the map.",
@@ -11882,6 +11942,30 @@
                 "args": [],
                 "description": "Get the current real world time",
                 "return": "cstring"
+            },
+            "GetTargetAOELocation": {
+                "args": [
+                    "int",
+                    "int",
+                    "int",
+                    "vector",
+                    "int",
+                    "int",
+                    "int"
+                ],
+                "return": "vector"
+            },
+            "GetTargetLinearLocation": {
+                "args": [
+                    "int",
+                    "int",
+                    "int",
+                    "vector",
+                    "int",
+                    "int",
+                    "int"
+                ],
+                "return": "vector"
             },
             "GetTeamHeroKills": {
                 "args": [
@@ -12044,6 +12128,13 @@
                     "int"
                 ],
                 "description": "Start a minimap event. (nTeamID, hEntity, nXCoord, nYCoord, nEventType, nEventDuration).",
+                "return": "void"
+            },
+            "Msg": {
+                "args": [
+                    "cstring"
+                ],
+                "description": "Print a message",
                 "return": "void"
             },
             "PauseGame": {
@@ -12214,7 +12305,7 @@
                 "args": [
                     "int"
                 ],
-                "description": "Rolls a number from 1 to 100 and returns true if the roll is less than or equal to the number specified",
+                "description": "(int nPct)",
                 "return": "bool"
             },
             "RotateOrientation": {
@@ -12279,16 +12370,6 @@
                     "bool"
                 ],
                 "description": "Start a screenshake with the following parameters. vecCenter, flAmplitude, flFrequency, flDuration, flRadius, eCommand( SHAKE_START = 0, SHAKE_STOP = 1 ), bAirShake",
-                "return": "void"
-            },
-            "SendFrostivusTimeElapsedToGC": {
-                "args": [],
-                "return": "void"
-            },
-            "SendFrostyPointsMessageToGC": {
-                "args": [
-                    "handle"
-                ],
                 "return": "void"
             },
             "SendOverheadEventMessage": {
@@ -12417,6 +12498,14 @@
                 "description": "Print a hud message on all clients",
                 "return": "void"
             },
+            "SpawnDOTAShopTriggerRadiusApproximate": {
+                "args": [
+                    "vector",
+                    "float"
+                ],
+                "description": "(Vector vOrigin, float flRadius )",
+                "return": "handle"
+            },
             "SpawnEntityFromTableSynchronous": {
                 "args": [
                     "cstring",
@@ -12523,6 +12612,13 @@
                 "description": "Pass entity and effect name",
                 "return": "void"
             },
+            "StopGlobalSound": {
+                "args": [
+                    "cstring"
+                ],
+                "description": "Stop named sound for all players",
+                "return": "void"
+            },
             "StopListeningToAllGameEvents": {
                 "args": [
                     "handle"
@@ -12542,7 +12638,7 @@
                     "cstring",
                     "handle"
                 ],
-                "description": "Stops a sound event",
+                "description": "Stops a sound event with optional delivery",
                 "return": "void"
             },
             "StopSoundOn": {
@@ -12690,6 +12786,7 @@
                 "args": [
                     "handle"
                 ],
+                "description": "( hEventPointData )",
                 "return": "void"
             },
             "VectorAngles": {
@@ -12704,6 +12801,13 @@
                 ],
                 "description": "Get Qangles (with no roll) for a Vector.",
                 "return": "qangle"
+            },
+            "Warning": {
+                "args": [
+                    "cstring"
+                ],
+                "description": "Print a warning",
+                "return": "void"
             },
             "cvar_getf": {
                 "args": [
@@ -12947,6 +13051,15 @@
                 ],
                 "description": "Update velocity",
                 "return": "void"
+            }
+        }
+    },
+    "SteamInfo": {
+        "functions": {
+            "IsPublicUniverse": {
+                "args": [],
+                "description": "Is the script connected to the public Steam universe",
+                "return": "bool"
             }
         }
     }
