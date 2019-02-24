@@ -124,53 +124,6 @@
             }
         }
     },
-    "CDOTAGamerules": {
-        "functions": {
-            "GetCustomGameDifficulty": {
-                "args": [],
-                "description": "Returns the difficulty level of the custom game mode",
-                "return": "int"
-            },
-            "GetDOTATime": {
-                "args": [
-                    "bool",
-                    "bool"
-                ],
-                "description": "(b IncludePregameTime b IncludeNegativeTime) Returns the actual DOTA in-game clock time.",
-                "return": "float"
-            },
-            "GetDifficulty": {
-                "args": [],
-                "description": "Returns difficulty level of the custom game mode",
-                "return": "int"
-            },
-            "GetGameFrameTime": {
-                "args": [],
-                "description": "Returns the number of seconds elapsed since the last frame was renderered. This time doesn't count up when the game is paused",
-                "return": "float"
-            },
-            "GetGameTime": {
-                "args": [],
-                "description": "Returns the number of seconds elapsed since map start. This time doesn't count up when the game is paused",
-                "return": "float"
-            },
-            "GetWeatherWindDirection": {
-                "args": [],
-                "description": "Get Weather Wind Direction Vector",
-                "return": "vector"
-            },
-            "IsCheatMode": {
-                "args": [],
-                "description": "Are cheats enabled on the server",
-                "return": "bool"
-            },
-            "State_Get": {
-                "args": [],
-                "description": "Get the current Gamerules state",
-                "return": "int"
-            }
-        }
-    },
     "CDOTA_Buff": {
         "functions": {
             "AddParticle": {
