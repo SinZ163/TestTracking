@@ -29,7 +29,7 @@ const numbers = [
 ]
 function typeCompare(overrideType: string, baseType: string, className: string, funcName: string, argIndex?: string) {
     if (overrideType.endsWith("!")) {
-        console.warn(ValidationWarning(`${baseType} has been forceably casted to ${overrideType.substr(0, -1)}.`, className, funcName, argIndex));
+        console.warn(ValidationWarning(`${baseType} has been forceably casted to ${overrideType.slice(0, -1)}.`, className, funcName, argIndex));
         return true;
     }
     switch(baseType.toLowerCase()) {
@@ -56,6 +56,7 @@ function typeCompare(overrideType: string, baseType: string, className: string, 
         case "uint64":
         case "bool":
         case "vector":
+        case "qangle":
         case "void":
             return overrideType === baseType;
         case "handle":
