@@ -24,9 +24,14 @@ const ReturnIDs = [
 const numbers = [
     "float",
     "int",
-    "uint"
+    "uint",
+    "number" // Probably an error later down the track?
 ]
 function typeCompare(overrideType: string, baseType: string, className: string, funcName: string, argIndex?: string) {
+    if (overrideType.endsWith("!")) {
+        console.warn(ValidationWarning(`${baseType} has been forceably casted to ${overrideType.substr(0, -1)}.`, className, funcName, argIndex));
+        return true;
+    }
     switch(baseType.toLowerCase()) {
         case "<unknown>":
         case "table":
@@ -65,6 +70,8 @@ function typeCompare(overrideType: string, baseType: string, className: string, 
 }
 
 const fails = [];
+let questions = 0;
+let nils = 0;
 const ValidationMessage = (message: string, className: string, funcName?: string, argIndex?: string) => {
     let argMsg = "";
     if (argIndex !== undefined) {
@@ -102,6 +109,12 @@ for (const className of Object.keys(override_server)) {
                     check(baseFunc.arg_names.length === overrideFunc.arg_names.length, `Overriden arg names should have same length, expected ${baseFunc.arg_names.length} but got ${overrideFunc.arg_names.length}`, className, funcName);
                 }
                 for (let i in baseFunc.args) {
+                    if ((overrideFunc.args[i] as string).endsWith("?")) {
+                        questions++;
+                    }
+                    if ((overrideFunc.args[i] as string).endsWith(" | nil")) {
+                        nils++;
+                    }
                     let argName = i;
                     if (baseFunc.arg_names) {
                         argName = `"${baseFunc.arg_names[i]}"`;
@@ -119,4 +132,5 @@ for (const className of Object.keys(override_server)) {
 for (let fail of fails) {
     console.error(fail.toString());
 }
+console.table({questions, nils});
 process.exit(fails.length === 0 ? 0 : 1);
