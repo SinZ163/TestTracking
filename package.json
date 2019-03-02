@@ -2,7 +2,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "test": "node override_validate.js",
+    "test": "tsc -p tsconfig.json && node build/override_validate.js",
     "start-dev": "ts-node-dev override_validate.ts"
   },
   "devDependencies": {
