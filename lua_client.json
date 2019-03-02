@@ -83,7 +83,8 @@
                 "description": "( string TableName, string KeyName )",
                 "return": "variant"
             }
-        }
+        },
+        "instance": "CustomNetTables"
     },
     "CDOTAGameManager": {
         "functions": {
@@ -122,7 +123,8 @@
                 "description": "Get the hero unit name given the hero ID.",
                 "return": "cstring"
             }
-        }
+        },
+        "instance": "DOTAGameManager"
     },
     "CDOTAGamerules": {
         "functions": {
@@ -169,7 +171,8 @@
                 "description": "Get the current Gamerules state",
                 "return": "int"
             }
-        }
+        },
+        "instance": "GameRules"
     },
     "CDOTA_Buff": {
         "functions": {
@@ -839,7 +842,8 @@
                 "description": "Draws a arrow associated with a specific yaw. Specify endpoints in world space.",
                 "return": "void"
             }
-        }
+        },
+        "instance": "debugoverlay"
     },
     "CEntities": {
         "functions": {
@@ -855,7 +859,8 @@
                 "description": "Continue an iteration over the list of entities, providing reference to a previously found entity",
                 "return": "handle"
             }
-        }
+        },
+        "instance": "Entities"
     },
     "CEntityInstance": {
         "functions": {
@@ -977,7 +982,8 @@
         }
     },
     "CEntityScriptFramework": {
-        "functions": {}
+        "functions": {},
+        "instance": "NativeFunctions"
     },
     "CInfoWorldLayer": {
         "extends": "C_BaseEntity",
@@ -1211,7 +1217,8 @@
                 "description": "int nfxindex, bool bCheckFoW",
                 "return": "bool"
             }
-        }
+        },
+        "instance": "ParticleManager"
     },
     "CScriptPrecacheContext": {
         "functions": {
@@ -2417,7 +2424,8 @@
                 "description": "SetStr(name, val) : sets the value of the convar to the string.",
                 "return": "void"
             }
-        }
+        },
+        "instance": "Convars"
     },
     "Global": {
         "functions": {
@@ -3350,6 +3358,7 @@
                 "description": "CommandLineStr(name) : returns the command line param as a string.",
                 "return": "variant"
             }
-        }
+        },
+        "instance": "GlobalSys"
     }
 }
