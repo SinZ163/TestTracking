@@ -40,7 +40,7 @@
                     "cstring"
                 ],
                 "description": "Get the value of the given animGraph parameter",
-                "return": "variant"
+                "return": "table"
             },
             "GetModelScale": {
                 "args": [],
@@ -104,7 +104,7 @@
                 ],
                 "args": [
                     "cstring",
-                    "variant"
+                    "table"
                 ],
                 "description": "Set the specific param value, type is inferred from the type in script",
                 "return": "void"
@@ -214,7 +214,7 @@
             "GetEquippedWeapons": {
                 "args": [],
                 "description": "GetEquippedWeapons() : Returns an array of all the equipped weapons",
-                "return": "variant"
+                "return": "table"
             },
             "GetFaction": {
                 "args": [],
@@ -431,7 +431,7 @@
             "GetBounds": {
                 "args": [],
                 "description": "Get a table containing the 'Mins' & 'Maxs' vector bounds, centered on object.",
-                "return": "variant"
+                "return": "table"
             },
             "GetCenter": {
                 "args": [],
@@ -451,7 +451,7 @@
                     "cstring"
                 ],
                 "description": "GetContext( name ): looks up a context and returns it if available. May return string, float, or null (if the context isn't found).",
-                "return": "variant"
+                "return": "table"
             },
             "GetForwardVector": {
                 "args": [],
@@ -1336,7 +1336,7 @@
                     "cstring"
                 ],
                 "description": "( string TableName, string KeyName )",
-                "return": "variant"
+                "return": "table"
             },
             "SetTableValue": {
                 "args": [
@@ -1415,7 +1415,7 @@
             "GetAbilityKeyValues": {
                 "args": [],
                 "description": "Gets the key values definition for this ability.",
-                "return": "variant"
+                "return": "table"
             },
             "GetAbilityName": {
                 "args": [],
@@ -1590,7 +1590,7 @@
                     "cstring",
                     "int"
                 ],
-                "return": "variant"
+                "return": "table"
             },
             "GetManaCost": {
                 "arg_names": [
@@ -1629,7 +1629,7 @@
                     "cstring"
                 ],
                 "description": "Gets a value from this ability's special value block for its current level.",
-                "return": "variant"
+                "return": "table"
             },
             "GetStolenActivityModifier": {
                 "args": [],
@@ -2905,7 +2905,7 @@
                     "cstring"
                 ],
                 "description": "Get the hero unit ",
-                "return": "variant"
+                "return": "table"
             },
             "GetHeroIDByName": {
                 "args": [
@@ -3098,7 +3098,7 @@
                     "int"
                 ],
                 "description": "(Preview/Unreleased) Gets the player's custom game account record, as it looked at the start of this session",
-                "return": "variant"
+                "return": "table"
             },
             "GetStateTransitionTime": {
                 "args": [],
@@ -4496,7 +4496,7 @@
             "FindAllModifiers": {
                 "args": [],
                 "description": "Returns a table of all of the modifiers on the NPC.",
-                "return": "variant"
+                "return": "table"
             },
             "FindAllModifiersByName": {
                 "arg_names": [
@@ -4506,7 +4506,7 @@
                     "cstring"
                 ],
                 "description": "Returns a table of all of the modifiers on the NPC with the passed name (modifierName)",
-                "return": "variant"
+                "return": "table"
             },
             "FindItemInInventory": {
                 "arg_names": [
@@ -6551,7 +6551,7 @@
             },
             "GetAdditionalOwnedUnits": {
                 "args": [],
-                "return": "variant"
+                "return": "table"
             },
             "GetAgility": {
                 "args": [],
@@ -10308,7 +10308,7 @@
                     "cstring"
                 ],
                 "description": "Finds all entities by class name. Returns an array containing all the found entities.",
-                "return": "variant"
+                "return": "table"
             },
             "FindAllByClassnameWithin": {
                 "args": [
@@ -10317,21 +10317,21 @@
                     "float"
                 ],
                 "description": "Find entities by class name within a radius.",
-                "return": "variant"
+                "return": "table"
             },
             "FindAllByModel": {
                 "args": [
                     "cstring"
                 ],
                 "description": "Find entities by model name.",
-                "return": "variant"
+                "return": "table"
             },
             "FindAllByName": {
                 "args": [
                     "cstring"
                 ],
                 "description": "Find all entities by name. Returns an array containing all the found entities in it.",
-                "return": "variant"
+                "return": "table"
             },
             "FindAllByNameWithin": {
                 "args": [
@@ -10340,14 +10340,14 @@
                     "float"
                 ],
                 "description": "Find entities by name within a radius.",
-                "return": "variant"
+                "return": "table"
             },
             "FindAllByTarget": {
                 "args": [
                     "cstring"
                 ],
                 "description": "Find entities by targetname.",
-                "return": "variant"
+                "return": "table"
             },
             "FindAllInSphere": {
                 "args": [
@@ -10355,7 +10355,7 @@
                     "float"
                 ],
                 "description": "Find entities within a radius.",
-                "return": "variant"
+                "return": "table"
             },
             "FindByClassname": {
                 "args": [
@@ -10502,7 +10502,7 @@
                     "cstring",
                     "handle",
                     "handle",
-                    "variant",
+                    "table",
                     "float"
                 ],
                 "description": "Fire an entity output",
@@ -11190,7 +11190,7 @@
             "GetAllHeroes": {
                 "args": [],
                 "description": "Returns all the heroes in the world",
-                "return": "variant"
+                "return": "table"
             },
             "GetHero": {
                 "args": [
@@ -11214,7 +11214,7 @@
                     "cstring"
                 ],
                 "description": "Reads a spawn key",
-                "return": "variant"
+                "return": "table"
             }
         }
     },
@@ -11373,7 +11373,7 @@
                     "cstring"
                 ],
                 "description": "Reads a spawn key",
-                "return": "variant"
+                "return": "table"
             }
         }
     },
@@ -11622,7 +11622,7 @@
                     "cstring"
                 ],
                 "description": "GetBool(name) : returns the convar as a boolean flag.",
-                "return": "variant"
+                "return": "table"
             },
             "GetCommandClient": {
                 "args": [],
@@ -11639,21 +11639,21 @@
                     "cstring"
                 ],
                 "description": "GetFloat(name) : returns the convar as a float. May return null if no such convar.",
-                "return": "variant"
+                "return": "table"
             },
             "GetInt": {
                 "args": [
                     "cstring"
                 ],
                 "description": "GetInt(name) : returns the convar as an int. May return null if no such convar.",
-                "return": "variant"
+                "return": "table"
             },
             "GetStr": {
                 "args": [
                     "cstring"
                 ],
                 "description": "GetStr(name) : returns the convar as a string. May return null if no such convar.",
-                "return": "variant"
+                "return": "table"
             },
             "RegisterCommand": {
                 "args": [
@@ -12284,7 +12284,7 @@
                     "int"
                 ],
                 "description": "Find units that intersect the given line with the given flags.",
-                "return": "variant"
+                "return": "table"
             },
             "FindUnitsInRadius": {
                 "args": [
@@ -12299,7 +12299,7 @@
                     "bool"
                 ],
                 "description": "Finds the units in a given radius with the given flags.",
-                "return": "variant"
+                "return": "table"
             },
             "FireEntityIOInputNameOnly": {
                 "args": [
@@ -12411,7 +12411,7 @@
             "GetLobbyEventGameDetails": {
                 "args": [],
                 "description": "( )",
-                "return": "variant"
+                "return": "table"
             },
             "GetMapName": {
                 "args": [],
@@ -12604,19 +12604,19 @@
                     "cstring"
                 ],
                 "description": "Creates a table from the specified keyvalues text file",
-                "return": "variant"
+                "return": "table"
             },
             "LoadKeyValuesFromString": {
                 "args": [
                     "cstring"
                 ],
                 "description": "Creates a table from the specified keyvalues string",
-                "return": "variant"
+                "return": "table"
             },
             "LocalTime": {
                 "args": [],
                 "description": "Get the current local time",
-                "return": "variant"
+                "return": "table"
             },
             "MakeStringToken": {
                 "args": [
@@ -13369,7 +13369,7 @@
                     "cstring"
                 ],
                 "description": "CommandLineCheck(name) : returns true if the command line param was used, otherwise false.",
-                "return": "variant"
+                "return": "table"
             },
             "CommandLineFloat": {
                 "args": [
@@ -13377,7 +13377,7 @@
                     "float"
                 ],
                 "description": "CommandLineFloat(name) : returns the command line param as a float.",
-                "return": "variant"
+                "return": "table"
             },
             "CommandLineInt": {
                 "args": [
@@ -13385,7 +13385,7 @@
                     "int"
                 ],
                 "description": "CommandLineInt(name) : returns the command line param as an int.",
-                "return": "variant"
+                "return": "table"
             },
             "CommandLineStr": {
                 "args": [
@@ -13393,7 +13393,7 @@
                     "cstring"
                 ],
                 "description": "CommandLineStr(name) : returns the command line param as a string.",
-                "return": "variant"
+                "return": "table"
             }
         },
         "instance": "GlobalSys"
@@ -13432,7 +13432,7 @@
                     "bool"
                 ],
                 "description": "Returns a table full of tree HSCRIPTS (vPosition, flRadius, bFullCollision).",
-                "return": "variant"
+                "return": "table"
             },
             "GridPosToWorldCenterX": {
                 "args": [

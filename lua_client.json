@@ -81,7 +81,7 @@
                     "cstring"
                 ],
                 "description": "( string TableName, string KeyName )",
-                "return": "variant"
+                "return": "table"
             }
         },
         "instance": "CustomNetTables"
@@ -93,7 +93,7 @@
                     "cstring"
                 ],
                 "description": "Get the hero unit ",
-                "return": "variant"
+                "return": "table"
             },
             "GetHeroIDByName": {
                 "args": [
@@ -898,7 +898,7 @@
                     "cstring",
                     "handle",
                     "handle",
-                    "variant",
+                    "table",
                     "float"
                 ],
                 "description": "Fire an entity output",
@@ -1075,7 +1075,7 @@
                     "cstring"
                 ],
                 "description": "Reads a spawn key",
-                "return": "variant"
+                "return": "table"
             }
         }
     },
@@ -1234,7 +1234,7 @@
                     "cstring"
                 ],
                 "description": "Reads a spawn key",
-                "return": "variant"
+                "return": "table"
             }
         }
     },
@@ -1311,7 +1311,7 @@
                     "cstring"
                 ],
                 "description": "Gets a value from this ability's special value block for its current level.",
-                "return": "variant"
+                "return": "table"
             }
         }
     },
@@ -2339,7 +2339,7 @@
                     "cstring"
                 ],
                 "description": "GetBool(name) : returns the convar as a boolean flag.",
-                "return": "variant"
+                "return": "table"
             },
             "GetCommandClient": {
                 "args": [],
@@ -2356,21 +2356,21 @@
                     "cstring"
                 ],
                 "description": "GetFloat(name) : returns the convar as a float. May return null if no such convar.",
-                "return": "variant"
+                "return": "table"
             },
             "GetInt": {
                 "args": [
                     "cstring"
                 ],
                 "description": "GetInt(name) : returns the convar as an int. May return null if no such convar.",
-                "return": "variant"
+                "return": "table"
             },
             "GetStr": {
                 "args": [
                     "cstring"
                 ],
                 "description": "GetStr(name) : returns the convar as a string. May return null if no such convar.",
-                "return": "variant"
+                "return": "table"
             },
             "RegisterCommand": {
                 "args": [
@@ -2856,19 +2856,19 @@
                     "cstring"
                 ],
                 "description": "Creates a table from the specified keyvalues text file",
-                "return": "variant"
+                "return": "table"
             },
             "LoadKeyValuesFromString": {
                 "args": [
                     "cstring"
                 ],
                 "description": "Creates a table from the specified keyvalues string",
-                "return": "variant"
+                "return": "table"
             },
             "LocalTime": {
                 "args": [],
                 "description": "Get the current local time",
-                "return": "variant"
+                "return": "table"
             },
             "MakeStringToken": {
                 "args": [
@@ -3332,7 +3332,7 @@
                     "cstring"
                 ],
                 "description": "CommandLineCheck(name) : returns true if the command line param was used, otherwise false.",
-                "return": "variant"
+                "return": "table"
             },
             "CommandLineFloat": {
                 "args": [
@@ -3340,7 +3340,7 @@
                     "float"
                 ],
                 "description": "CommandLineFloat(name) : returns the command line param as a float.",
-                "return": "variant"
+                "return": "table"
             },
             "CommandLineInt": {
                 "args": [
@@ -3348,7 +3348,7 @@
                     "int"
                 ],
                 "description": "CommandLineInt(name) : returns the command line param as an int.",
-                "return": "variant"
+                "return": "table"
             },
             "CommandLineStr": {
                 "args": [
@@ -3356,7 +3356,7 @@
                     "cstring"
                 ],
                 "description": "CommandLineStr(name) : returns the command line param as a string.",
-                "return": "variant"
+                "return": "table"
             }
         },
         "instance": "GlobalSys"
