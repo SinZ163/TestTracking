@@ -9737,6 +9737,449 @@
             }
         }
     },
+    "CDebugOverlayScriptHelper": {
+        "functions": {
+            "Axis": {
+                "args": [
+                    "vector",
+                    "quaternion",
+                    "float",
+                    "bool",
+                    "float"
+                ],
+                "description": "Draws an axis. Specify origin + orientation in world space.",
+                "return": "void"
+            },
+            "Box": {
+                "args": [
+                    "vector",
+                    "vector",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "bool",
+                    "float"
+                ],
+                "description": "Draws a world-space axis-aligned box. Specify bounds in world space.",
+                "return": "void"
+            },
+            "BoxAngles": {
+                "args": [
+                    "vector",
+                    "vector",
+                    "vector",
+                    "quaternion",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "bool",
+                    "float"
+                ],
+                "description": "Draws an oriented box at the origin. Specify bounds in local space.",
+                "return": "void"
+            },
+            "Capsule": {
+                "args": [
+                    "vector",
+                    "quaternion",
+                    "float",
+                    "float",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "bool",
+                    "float"
+                ],
+                "description": "Draws a capsule. Specify base in world space.",
+                "return": "void"
+            },
+            "Circle": {
+                "args": [
+                    "vector",
+                    "quaternion",
+                    "float",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "bool",
+                    "float"
+                ],
+                "description": "Draws a circle. Specify center in world space.",
+                "return": "void"
+            },
+            "CircleScreenOriented": {
+                "args": [
+                    "vector",
+                    "float",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "bool",
+                    "float"
+                ],
+                "description": "Draws a circle oriented to the screen. Specify center in world space.",
+                "return": "void"
+            },
+            "Cone": {
+                "args": [
+                    "vector",
+                    "vector",
+                    "float",
+                    "float",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "bool",
+                    "float"
+                ],
+                "description": "Draws a wireframe cone. Specify endpoint and direction in world space.",
+                "return": "void"
+            },
+            "Cross": {
+                "args": [
+                    "vector",
+                    "float",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "bool",
+                    "float"
+                ],
+                "description": "Draws a screen-aligned cross. Specify origin in world space.",
+                "return": "void"
+            },
+            "Cross3D": {
+                "args": [
+                    "vector",
+                    "float",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "bool",
+                    "float"
+                ],
+                "description": "Draws a world-aligned cross. Specify origin in world space.",
+                "return": "void"
+            },
+            "Cross3DOriented": {
+                "args": [
+                    "vector",
+                    "quaternion",
+                    "float",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "bool",
+                    "float"
+                ],
+                "description": "Draws an oriented cross. Specify origin in world space.",
+                "return": "void"
+            },
+            "DrawTickMarkedLine": {
+                "args": [
+                    "vector",
+                    "vector",
+                    "float",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "bool",
+                    "float"
+                ],
+                "description": "Draws a dashed line. Specify endpoints in world space.",
+                "return": "void"
+            },
+            "EntityAttachments": {
+                "args": [
+                    "ehandle",
+                    "float",
+                    "float"
+                ],
+                "description": "Draws the attachments of the entity",
+                "return": "void"
+            },
+            "EntityAxis": {
+                "args": [
+                    "ehandle",
+                    "float",
+                    "bool",
+                    "float"
+                ],
+                "description": "Draws the axis of the entity origin",
+                "return": "void"
+            },
+            "EntityBounds": {
+                "args": [
+                    "ehandle",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "bool",
+                    "float"
+                ],
+                "description": "Draws bounds of an entity",
+                "return": "void"
+            },
+            "EntitySkeleton": {
+                "args": [
+                    "ehandle",
+                    "float"
+                ],
+                "description": "Draws the skeleton of the entity",
+                "return": "void"
+            },
+            "EntityText": {
+                "args": [
+                    "ehandle",
+                    "int",
+                    "cstring",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "float"
+                ],
+                "description": "Draws text on an entity",
+                "return": "void"
+            },
+            "FilledRect2D": {
+                "args": [
+                    "vector2d",
+                    "vector2d",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "float"
+                ],
+                "description": "Draws a screen-space filled 2D rectangle. Coordinates are in pixels.",
+                "return": "void"
+            },
+            "HorzArrow": {
+                "args": [
+                    "vector",
+                    "vector",
+                    "float",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "bool",
+                    "float"
+                ],
+                "description": "Draws a horizontal arrow. Specify endpoints in world space.",
+                "return": "void"
+            },
+            "Line": {
+                "args": [
+                    "vector",
+                    "vector",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "bool",
+                    "float"
+                ],
+                "description": "Draws a line between two points",
+                "return": "void"
+            },
+            "Line2D": {
+                "args": [
+                    "vector2d",
+                    "vector2d",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "float"
+                ],
+                "description": "Draws a line between two points in screenspace",
+                "return": "void"
+            },
+            "PopDebugOverlayScope": {
+                "args": [],
+                "description": "Pops the identifier used to group overlays. Overlays marked with this identifier can be deleted in a big batch.",
+                "return": "void"
+            },
+            "PushAndClearDebugOverlayScope": {
+                "args": [
+                    "utlstringtoken"
+                ],
+                "description": "Pushes an identifier used to group overlays. Deletes all existing overlays using this overlay id.",
+                "return": "void"
+            },
+            "PushDebugOverlayScope": {
+                "args": [
+                    "utlstringtoken"
+                ],
+                "description": "Pushes an identifier used to group overlays. Overlays marked with this identifier can be deleted in a big batch.",
+                "return": "void"
+            },
+            "RemoveAllInScope": {
+                "args": [
+                    "utlstringtoken"
+                ],
+                "description": "Removes all overlays marked with a specific identifier, regardless of their lifetime.",
+                "return": "void"
+            },
+            "SolidCone": {
+                "args": [
+                    "vector",
+                    "vector",
+                    "float",
+                    "float",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "bool",
+                    "float"
+                ],
+                "description": "Draws a solid cone. Specify endpoint and direction in world space.",
+                "return": "void"
+            },
+            "Sphere": {
+                "args": [
+                    "vector",
+                    "float",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "bool",
+                    "float"
+                ],
+                "description": "Draws a wireframe sphere. Specify center in world space.",
+                "return": "void"
+            },
+            "SweptBox": {
+                "args": [
+                    "vector",
+                    "vector",
+                    "vector",
+                    "vector",
+                    "quaternion",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "float"
+                ],
+                "description": "Draws a swept box. Specify endpoints in world space and the bounds in local space.",
+                "return": "void"
+            },
+            "Text": {
+                "args": [
+                    "vector",
+                    "int",
+                    "cstring",
+                    "float",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "float"
+                ],
+                "description": "Draws 2D text. Specify origin in world space.",
+                "return": "void"
+            },
+            "Texture": {
+                "args": [
+                    "cstring",
+                    "vector2d",
+                    "vector2d",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "vector2d",
+                    "vector2d",
+                    "float"
+                ],
+                "description": "Draws a screen-space texture. Coordinates are in pixels.",
+                "return": "void"
+            },
+            "Triangle": {
+                "args": [
+                    "vector",
+                    "vector",
+                    "vector",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "bool",
+                    "float"
+                ],
+                "description": "Draws a filled triangle. Specify vertices in world space.",
+                "return": "void"
+            },
+            "UnitTestCycleOverlayRenderType": {
+                "args": [],
+                "description": "Toggles the overlay render type, for unit tests",
+                "return": "void"
+            },
+            "VectorText3D": {
+                "args": [
+                    "vector",
+                    "quaternion",
+                    "cstring",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "bool",
+                    "float"
+                ],
+                "description": "Draws 3D text. Specify origin + orientation in world space.",
+                "return": "void"
+            },
+            "VertArrow": {
+                "args": [
+                    "vector",
+                    "vector",
+                    "float",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "bool",
+                    "float"
+                ],
+                "description": "Draws a vertical arrow. Specify endpoints in world space.",
+                "return": "void"
+            },
+            "YawArrow": {
+                "args": [
+                    "vector",
+                    "float",
+                    "float",
+                    "float",
+                    "int",
+                    "int",
+                    "int",
+                    "int",
+                    "bool",
+                    "float"
+                ],
+                "description": "Draws a arrow associated with a specific yaw. Specify endpoints in world space.",
+                "return": "void"
+            }
+        }
+    },
     "CDotaQuest": {
         "extends": "CBaseEntity",
         "functions": {
@@ -10678,6 +11121,55 @@
                 ],
                 "description": "Start scene playback, takes activatorEntity as param",
                 "return": "void"
+            }
+        }
+    },
+    "CScriptHTTPRequest": {
+        "functions": {
+            "Send": {
+                "args": [
+                    "handle"
+                ],
+                "description": "Send a HTTP request.",
+                "return": "bool"
+            },
+            "SetHTTPRequestAbsoluteTimeoutMS": {
+                "args": [
+                    "uint"
+                ],
+                "description": "Set the total timeout on the request.",
+                "return": "bool"
+            },
+            "SetHTTPRequestGetOrPostParameter": {
+                "args": [
+                    "cstring",
+                    "cstring"
+                ],
+                "description": "Set a POST or GET parameter on the request.",
+                "return": "bool"
+            },
+            "SetHTTPRequestHeaderValue": {
+                "args": [
+                    "cstring",
+                    "cstring"
+                ],
+                "description": "Set a header value on the request.",
+                "return": "bool"
+            },
+            "SetHTTPRequestNetworkActivityTimeout": {
+                "args": [
+                    "uint"
+                ],
+                "description": "Set the network timeout on the request - this timer is reset when any data is received.",
+                "return": "bool"
+            },
+            "SetHTTPRequestRawPostBody": {
+                "args": [
+                    "cstring",
+                    "cstring"
+                ],
+                "description": "Set the literal body of a post - invalid after setting a post parameter.",
+                "return": "bool"
             }
         }
     },
