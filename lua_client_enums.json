@@ -7101,35 +7101,35 @@
             "value": 1751
         },
         {
-            "key": "ACT_DOTA_RUN_ALT",
+            "key": "ACT_DOTA_CYCLONE",
             "value": 1752
         },
         {
-            "key": "ACT_DOTA_CYCLONE",
+            "key": "ACT_DOTA_IMPALE",
             "value": 1753
         },
         {
-            "key": "ACT_DOTA_IMPALE",
+            "key": "ACT_DOTA_TORRENT",
             "value": 1754
         },
         {
-            "key": "ACT_DOTA_TORRENT",
+            "key": "ACT_DOTA_RELAX_IN",
             "value": 1755
         },
         {
-            "key": "ACT_DOTA_RELAX_IN",
+            "key": "ACT_DOTA_RELAX_OUT",
             "value": 1756
         },
         {
-            "key": "ACT_DOTA_RELAX_OUT",
+            "key": "ACT_DOTA_CAST_FENCE",
             "value": 1757
         },
         {
-            "key": "ACT_DOTA_CAST_FENCE",
+            "key": "ACT_DOTA_RADIANT_CREEP_HAMMER",
             "value": 1758
         },
         {
-            "key": "ACT_DOTA_RADIANT_CREEP_HAMMER",
+            "key": "ACT_DOTA_RUN_ALT",
             "value": 1759
         },
         {
@@ -7145,11 +7145,11 @@
             "value": 1762
         },
         {
-            "key": "FCVAR_UNLOGGED",
+            "key": "DMG_PREVENT_PHYSICS_FORCE",
             "value": 2048
         },
         {
-            "key": "DMG_PREVENT_PHYSICS_FORCE",
+            "key": "FCVAR_UNLOGGED",
             "value": 2048
         },
         {
@@ -7177,11 +7177,11 @@
             "value": 16384
         },
         {
-            "key": "FCVAR_SS",
+            "key": "DMG_PARALYZE",
             "value": 32768
         },
         {
-            "key": "DMG_PARALYZE",
+            "key": "FCVAR_SS",
             "value": 32768
         },
         {
