@@ -12355,6 +12355,13 @@
                 "description": "( version )",
                 "return": "cstring"
             },
+            "GetDedicatedServerKeyV2": {
+                "args": [
+                    "cstring"
+                ],
+                "description": "( version )",
+                "return": "cstring"
+            },
             "GetEntityIndexForTreeId": {
                 "args": [
                     "uint"
