@@ -4245,6 +4245,16 @@
                 "description": "Add an ability to this unit by name.",
                 "return": "handle"
             },
+            "AddActivityModifier": {
+                "arg_names": [
+                    "szName"
+                ],
+                "args": [
+                    "cstring"
+                ],
+                "description": "Add an activity modifier that affects future StartGesture calls",
+                "return": "void"
+            },
             "AddItem": {
                 "arg_names": [
                     "hItem"
@@ -4413,6 +4423,11 @@
                     "int"
                 ],
                 "description": "Toggle an ability.",
+                "return": "void"
+            },
+            "ClearActivityModifiers": {
+                "args": [],
+                "description": "Clear Activity modifiers",
                 "return": "void"
             },
             "DestroyAllSpeechBubbles": {
@@ -11468,6 +11483,15 @@
             "GetStabilityDamage": {
                 "args": [],
                 "return": "float"
+            },
+            "HasDamageType": {
+                "arg_names": [
+                    "bitsToTest"
+                ],
+                "args": [
+                    "int"
+                ],
+                "return": "bool"
             },
             "ScaleDamage": {
                 "arg_names": [
