@@ -3277,7 +3277,7 @@
             "value": 5
         },
         {
-            "key": "DOTA_UNIT_ORDER_CAST_POSITION",
+            "key": "DOTA_CONNECTION_STATE_LOADING",
             "value": 5
         },
         {
@@ -3285,7 +3285,7 @@
             "value": 5
         },
         {
-            "key": "DOTA_CONNECTION_STATE_LOADING",
+            "key": "DOTA_UNIT_ORDER_CAST_POSITION",
             "value": 5
         },
         {
@@ -3621,11 +3621,11 @@
             "value": 20
         },
         {
-            "key": "AE_STOP_SCRIPTED_EFFECT",
+            "key": "OVERHEAD_ALERT_DEATH",
             "value": 20
         },
         {
-            "key": "OVERHEAD_ALERT_DEATH",
+            "key": "AE_STOP_SCRIPTED_EFFECT",
             "value": 20
         },
         {
@@ -3709,11 +3709,11 @@
             "value": 26
         },
         {
-            "key": "AE_NPC_RAGDOLL",
+            "key": "DOTA_UNIT_ORDER_CAST_RUNE",
             "value": 26
         },
         {
-            "key": "DOTA_UNIT_ORDER_CAST_RUNE",
+            "key": "AE_NPC_RAGDOLL",
             "value": 26
         },
         {
@@ -3729,15 +3729,15 @@
             "value": 27
         },
         {
+            "key": "ACT_SWIM",
+            "value": 28
+        },
+        {
             "key": "AE_NPC_RESTARTGESTURE",
             "value": 28
         },
         {
             "key": "DOTA_UNIT_ORDER_MOVE_TO_DIRECTION",
-            "value": 28
-        },
-        {
-            "key": "ACT_SWIM",
             "value": 28
         },
         {
@@ -3753,20 +3753,16 @@
             "value": 29
         },
         {
-            "key": "AE_NPC_HURT_INTERACTION_PARTNER",
+            "key": "DOTA_UNIT_ORDER_VECTOR_TARGET_POSITION",
             "value": 30
         },
         {
-            "key": "DOTA_UNIT_ORDER_VECTOR_TARGET_POSITION",
+            "key": "AE_NPC_HURT_INTERACTION_PARTNER",
             "value": 30
         },
         {
             "key": "ACT_HOP",
             "value": 30
-        },
-        {
-            "key": "AE_NPC_SET_INTERACTION_CANTDIE",
-            "value": 31
         },
         {
             "key": "DOTA_UNIT_ORDER_RADAR",
@@ -3777,11 +3773,19 @@
             "value": 31
         },
         {
-            "key": "FCVAR_PROTECTED",
+            "key": "AE_NPC_SET_INTERACTION_CANTDIE",
+            "value": 31
+        },
+        {
+            "key": "AE_SV_DUSTTRAIL",
             "value": 32
         },
         {
-            "key": "ACT_LAND",
+            "key": "DOTA_UNIT_ORDER_SET_ITEM_COMBINE_LOCK",
+            "value": 32
+        },
+        {
+            "key": "FCVAR_PROTECTED",
             "value": 32
         },
         {
@@ -3793,16 +3797,8 @@
             "value": 32
         },
         {
-            "key": "AE_SV_DUSTTRAIL",
+            "key": "ACT_LAND",
             "value": 32
-        },
-        {
-            "key": "DOTA_UNIT_ORDER_SET_ITEM_COMBINE_LOCK",
-            "value": 32
-        },
-        {
-            "key": "DOTA_UNIT_ORDER_CONTINUE",
-            "value": 33
         },
         {
             "key": "ACT_CLIMB_UP",
@@ -3813,6 +3809,14 @@
             "value": 33
         },
         {
+            "key": "DOTA_UNIT_ORDER_CONTINUE",
+            "value": 33
+        },
+        {
+            "key": "AE_CL_STOP_PARTICLE_EFFECT",
+            "value": 34
+        },
+        {
             "key": "ACT_CLIMB_DOWN",
             "value": 34
         },
@@ -3821,19 +3825,15 @@
             "value": 34
         },
         {
-            "key": "AE_CL_STOP_PARTICLE_EFFECT",
-            "value": 34
-        },
-        {
             "key": "AE_CL_ADD_PARTICLE_EFFECT_CP",
             "value": 35
         },
         {
-            "key": "DOTA_UNIT_ORDER_CAST_RIVER_PAINT",
+            "key": "ACT_CLIMB_DISMOUNT",
             "value": 35
         },
         {
-            "key": "ACT_CLIMB_DISMOUNT",
+            "key": "DOTA_UNIT_ORDER_CAST_RIVER_PAINT",
             "value": 35
         },
         {
@@ -4445,11 +4445,11 @@
             "value": 110
         },
         {
-            "key": "AE_WEAPON_SHOTGUN_FIRE",
+            "key": "ACT_WALK_SCARED",
             "value": 111
         },
         {
-            "key": "ACT_WALK_SCARED",
+            "key": "AE_WEAPON_SHOTGUN_FIRE",
             "value": 111
         },
         {
@@ -4797,11 +4797,11 @@
             "value": 153
         },
         {
-            "key": "AE_DROP_ITEM",
+            "key": "ACT_GESTURE_FLINCH_BLAST",
             "value": 154
         },
         {
-            "key": "ACT_GESTURE_FLINCH_BLAST",
+            "key": "AE_DROP_ITEM",
             "value": 154
         },
         {
@@ -4853,19 +4853,19 @@
             "value": 160
         },
         {
-            "key": "AE_DROP_PRIMARY_WEAPON",
-            "value": 161
-        },
-        {
             "key": "ACT_GESTURE_FLINCH_LEFTARM",
             "value": 161
         },
         {
-            "key": "ACT_GESTURE_FLINCH_RIGHTARM",
-            "value": 162
+            "key": "AE_DROP_PRIMARY_WEAPON",
+            "value": 161
         },
         {
             "key": "AE_CL_PLAYSOUND_POSITION",
+            "value": 162
+        },
+        {
+            "key": "ACT_GESTURE_FLINCH_RIGHTARM",
             "value": 162
         },
         {
@@ -4893,11 +4893,11 @@
             "value": 165
         },
         {
-            "key": "ACT_GESTURE_TURN_RIGHT",
+            "key": "AE_SCRIPT_EVENT_NOINTERRUPT",
             "value": 166
         },
         {
-            "key": "AE_SCRIPT_EVENT_NOINTERRUPT",
+            "key": "ACT_GESTURE_TURN_RIGHT",
             "value": 166
         },
         {
@@ -4925,11 +4925,11 @@
             "value": 169
         },
         {
-            "key": "ACT_GESTURE_TURN_RIGHT90",
+            "key": "AE_SCRIPT_EVENT_NOT_DEAD",
             "value": 170
         },
         {
-            "key": "AE_SCRIPT_EVENT_NOT_DEAD",
+            "key": "ACT_GESTURE_TURN_RIGHT90",
             "value": 170
         },
         {
@@ -4949,19 +4949,19 @@
             "value": 172
         },
         {
-            "key": "AE_CL_PLAYSOUND_LOOPING",
-            "value": 173
-        },
-        {
             "key": "ACT_GESTURE_TURN_LEFT90_FLAT",
             "value": 173
         },
         {
-            "key": "AE_IK_SET_LOCK_ROTATION_ALPHA",
-            "value": 174
+            "key": "AE_CL_PLAYSOUND_LOOPING",
+            "value": 173
         },
         {
             "key": "ACT_GESTURE_TURN_RIGHT90_FLAT",
+            "value": 174
+        },
+        {
+            "key": "AE_IK_SET_LOCK_ROTATION_ALPHA",
             "value": 174
         },
         {
@@ -4981,11 +4981,11 @@
             "value": 176
         },
         {
-            "key": "ACT_BARNACLE_CHOMP",
+            "key": "AE_IK_SET_CHAIN_BLEND_AMOUNT",
             "value": 177
         },
         {
-            "key": "AE_IK_SET_CHAIN_BLEND_AMOUNT",
+            "key": "ACT_BARNACLE_CHOMP",
             "value": 177
         },
         {
@@ -5021,11 +5021,11 @@
             "value": 181
         },
         {
-            "key": "ACT_VM_RELOAD_EMPTY",
+            "key": "AE_NPC_GIB",
             "value": 182
         },
         {
-            "key": "AE_NPC_GIB",
+            "key": "ACT_VM_RELOAD_EMPTY",
             "value": 182
         },
         {
@@ -5041,19 +5041,19 @@
             "value": 184
         },
         {
-            "key": "AE_CL_DOTA_STOP_STATUS_EFFECT",
-            "value": 185
-        },
-        {
             "key": "ACT_VM_IDLE",
             "value": 185
         },
         {
-            "key": "ACT_VM_FIDGET",
-            "value": 186
+            "key": "AE_CL_DOTA_STOP_STATUS_EFFECT",
+            "value": 185
         },
         {
             "key": "AE_CL_DOTA_NPC_CREATE_PARTICLE_EFFECT",
+            "value": 186
+        },
+        {
+            "key": "ACT_VM_FIDGET",
             "value": 186
         },
         {
@@ -9339,337 +9339,342 @@
             "value": 137
         },
         {
+            "description": "GetTriggerCosmeticAndEndAttack",
+            "key": "MODIFIER_PROPERTY_TRIGGER_COSMETIC_AND_END_ATTACK",
+            "value": 138
+        },
+        {
             "description": "OnSpellTargetReady",
             "key": "MODIFIER_EVENT_ON_SPELL_TARGET_READY",
-            "value": 138
+            "value": 139
         },
         {
             "description": "OnAttackRecord",
             "key": "MODIFIER_EVENT_ON_ATTACK_RECORD",
-            "value": 139
+            "value": 140
         },
         {
             "description": "OnAttackStart",
             "key": "MODIFIER_EVENT_ON_ATTACK_START",
-            "value": 140
+            "value": 141
         },
         {
             "description": "OnAttack",
             "key": "MODIFIER_EVENT_ON_ATTACK",
-            "value": 141
+            "value": 142
         },
         {
             "description": "OnAttackLanded",
             "key": "MODIFIER_EVENT_ON_ATTACK_LANDED",
-            "value": 142
+            "value": 143
         },
         {
             "description": "OnAttackFail",
             "key": "MODIFIER_EVENT_ON_ATTACK_FAIL",
-            "value": 143
+            "value": 144
         },
         {
             "description": "OnAttackAllied",
             "key": "MODIFIER_EVENT_ON_ATTACK_ALLIED",
-            "value": 144
+            "value": 145
         },
         {
             "description": "OnProjectileDodge",
             "key": "MODIFIER_EVENT_ON_PROJECTILE_DODGE",
-            "value": 145
+            "value": 146
         },
         {
             "description": "OnOrder",
             "key": "MODIFIER_EVENT_ON_ORDER",
-            "value": 146
+            "value": 147
         },
         {
             "description": "OnUnitMoved",
             "key": "MODIFIER_EVENT_ON_UNIT_MOVED",
-            "value": 147
+            "value": 148
         },
         {
             "description": "OnAbilityStart",
             "key": "MODIFIER_EVENT_ON_ABILITY_START",
-            "value": 148
+            "value": 149
         },
         {
             "description": "OnAbilityExecuted",
             "key": "MODIFIER_EVENT_ON_ABILITY_EXECUTED",
-            "value": 149
+            "value": 150
         },
         {
             "description": "OnAbilityFullyCast",
             "key": "MODIFIER_EVENT_ON_ABILITY_FULLY_CAST",
-            "value": 150
+            "value": 151
         },
         {
             "description": "OnBreakInvisibility",
             "key": "MODIFIER_EVENT_ON_BREAK_INVISIBILITY",
-            "value": 151
+            "value": 152
         },
         {
             "description": "OnAbilityEndChannel",
             "key": "MODIFIER_EVENT_ON_ABILITY_END_CHANNEL",
-            "value": 152
-        },
-        {
-            "description": "Unused",
-            "key": "MODIFIER_EVENT_ON_PROCESS_UPGRADE",
             "value": 153
         },
         {
             "description": "Unused",
-            "key": "MODIFIER_EVENT_ON_REFRESH",
+            "key": "MODIFIER_EVENT_ON_PROCESS_UPGRADE",
             "value": 154
+        },
+        {
+            "description": "Unused",
+            "key": "MODIFIER_EVENT_ON_REFRESH",
+            "value": 155
         },
         {
             "description": "OnTakeDamage",
             "key": "MODIFIER_EVENT_ON_TAKEDAMAGE",
-            "value": 155
+            "value": 156
         },
         {
             "description": "OnStateChanged",
             "key": "MODIFIER_EVENT_ON_STATE_CHANGED",
-            "value": 156
+            "value": 157
         },
         {
             "description": "Unused",
             "key": "MODIFIER_EVENT_ON_ORB_EFFECT",
-            "value": 157
+            "value": 158
         },
         {
             "description": "OnProcessCleave",
             "key": "MODIFIER_EVENT_ON_PROCESS_CLEAVE",
-            "value": 158
+            "value": 159
         },
         {
             "description": "OnDamageCalculated",
             "key": "MODIFIER_EVENT_ON_DAMAGE_CALCULATED",
-            "value": 159
+            "value": 160
         },
         {
             "description": "OnAttacked",
             "key": "MODIFIER_EVENT_ON_ATTACKED",
-            "value": 160
+            "value": 161
         },
         {
             "description": "OnDeath",
             "key": "MODIFIER_EVENT_ON_DEATH",
-            "value": 161
+            "value": 162
         },
         {
             "description": "OnRespawn",
             "key": "MODIFIER_EVENT_ON_RESPAWN",
-            "value": 162
+            "value": 163
         },
         {
             "description": "OnSpentMana",
             "key": "MODIFIER_EVENT_ON_SPENT_MANA",
-            "value": 163
+            "value": 164
         },
         {
             "description": "OnTeleporting",
             "key": "MODIFIER_EVENT_ON_TELEPORTING",
-            "value": 164
+            "value": 165
         },
         {
             "description": "OnTeleported",
             "key": "MODIFIER_EVENT_ON_TELEPORTED",
-            "value": 165
+            "value": 166
         },
         {
             "description": "OnSetLocation",
             "key": "MODIFIER_EVENT_ON_SET_LOCATION",
-            "value": 166
+            "value": 167
         },
         {
             "description": "OnHealthGained",
             "key": "MODIFIER_EVENT_ON_HEALTH_GAINED",
-            "value": 167
+            "value": 168
         },
         {
             "description": "OnManaGained",
             "key": "MODIFIER_EVENT_ON_MANA_GAINED",
-            "value": 168
+            "value": 169
         },
         {
             "description": "OnTakeDamageKillCredit",
             "key": "MODIFIER_EVENT_ON_TAKEDAMAGE_KILLCREDIT",
-            "value": 169
+            "value": 170
         },
         {
             "description": "OnHeroKilled",
             "key": "MODIFIER_EVENT_ON_HERO_KILLED",
-            "value": 170
+            "value": 171
         },
         {
             "description": "OnHealReceived",
             "key": "MODIFIER_EVENT_ON_HEAL_RECEIVED",
-            "value": 171
+            "value": 172
         },
         {
             "description": "OnBuildingKilled",
             "key": "MODIFIER_EVENT_ON_BUILDING_KILLED",
-            "value": 172
+            "value": 173
         },
         {
             "description": "OnModelChanged",
             "key": "MODIFIER_EVENT_ON_MODEL_CHANGED",
-            "value": 173
+            "value": 174
         },
         {
             "description": "OnModifierAdded",
             "key": "MODIFIER_EVENT_ON_MODIFIER_ADDED",
-            "value": 174
+            "value": 175
         },
         {
             "description": "OnTooltip",
             "key": "MODIFIER_PROPERTY_TOOLTIP",
-            "value": 175
+            "value": 176
         },
         {
             "description": "GetModifierModelChange",
             "key": "MODIFIER_PROPERTY_MODEL_CHANGE",
-            "value": 176
+            "value": 177
         },
         {
             "description": "GetModifierModelScale",
             "key": "MODIFIER_PROPERTY_MODEL_SCALE",
-            "value": 177
+            "value": 178
         },
         {
             "description": "GetModifierScepter",
             "key": "MODIFIER_PROPERTY_IS_SCEPTER",
-            "value": 178
+            "value": 179
         },
         {
             "description": "GetActivityTranslationModifiers",
             "key": "MODIFIER_PROPERTY_TRANSLATE_ACTIVITY_MODIFIERS",
-            "value": 179
+            "value": 180
         },
         {
             "description": "GetAttackSound",
             "key": "MODIFIER_PROPERTY_TRANSLATE_ATTACK_SOUND",
-            "value": 180
+            "value": 181
         },
         {
             "description": "GetUnitLifetimeFraction",
             "key": "MODIFIER_PROPERTY_LIFETIME_FRACTION",
-            "value": 181
+            "value": 182
         },
         {
             "description": "GetModifierProvidesFOWVision",
             "key": "MODIFIER_PROPERTY_PROVIDES_FOW_POSITION",
-            "value": 182
+            "value": 183
         },
         {
             "description": "GetModifierSpellsRequireHP",
             "key": "MODIFIER_PROPERTY_SPELLS_REQUIRE_HP",
-            "value": 183
+            "value": 184
         },
         {
             "description": "GetForceDrawOnMinimap",
             "key": "MODIFIER_PROPERTY_FORCE_DRAW_MINIMAP",
-            "value": 184
+            "value": 185
         },
         {
             "description": "GetModifierDisableTurning",
             "key": "MODIFIER_PROPERTY_DISABLE_TURNING",
-            "value": 185
+            "value": 186
         },
         {
             "description": "GetModifierIgnoreCastAngle",
             "key": "MODIFIER_PROPERTY_IGNORE_CAST_ANGLE",
-            "value": 186
+            "value": 187
         },
         {
             "description": "GetModifierChangeAbilityValue",
             "key": "MODIFIER_PROPERTY_CHANGE_ABILITY_VALUE",
-            "value": 187
+            "value": 188
         },
         {
             "description": "GetModifierAbilityLayout",
             "key": "MODIFIER_PROPERTY_ABILITY_LAYOUT",
-            "value": 188
+            "value": 189
         },
         {
             "description": "OnDominated",
             "key": "MODIFIER_EVENT_ON_DOMINATED",
-            "value": 189
+            "value": 190
         },
         {
             "description": "GetModifierTempestDouble",
             "key": "MODIFIER_PROPERTY_TEMPEST_DOUBLE",
-            "value": 190
+            "value": 191
         },
         {
             "description": "PreserveParticlesOnModelChanged",
             "key": "MODIFIER_PROPERTY_PRESERVE_PARTICLES_ON_MODEL_CHANGE",
-            "value": 191
+            "value": 192
         },
         {
             "description": "OnAttackFinished",
             "key": "MODIFIER_EVENT_ON_ATTACK_FINISHED",
-            "value": 192
+            "value": 193
         },
         {
             "description": "GetModifierIgnoreCooldown",
             "key": "MODIFIER_PROPERTY_IGNORE_COOLDOWN",
-            "value": 193
+            "value": 194
         },
         {
             "description": "GetModifierCanAttackTrees",
             "key": "MODIFIER_PROPERTY_CAN_ATTACK_TREES",
-            "value": 194
+            "value": 195
         },
         {
             "description": "GetVisualZDelta",
             "key": "MODIFIER_PROPERTY_VISUAL_Z_DELTA",
-            "value": 195
+            "value": 196
         },
         {
             "key": "MODIFIER_PROPERTY_INCOMING_DAMAGE_ILLUSION",
-            "value": 196
+            "value": 197
         },
         {
             "description": "GetModifierNoVisionOfAttacker",
             "key": "MODIFIER_PROPERTY_DONT_GIVE_VISION_OF_ATTACKER",
-            "value": 197
+            "value": 198
         },
         {
             "description": "OnTooltip2",
             "key": "MODIFIER_PROPERTY_TOOLTIP2",
-            "value": 198
+            "value": 199
         },
         {
             "description": "OnAttackRecordDestroy",
             "key": "MODIFIER_EVENT_ON_ATTACK_RECORD_DESTROY",
-            "value": 199
+            "value": 200
         },
         {
             "description": "OnProjectileObstructionHit",
             "key": "MODIFIER_EVENT_ON_PROJECTILE_OBSTRUCTION_HIT",
-            "value": 200
+            "value": 201
         },
         {
             "description": "GetSuppressTeleport",
             "key": "MODIFIER_PROPERTY_SUPPRESS_TELEPORT",
-            "value": 201
+            "value": 202
         },
         {
             "description": "OnAttackCancelled",
             "key": "MODIFIER_EVENT_ON_ATTACK_CANCELLED",
-            "value": 202
+            "value": 203
         },
         {
             "description": "GetSuppressCleave",
             "key": "MODIFIER_PROPERTY_SUPPRESS_CLEAVE",
-            "value": 203
+            "value": 204
         },
         {
             "key": "MODIFIER_FUNCTION_LAST",
-            "value": 204
+            "value": 205
         },
         {
             "key": "MODIFIER_FUNCTION_INVALID",
