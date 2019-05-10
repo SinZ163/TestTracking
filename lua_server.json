@@ -5645,6 +5645,16 @@
                 "description": "Remove an ability from this unit by name.",
                 "return": "void"
             },
+            "RemoveAbilityByHandle": {
+                "arg_names": [
+                    "hAbility"
+                ],
+                "args": [
+                    "handle"
+                ],
+                "description": "Remove the passed ability from this unit.",
+                "return": "void"
+            },
             "RemoveGesture": {
                 "arg_names": [
                     "nActivity"
