@@ -4945,7 +4945,12 @@
                 "return": "float"
             },
             "GetPhysicalArmorValue": {
-                "args": [],
+                "arg_names": [
+                    "bIgnoreBase"
+                ],
+                "args": [
+                    "bool"
+                ],
                 "description": "Returns current physical armor value.",
                 "return": "float"
             },
