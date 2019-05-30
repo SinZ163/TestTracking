@@ -215,6 +215,10 @@
         {
             "key": "DOTA_DAMAGE_FLAG_PROPERTY_FIRE",
             "value": 8192
+        },
+        {
+            "key": "DOTA_DAMAGE_FLAG_IGNORES_BASE_PHYSICAL_ARMOR",
+            "value": 16384
         }
     ],
     "DOTAHUDVisibility_t": [
