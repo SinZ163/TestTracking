@@ -2447,7 +2447,7 @@
                     "cstring",
                     "cstring"
                 ],
-                "description": "Appends a string to a log file on the server",
+                "description": "AppendToLogFile is deprecated. Print to the console for logging instead.",
                 "return": "void"
             },
             "AxisAngleToQuaternion": {
@@ -2792,7 +2792,7 @@
                     "cstring",
                     "cstring"
                 ],
-                "description": "If the given file doesn't exist, creates it with the given contents; does nothing if it exists",
+                "description": "InitLogFile is deprecated. Print to the console for logging instead.",
                 "return": "void"
             },
             "IsClient": {

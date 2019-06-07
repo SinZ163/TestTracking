@@ -4824,6 +4824,11 @@
                 "args": [],
                 "return": "float"
             },
+            "GetLastDamageTime": {
+                "args": [],
+                "description": "Get the last time this NPC took damage",
+                "return": "float"
+            },
             "GetLastIdleChangeTime": {
                 "args": [],
                 "description": "Get the last game time that this unit switched to/from idle state.",
@@ -11775,7 +11780,7 @@
                     "cstring",
                     "cstring"
                 ],
-                "description": "Appends a string to a log file on the server",
+                "description": "AppendToLogFile is deprecated. Print to the console for logging instead.",
                 "return": "void"
             },
             "ApplyDamage": {
@@ -12566,7 +12571,7 @@
                     "cstring",
                     "cstring"
                 ],
-                "description": "If the given file doesn't exist, creates it with the given contents; does nothing if it exists",
+                "description": "InitLogFile is deprecated. Print to the console for logging instead.",
                 "return": "void"
             },
             "IsClient": {
