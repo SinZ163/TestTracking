@@ -7309,43 +7309,43 @@
             "value": 1760
         },
         {
-            "key": "ACT_DOTA_ARCANA_VOTE",
+            "key": "ACT_DOTA_STORM_ABILITY_4",
             "value": 1761
         },
         {
-            "key": "ACT_DOTA_PUNCH",
+            "key": "ACT_DOTA_CAST2_STATUE",
             "value": 1762
         },
         {
-            "key": "ACT_DOTA_SPIRIT_BREAKER_ULT_RUN",
+            "key": "ACT_DOTA_ARCANA_VOTE",
             "value": 1763
         },
         {
-            "key": "ACT_DOTA_CAST_STATUE",
+            "key": "ACT_DOTA_PUNCH",
             "value": 1764
         },
         {
-            "key": "ACT_DOTA_CAST3_STATUE",
+            "key": "ACT_DOTA_SPIRIT_BREAKER_ULT_RUN",
             "value": 1765
         },
         {
-            "key": "ACT_DOTA_STATUE_SEQUENCE",
+            "key": "ACT_DOTA_CAST_STATUE",
             "value": 1766
         },
         {
-            "key": "ACT_DOTA_STORM_ABILITY_4",
+            "key": "ACT_DOTA_CAST3_STATUE",
             "value": 1767
         },
         {
-            "key": "ACT_DOTA_CAST2_STATUE",
+            "key": "ACT_DOTA_STATUE_SEQUENCE",
             "value": 1768
         },
         {
-            "key": "ACD_DOTA_IDLE",
+            "key": "ACT_DOTA_DISABLED_END",
             "value": 1769
         },
         {
-            "key": "ACT_DOTA_DISABLED_END",
+            "key": "ACD_DOTA_IDLE",
             "value": 1770
         },
         {
@@ -7389,27 +7389,27 @@
             "value": 1780
         },
         {
-            "key": "DMG_PREVENT_PHYSICS_FORCE",
-            "value": 2048
-        },
-        {
             "key": "FCVAR_UNLOGGED",
             "value": 2048
         },
         {
-            "key": "DMG_NEVERGIB",
-            "value": 4096
+            "key": "DMG_PREVENT_PHYSICS_FORCE",
+            "value": 2048
         },
         {
             "key": "FCVAR_NEVER_AS_STRING",
             "value": 4096
         },
         {
-            "key": "DMG_ALWAYSGIB",
-            "value": 8192
+            "key": "DMG_NEVERGIB",
+            "value": 4096
         },
         {
             "key": "FCVAR_REPLICATED",
+            "value": 8192
+        },
+        {
+            "key": "DMG_ALWAYSGIB",
             "value": 8192
         },
         {
@@ -7437,11 +7437,11 @@
             "value": 65536
         },
         {
-            "key": "DMG_POISON",
+            "key": "FCVAR_DONTRECORD",
             "value": 131072
         },
         {
-            "key": "FCVAR_DONTRECORD",
+            "key": "DMG_POISON",
             "value": 131072
         },
         {
