@@ -237,11 +237,11 @@
     ],
     "DOTATeam_t": [
         {
-            "key": "DOTA_TEAM_FIRST",
+            "key": "DOTA_TEAM_GOODGUYS",
             "value": 2
         },
         {
-            "key": "DOTA_TEAM_GOODGUYS",
+            "key": "DOTA_TEAM_FIRST",
             "value": 2
         },
         {
@@ -293,11 +293,11 @@
             "value": 12
         },
         {
-            "key": "DOTA_TEAM_CUSTOM_8",
+            "key": "DOTA_TEAM_CUSTOM_MAX",
             "value": 13
         },
         {
-            "key": "DOTA_TEAM_CUSTOM_MAX",
+            "key": "DOTA_TEAM_CUSTOM_8",
             "value": 13
         },
         {
@@ -309,10 +309,6 @@
         {
             "key": "DOTA_ABILITY_BEHAVIOR_LAST_RESORT_POINT",
             "value": -2147483648
-        },
-        {
-            "key": "DOTA_ABILITY_BEHAVIOR_UNLOCKED_BY_EFFECT_INDEX",
-            "value": 0
         },
         {
             "key": "DOTA_ABILITY_BEHAVIOR_NONE",
@@ -328,6 +324,10 @@
         },
         {
             "key": "DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+            "value": 0
+        },
+        {
+            "key": "DOTA_ABILITY_BEHAVIOR_UNLOCKED_BY_EFFECT_INDEX",
             "value": 0
         },
         {
@@ -1161,6 +1161,18 @@
             "value": -1
         },
         {
+            "key": "DMG_GENERIC",
+            "value": 0
+        },
+        {
+            "key": "ACTIVATE_TYPE_INITIAL_CREATION",
+            "value": 0
+        },
+        {
+            "key": "EMPTY",
+            "value": 0
+        },
+        {
             "key": "ScriptDebugTextIndent",
             "value": 0
         },
@@ -1169,11 +1181,11 @@
             "value": 0
         },
         {
-            "key": "PRESIM",
+            "key": "ACT_RESET",
             "value": 0
         },
         {
-            "key": "DMG_GENERIC",
+            "key": "PRESIM",
             "value": 0
         },
         {
@@ -1181,19 +1193,7 @@
             "value": 0
         },
         {
-            "key": "ACT_RESET",
-            "value": 0
-        },
-        {
-            "key": "ACTIVATE_TYPE_INITIAL_CREATION",
-            "value": 0
-        },
-        {
             "key": "DOTA_PROJECTILE_ATTACHMENT_NONE",
-            "value": 0
-        },
-        {
-            "key": "EMPTY",
             "value": 0
         },
         {
@@ -1201,23 +1201,11 @@
             "value": 0.01023
         },
         {
-            "key": "ACTIVATE_TYPE_DATAUPDATE_CREATION",
+            "key": "SINGLE_SHOT",
             "value": 1
         },
         {
-            "key": "CLIENT_DLL",
-            "value": 1
-        },
-        {
-            "key": "DOTA_PROJECTILE_ATTACHMENT_ATTACK_1",
-            "value": 1
-        },
-        {
-            "key": "ACT_IDLE",
-            "value": 1
-        },
-        {
-            "key": "AE_NPC_LEFTFOOT",
+            "key": "PRESENSING",
             "value": 1
         },
         {
@@ -1225,7 +1213,15 @@
             "value": 1
         },
         {
-            "key": "PRESENSING",
+            "key": "ACTIVATE_TYPE_DATAUPDATE_CREATION",
+            "value": 1
+        },
+        {
+            "key": "AE_NPC_LEFTFOOT",
+            "value": 1
+        },
+        {
+            "key": "CLIENT_DLL",
             "value": 1
         },
         {
@@ -1237,19 +1233,15 @@
             "value": 1
         },
         {
-            "key": "SINGLE_SHOT",
+            "key": "ACT_IDLE",
             "value": 1
         },
         {
-            "key": "SINGLE_SHOT_NPC",
-            "value": 2
+            "key": "DOTA_PROJECTILE_ATTACHMENT_ATTACK_1",
+            "value": 1
         },
         {
             "key": "ACT_TRANSITION",
-            "value": 2
-        },
-        {
-            "key": "FCVAR_DEVELOPMENTONLY",
             "value": 2
         },
         {
@@ -1257,19 +1249,7 @@
             "value": 2
         },
         {
-            "key": "DMG_BULLET",
-            "value": 2
-        },
-        {
-            "key": "DOTA_PROJECTILE_ATTACHMENT_ATTACK_2",
-            "value": 2
-        },
-        {
-            "key": "FIND_FARTHEST",
-            "value": 2
-        },
-        {
-            "key": "AE_NPC_RIGHTFOOT",
+            "key": "FCVAR_DEVELOPMENTONLY",
             "value": 2
         },
         {
@@ -1277,11 +1257,31 @@
             "value": 2
         },
         {
-            "key": "DOTA_PROJECTILE_ATTACHMENT_HITLOCATION",
+            "key": "SINGLE_SHOT_NPC",
+            "value": 2
+        },
+        {
+            "key": "DMG_BULLET",
+            "value": 2
+        },
+        {
+            "key": "AE_NPC_RIGHTFOOT",
+            "value": 2
+        },
+        {
+            "key": "FIND_FARTHEST",
+            "value": 2
+        },
+        {
+            "key": "DOTA_PROJECTILE_ATTACHMENT_ATTACK_2",
+            "value": 2
+        },
+        {
+            "key": "DOUBLE_SHOT",
             "value": 3
         },
         {
-            "key": "AE_NPC_BODYDROP_LIGHT",
+            "key": "DOTA_PROJECTILE_ATTACHMENT_HITLOCATION",
             "value": 3
         },
         {
@@ -1289,7 +1289,7 @@
             "value": 3
         },
         {
-            "key": "DOUBLE_SHOT",
+            "key": "AE_NPC_BODYDROP_LIGHT",
             "value": 3
         },
         {
@@ -1297,7 +1297,7 @@
             "value": 4
         },
         {
-            "key": "AE_NPC_BODYDROP_HEAVY",
+            "key": "ACT_COVER_MED",
             "value": 4
         },
         {
@@ -1305,19 +1305,15 @@
             "value": 4
         },
         {
+            "key": "AE_NPC_BODYDROP_HEAVY",
+            "value": 4
+        },
+        {
             "key": "DOUBLE_SHOT_NPC",
             "value": 4
         },
         {
-            "key": "ACT_COVER_MED",
-            "value": 4
-        },
-        {
             "key": "BURST",
-            "value": 5
-        },
-        {
-            "key": "ACT_COVER_LOW",
             "value": 5
         },
         {
@@ -1329,15 +1325,15 @@
             "value": 5
         },
         {
-            "key": "AE_NPC_180TURN",
-            "value": 6
-        },
-        {
-            "key": "ScriptDebugFirstLine",
-            "value": 6
+            "key": "ACT_COVER_LOW",
+            "value": 5
         },
         {
             "key": "ACT_WALK",
+            "value": 6
+        },
+        {
+            "key": "RELOAD",
             "value": 6
         },
         {
@@ -1345,7 +1341,11 @@
             "value": 6
         },
         {
-            "key": "RELOAD",
+            "key": "AE_NPC_180TURN",
+            "value": 6
+        },
+        {
+            "key": "ScriptDebugFirstLine",
             "value": 6
         },
         {
@@ -1361,14 +1361,6 @@
             "value": 7
         },
         {
-            "key": "AE_NPC_WEAPON_DROP",
-            "value": 8
-        },
-        {
-            "key": "DMG_BURN",
-            "value": 8
-        },
-        {
             "key": "MELEE_MISS",
             "value": 8
         },
@@ -1377,11 +1369,19 @@
             "value": 8
         },
         {
-            "key": "MELEE_HIT",
-            "value": 9
+            "key": "DMG_BURN",
+            "value": 8
+        },
+        {
+            "key": "AE_NPC_WEAPON_DROP",
+            "value": 8
         },
         {
             "key": "ACT_WALK_CROUCH_AIM",
+            "value": 9
+        },
+        {
+            "key": "MELEE_HIT",
             "value": 9
         },
         {
@@ -1389,7 +1389,7 @@
             "value": 9
         },
         {
-            "key": "AE_NPC_WEAPON_SET_SEQUENCE_NUMBER",
+            "key": "ScriptDebugTextTime",
             "value": 10
         },
         {
@@ -1401,12 +1401,8 @@
             "value": 10
         },
         {
-            "key": "ScriptDebugTextTime",
+            "key": "AE_NPC_WEAPON_SET_SEQUENCE_NUMBER",
             "value": 10
-        },
-        {
-            "key": "ACT_RUN_AIM",
-            "value": 11
         },
         {
             "key": "AE_NPC_WEAPON_SET_ACTIVITY",
@@ -1417,16 +1413,24 @@
             "value": 11
         },
         {
-            "key": "AE_NPC_HOLSTER",
-            "value": 12
+            "key": "ACT_RUN_AIM",
+            "value": 11
         },
         {
             "key": "SPECIAL2",
             "value": 12
         },
         {
+            "key": "AE_NPC_HOLSTER",
+            "value": 12
+        },
+        {
             "key": "ACT_RUN_CROUCH",
             "value": 12
+        },
+        {
+            "key": "SPECIAL3",
+            "value": 13
         },
         {
             "key": "AE_NPC_DRAW",
@@ -1437,15 +1441,11 @@
             "value": 13
         },
         {
-            "key": "SPECIAL3",
-            "value": 13
-        },
-        {
-            "key": "TAUNT",
+            "key": "ACT_RUN_PROTECTED",
             "value": 14
         },
         {
-            "key": "ACT_RUN_PROTECTED",
+            "key": "TAUNT",
             "value": 14
         },
         {
@@ -1453,11 +1453,11 @@
             "value": 14
         },
         {
-            "key": "FASTRELOAD",
+            "key": "ACT_SCRIPT_CUSTOM_MOVE",
             "value": 15
         },
         {
-            "key": "ACT_SCRIPT_CUSTOM_MOVE",
+            "key": "FASTRELOAD",
             "value": 15
         },
         {
@@ -1465,15 +1465,7 @@
             "value": 15
         },
         {
-            "key": "AE_CL_PLAYSOUND_ATTACHMENT",
-            "value": 16
-        },
-        {
             "key": "DMG_VEHICLE",
-            "value": 16
-        },
-        {
-            "key": "ACT_RANGE_ATTACK1",
             "value": 16
         },
         {
@@ -1481,11 +1473,19 @@
             "value": 16
         },
         {
-            "key": "ACT_RANGE_ATTACK2",
-            "value": 17
+            "key": "AE_CL_PLAYSOUND_ATTACHMENT",
+            "value": 16
+        },
+        {
+            "key": "ACT_RANGE_ATTACK1",
+            "value": 16
         },
         {
             "key": "AE_SV_PLAYSOUND",
+            "value": 17
+        },
+        {
+            "key": "ACT_RANGE_ATTACK2",
             "value": 17
         },
         {
@@ -1497,19 +1497,19 @@
             "value": 18
         },
         {
-            "key": "ACT_RANGE_ATTACK2_LOW",
-            "value": 19
-        },
-        {
             "key": "AE_START_SCRIPTED_EFFECT",
             "value": 19
         },
         {
-            "key": "ACT_DIESIMPLE",
-            "value": 20
+            "key": "ACT_RANGE_ATTACK2_LOW",
+            "value": 19
         },
         {
             "key": "AE_STOP_SCRIPTED_EFFECT",
+            "value": 20
+        },
+        {
+            "key": "ACT_DIESIMPLE",
             "value": 20
         },
         {
@@ -1525,27 +1525,27 @@
             "value": 21
         },
         {
-            "key": "ACT_DIEFORWARD",
-            "value": 22
-        },
-        {
             "key": "AE_MUZZLEFLASH",
             "value": 22
         },
         {
-            "key": "AE_NPC_MUZZLEFLASH",
-            "value": 23
+            "key": "ACT_DIEFORWARD",
+            "value": 22
         },
         {
             "key": "ACT_DIEVIOLENT",
             "value": 23
         },
         {
-            "key": "ACT_DIERAGDOLL",
-            "value": 24
+            "key": "AE_NPC_MUZZLEFLASH",
+            "value": 23
         },
         {
             "key": "AE_THUMPER_THUMP",
+            "value": 24
+        },
+        {
+            "key": "ACT_DIERAGDOLL",
             "value": 24
         },
         {
@@ -1569,27 +1569,27 @@
             "value": 26
         },
         {
-            "key": "ACT_GLIDE",
-            "value": 27
-        },
-        {
             "key": "AE_NPC_ADDGESTURE",
             "value": 27
         },
         {
-            "key": "AE_NPC_RESTARTGESTURE",
-            "value": 28
+            "key": "ACT_GLIDE",
+            "value": 27
         },
         {
             "key": "ACT_SWIM",
             "value": 28
         },
         {
-            "key": "AE_NPC_ATTACK_BROADCAST",
-            "value": 29
+            "key": "AE_NPC_RESTARTGESTURE",
+            "value": 28
         },
         {
             "key": "ACT_JUMP",
+            "value": 29
+        },
+        {
+            "key": "AE_NPC_ATTACK_BROADCAST",
             "value": 29
         },
         {
@@ -1601,15 +1601,15 @@
             "value": 30
         },
         {
-            "key": "AE_NPC_SET_INTERACTION_CANTDIE",
-            "value": 31
-        },
-        {
             "key": "ACT_LEAP",
             "value": 31
         },
         {
-            "key": "AE_SV_DUSTTRAIL",
+            "key": "AE_NPC_SET_INTERACTION_CANTDIE",
+            "value": 31
+        },
+        {
+            "key": "ACT_LAND",
             "value": 32
         },
         {
@@ -1617,11 +1617,11 @@
             "value": 32
         },
         {
-            "key": "DMG_FALL",
+            "key": "AE_SV_DUSTTRAIL",
             "value": 32
         },
         {
-            "key": "ACT_LAND",
+            "key": "DMG_FALL",
             "value": 32
         },
         {
@@ -1633,11 +1633,11 @@
             "value": 33
         },
         {
-            "key": "AE_CL_STOP_PARTICLE_EFFECT",
+            "key": "ACT_CLIMB_DOWN",
             "value": 34
         },
         {
-            "key": "ACT_CLIMB_DOWN",
+            "key": "AE_CL_STOP_PARTICLE_EFFECT",
             "value": 34
         },
         {
@@ -1681,27 +1681,27 @@
             "value": 39
         },
         {
-            "key": "ACT_ROLL_LEFT",
-            "value": 40
-        },
-        {
             "key": "AE_CL_BODYGROUP_SET_VALUE",
             "value": 40
         },
         {
-            "key": "ACT_ROLL_RIGHT",
-            "value": 41
+            "key": "ACT_ROLL_LEFT",
+            "value": 40
         },
         {
             "key": "AE_CL_BODYGROUP_SET_VALUE_CMODEL_WPN",
             "value": 41
         },
         {
-            "key": "AE_WPN_PRIMARYATTACK",
-            "value": 42
+            "key": "ACT_ROLL_RIGHT",
+            "value": 41
         },
         {
             "key": "ACT_TURN_LEFT",
+            "value": 42
+        },
+        {
+            "key": "AE_WPN_PRIMARYATTACK",
             "value": 42
         },
         {
@@ -1713,11 +1713,11 @@
             "value": 43
         },
         {
-            "key": "ACT_CROUCH",
+            "key": "AE_WPN_HIDE",
             "value": 44
         },
         {
-            "key": "AE_WPN_HIDE",
+            "key": "ACT_CROUCH",
             "value": 44
         },
         {
@@ -1741,11 +1741,11 @@
             "value": 47
         },
         {
-            "key": "ACT_ALIEN_BURROW_IDLE",
+            "key": "AE_MARINE_FOOTSTEP",
             "value": 48
         },
         {
-            "key": "AE_MARINE_FOOTSTEP",
+            "key": "ACT_ALIEN_BURROW_IDLE",
             "value": 48
         },
         {
@@ -1773,19 +1773,19 @@
             "value": 51
         },
         {
-            "key": "AE_REMOVE_CLIENT_AIM",
-            "value": 52
-        },
-        {
             "key": "ACT_SIGNAL3",
             "value": 52
         },
         {
-            "key": "AE_FOOTSTEP_LEFT",
-            "value": 53
+            "key": "AE_REMOVE_CLIENT_AIM",
+            "value": 52
         },
         {
             "key": "ACT_SIGNAL_ADVANCE",
+            "value": 53
+        },
+        {
+            "key": "AE_FOOTSTEP_LEFT",
             "value": 53
         },
         {
@@ -1797,11 +1797,11 @@
             "value": 54
         },
         {
-            "key": "ACT_SIGNAL_GROUP",
+            "key": "AE_ATTACK_START",
             "value": 55
         },
         {
-            "key": "AE_ATTACK_START",
+            "key": "ACT_SIGNAL_GROUP",
             "value": 55
         },
         {
@@ -1845,11 +1845,11 @@
             "value": 60
         },
         {
-            "key": "AE_PICKUP_CLIPIN",
+            "key": "ACT_LOOKBACK_LEFT",
             "value": 61
         },
         {
-            "key": "ACT_LOOKBACK_LEFT",
+            "key": "AE_PICKUP_CLIPIN",
             "value": 61
         },
         {
@@ -1861,20 +1861,12 @@
             "value": 62
         },
         {
-            "key": "AE_PICKUP_FASSIST",
-            "value": 63
-        },
-        {
             "key": "ACT_SMALL_FLINCH",
             "value": 63
         },
         {
-            "key": "DMG_BLAST",
-            "value": 64
-        },
-        {
-            "key": "FCVAR_SPONLY",
-            "value": 64
+            "key": "AE_PICKUP_FASSIST",
+            "value": 63
         },
         {
             "key": "AE_RELOAD_CLIPOUT",
@@ -1885,19 +1877,27 @@
             "value": 64
         },
         {
-            "key": "ACT_MELEE_ATTACK1",
-            "value": 65
+            "key": "DMG_BLAST",
+            "value": 64
+        },
+        {
+            "key": "FCVAR_SPONLY",
+            "value": 64
         },
         {
             "key": "AE_RELOAD_CLIPIN",
             "value": 65
         },
         {
-            "key": "ACT_MELEE_ATTACK2",
-            "value": 66
+            "key": "ACT_MELEE_ATTACK1",
+            "value": 65
         },
         {
             "key": "AE_RELOAD_EMPTY_CLIPOUT",
+            "value": 66
+        },
+        {
+            "key": "ACT_MELEE_ATTACK2",
             "value": 66
         },
         {
@@ -1917,11 +1917,11 @@
             "value": 68
         },
         {
-            "key": "ACT_RELOAD_FINISH",
+            "key": "AE_RELOAD_SHELL_INSERT",
             "value": 69
         },
         {
-            "key": "AE_RELOAD_SHELL_INSERT",
+            "key": "ACT_RELOAD_FINISH",
             "value": 69
         },
         {
@@ -1949,43 +1949,43 @@
             "value": 72
         },
         {
-            "key": "ACT_DROP_WEAPON",
-            "value": 73
-        },
-        {
             "key": "AE_CHARGER_POUND_IMPACT",
             "value": 73
         },
         {
-            "key": "ACT_DROP_WEAPON_SHOTGUN",
-            "value": 74
+            "key": "ACT_DROP_WEAPON",
+            "value": 73
         },
         {
             "key": "AE_CHARGER_POUND_VOCALIZE",
             "value": 74
         },
         {
-            "key": "AE_CHARGER_POUND_SOUND",
-            "value": 75
+            "key": "ACT_DROP_WEAPON_SHOTGUN",
+            "value": 74
         },
         {
             "key": "ACT_PICKUP_GROUND",
             "value": 75
         },
         {
-            "key": "ACT_PICKUP_RACK",
-            "value": 76
+            "key": "AE_CHARGER_POUND_SOUND",
+            "value": 75
         },
         {
             "key": "AE_DEFIBRILLATOR_SHOCK",
             "value": 76
         },
         {
-            "key": "ACT_IDLE_ANGRY",
-            "value": 77
+            "key": "ACT_PICKUP_RACK",
+            "value": 76
         },
         {
             "key": "AE_HIT_HEAD_FRONT",
+            "value": 77
+        },
+        {
+            "key": "ACT_IDLE_ANGRY",
             "value": 77
         },
         {
@@ -1997,11 +1997,11 @@
             "value": 78
         },
         {
-            "key": "AE_HIT_STOMACH",
+            "key": "ACT_IDLE_STIMULATED",
             "value": 79
         },
         {
-            "key": "ACT_IDLE_STIMULATED",
+            "key": "AE_HIT_STOMACH",
             "value": 79
         },
         {
@@ -2029,11 +2029,11 @@
             "value": 82
         },
         {
-            "key": "AE_HIT_SHOULDER_RIGHT_FRONT",
+            "key": "ACT_WALK_RELAXED",
             "value": 83
         },
         {
-            "key": "ACT_WALK_RELAXED",
+            "key": "AE_HIT_SHOULDER_RIGHT_FRONT",
             "value": 83
         },
         {
@@ -2053,43 +2053,43 @@
             "value": 85
         },
         {
-            "key": "AE_HIT_SHOULDER_LEFT_BACK",
-            "value": 86
-        },
-        {
             "key": "ACT_WALK_STEALTH",
             "value": 86
         },
         {
-            "key": "AE_HIT_LEG_RIGHT_FRONT",
-            "value": 87
+            "key": "AE_HIT_SHOULDER_LEFT_BACK",
+            "value": 86
         },
         {
             "key": "ACT_RUN_RELAXED",
             "value": 87
         },
         {
-            "key": "AE_HIT_LEG_RIGHT_BACK",
-            "value": 88
+            "key": "AE_HIT_LEG_RIGHT_FRONT",
+            "value": 87
         },
         {
             "key": "ACT_RUN_STIMULATED",
             "value": 88
         },
         {
-            "key": "AE_HIT_LEG_LEFT_FRONT",
-            "value": 89
+            "key": "AE_HIT_LEG_RIGHT_BACK",
+            "value": 88
         },
         {
             "key": "ACT_RUN_AGITATED",
             "value": 89
         },
         {
-            "key": "AE_HIT_LEG_LEFT_BACK",
-            "value": 90
+            "key": "AE_HIT_LEG_LEFT_FRONT",
+            "value": 89
         },
         {
             "key": "ACT_RUN_STEALTH",
+            "value": 90
+        },
+        {
+            "key": "AE_HIT_LEG_LEFT_BACK",
             "value": 90
         },
         {
@@ -2101,11 +2101,11 @@
             "value": 91
         },
         {
-            "key": "AE_HIT_ARM_LEFT_SEVERED",
+            "key": "ACT_IDLE_AIM_STIMULATED",
             "value": 92
         },
         {
-            "key": "ACT_IDLE_AIM_STIMULATED",
+            "key": "AE_HIT_ARM_LEFT_SEVERED",
             "value": 92
         },
         {
@@ -2117,27 +2117,27 @@
             "value": 93
         },
         {
-            "key": "ACT_IDLE_AIM_STEALTH",
-            "value": 94
-        },
-        {
             "key": "AE_HIT_LEG_LEFT_SEVERED",
             "value": 94
         },
         {
-            "key": "AE_HIT_FRONT",
-            "value": 95
+            "key": "ACT_IDLE_AIM_STEALTH",
+            "value": 94
         },
         {
             "key": "ACT_WALK_AIM_RELAXED",
             "value": 95
         },
         {
-            "key": "ACT_WALK_AIM_STIMULATED",
-            "value": 96
+            "key": "AE_HIT_FRONT",
+            "value": 95
         },
         {
             "key": "AE_HIT_BACK",
+            "value": 96
+        },
+        {
+            "key": "ACT_WALK_AIM_STIMULATED",
             "value": 96
         },
         {
@@ -2149,19 +2149,19 @@
             "value": 97
         },
         {
-            "key": "ACT_WALK_AIM_STEALTH",
-            "value": 98
-        },
-        {
             "key": "AE_HIT_RIGHT",
             "value": 98
         },
         {
-            "key": "ACT_RUN_AIM_RELAXED",
-            "value": 99
+            "key": "ACT_WALK_AIM_STEALTH",
+            "value": 98
         },
         {
             "key": "AE_FIRE_INPUT",
+            "value": 99
+        },
+        {
+            "key": "ACT_RUN_AIM_RELAXED",
             "value": 99
         },
         {
@@ -2173,35 +2173,35 @@
             "value": 100
         },
         {
-            "key": "AE_SV_FOOTSTEP_RIGHT",
-            "value": 101
-        },
-        {
             "key": "ACT_RUN_AIM_AGITATED",
             "value": 101
         },
         {
-            "key": "ACT_RUN_AIM_STEALTH",
-            "value": 102
+            "key": "AE_SV_FOOTSTEP_RIGHT",
+            "value": 101
         },
         {
             "key": "AE_CL_FOOTSTEP_LEFT",
             "value": 102
         },
         {
-            "key": "ACT_CROUCHIDLE_STIMULATED",
-            "value": 103
+            "key": "ACT_RUN_AIM_STEALTH",
+            "value": 102
         },
         {
             "key": "AE_CL_FOOTSTEP_RIGHT",
             "value": 103
         },
         {
-            "key": "AE_CL_MFOOTSTEP_LEFT",
-            "value": 104
+            "key": "ACT_CROUCHIDLE_STIMULATED",
+            "value": 103
         },
         {
             "key": "ACT_CROUCHIDLE_AIM_STIMULATED",
+            "value": 104
+        },
+        {
+            "key": "AE_CL_MFOOTSTEP_LEFT",
             "value": 104
         },
         {
@@ -2221,19 +2221,19 @@
             "value": 106
         },
         {
-            "key": "ACT_RUN_HURT",
-            "value": 107
-        },
-        {
             "key": "AE_CL_MFOOTSTEP_RIGHT_LOUD",
             "value": 107
         },
         {
-            "key": "AE_WEAPON_MELEE_HIT",
-            "value": 108
+            "key": "ACT_RUN_HURT",
+            "value": 107
         },
         {
             "key": "ACT_SPECIAL_ATTACK1",
+            "value": 108
+        },
+        {
+            "key": "AE_WEAPON_MELEE_HIT",
             "value": 108
         },
         {
@@ -2245,27 +2245,27 @@
             "value": 109
         },
         {
-            "key": "AE_WEAPON_MELEE_SWISH",
-            "value": 110
-        },
-        {
             "key": "ACT_COMBAT_IDLE",
             "value": 110
         },
         {
-            "key": "AE_WEAPON_SHOTGUN_FIRE",
-            "value": 111
+            "key": "AE_WEAPON_MELEE_SWISH",
+            "value": 110
         },
         {
             "key": "ACT_WALK_SCARED",
             "value": 111
         },
         {
-            "key": "ACT_RUN_SCARED",
-            "value": 112
+            "key": "AE_WEAPON_SHOTGUN_FIRE",
+            "value": 111
         },
         {
             "key": "AE_WEAPON_THROW",
+            "value": 112
+        },
+        {
+            "key": "ACT_RUN_SCARED",
             "value": 112
         },
         {
@@ -2285,19 +2285,19 @@
             "value": 114
         },
         {
-            "key": "AE_WEAPON_HMG1",
-            "value": 115
-        },
-        {
             "key": "ACT_DIE_CHESTSHOT",
             "value": 115
         },
         {
-            "key": "AE_WEAPON_SMG2",
-            "value": 116
+            "key": "AE_WEAPON_HMG1",
+            "value": 115
         },
         {
             "key": "ACT_DIE_GUTSHOT",
+            "value": 116
+        },
+        {
+            "key": "AE_WEAPON_SMG2",
             "value": 116
         },
         {
@@ -2309,11 +2309,11 @@
             "value": 117
         },
         {
-            "key": "AE_WEAPON_SNIPER_RIFLE_FIRE",
+            "key": "ACT_FLINCH_HEAD",
             "value": 118
         },
         {
-            "key": "ACT_FLINCH_HEAD",
+            "key": "AE_WEAPON_SNIPER_RIFLE_FIRE",
             "value": 118
         },
         {
@@ -2373,27 +2373,27 @@
             "value": 125
         },
         {
-            "key": "AE_WEAPON_SMG1_BURST1",
-            "value": 126
-        },
-        {
             "key": "ACT_FLINCH_HEAD_BACK",
             "value": 126
         },
         {
-            "key": "AE_WEAPON_SMG1_BURSTN",
-            "value": 127
+            "key": "AE_WEAPON_SMG1_BURST1",
+            "value": 126
         },
         {
             "key": "ACT_FLINCH_CHEST_BACK",
             "value": 127
         },
         {
-            "key": "ACT_FLINCH_STOMACH_BACK",
+            "key": "AE_WEAPON_SMG1_BURSTN",
+            "value": 127
+        },
+        {
+            "key": "DMG_CLUB",
             "value": 128
         },
         {
-            "key": "FCVAR_ARCHIVE",
+            "key": "ACT_FLINCH_STOMACH_BACK",
             "value": 128
         },
         {
@@ -2401,7 +2401,7 @@
             "value": 128
         },
         {
-            "key": "DMG_CLUB",
+            "key": "FCVAR_ARCHIVE",
             "value": 128
         },
         {
@@ -2413,19 +2413,19 @@
             "value": 129
         },
         {
-            "key": "AE_CL_SPEECH",
-            "value": 130
-        },
-        {
             "key": "ACT_FLINCH_CROUCH_BACK",
             "value": 130
         },
         {
-            "key": "ACT_FLINCH_CROUCH_LEFT",
-            "value": 131
+            "key": "AE_CL_SPEECH",
+            "value": 130
         },
         {
             "key": "AE_MELEE_START_COLLISION_DAMAGE",
+            "value": 131
+        },
+        {
+            "key": "ACT_FLINCH_CROUCH_LEFT",
             "value": 131
         },
         {
@@ -2453,11 +2453,11 @@
             "value": 134
         },
         {
-            "key": "AE_ACTION_ENTERING_IDLE",
+            "key": "ACT_RUN_ON_FIRE",
             "value": 135
         },
         {
-            "key": "ACT_RUN_ON_FIRE",
+            "key": "AE_ACTION_ENTERING_IDLE",
             "value": 135
         },
         {
@@ -2469,11 +2469,11 @@
             "value": 136
         },
         {
-            "key": "AE_ACTION_ALLOW_MOVE_INTERRUPT",
+            "key": "ACT_180_LEFT",
             "value": 137
         },
         {
-            "key": "ACT_180_LEFT",
+            "key": "AE_ACTION_ALLOW_MOVE_INTERRUPT",
             "value": 137
         },
         {
@@ -2525,19 +2525,19 @@
             "value": 143
         },
         {
-            "key": "AE_ACTION_PREVENT_DODGE",
-            "value": 144
-        },
-        {
             "key": "ACT_STEP_FORE",
             "value": 144
         },
         {
-            "key": "ACT_GESTURE_RANGE_ATTACK1",
-            "value": 145
+            "key": "AE_ACTION_PREVENT_DODGE",
+            "value": 144
         },
         {
             "key": "AE_ABILITY_START_EVENT",
+            "value": 145
+        },
+        {
+            "key": "ACT_GESTURE_RANGE_ATTACK1",
             "value": 145
         },
         {
@@ -2549,11 +2549,11 @@
             "value": 146
         },
         {
-            "key": "AE_ABILITY_TICK",
+            "key": "ACT_GESTURE_MELEE_ATTACK1",
             "value": 147
         },
         {
-            "key": "ACT_GESTURE_MELEE_ATTACK1",
+            "key": "AE_ABILITY_TICK",
             "value": 147
         },
         {
@@ -2565,51 +2565,51 @@
             "value": 148
         },
         {
-            "key": "AE_ACTION_END_TURN",
-            "value": 149
-        },
-        {
             "key": "ACT_GESTURE_RANGE_ATTACK1_LOW",
             "value": 149
         },
         {
-            "key": "ACT_GESTURE_RANGE_ATTACK2_LOW",
-            "value": 150
+            "key": "AE_ACTION_END_TURN",
+            "value": 149
         },
         {
             "key": "AE_ACTION_USE",
             "value": 150
         },
         {
-            "key": "AE_SHEATHE_WEAPONS",
-            "value": 151
+            "key": "ACT_GESTURE_RANGE_ATTACK2_LOW",
+            "value": 150
         },
         {
             "key": "ACT_MELEE_ATTACK_SWING_GESTURE",
             "value": 151
         },
         {
-            "key": "AE_DRAW_WEAPONS",
-            "value": 152
+            "key": "AE_SHEATHE_WEAPONS",
+            "value": 151
         },
         {
             "key": "ACT_GESTURE_SMALL_FLINCH",
             "value": 152
         },
         {
-            "key": "AE_PICK_UP_ITEM",
-            "value": 153
+            "key": "AE_DRAW_WEAPONS",
+            "value": 152
         },
         {
             "key": "ACT_GESTURE_BIG_FLINCH",
             "value": 153
         },
         {
-            "key": "AE_DROP_ITEM",
-            "value": 154
+            "key": "AE_PICK_UP_ITEM",
+            "value": 153
         },
         {
             "key": "ACT_GESTURE_FLINCH_BLAST",
+            "value": 154
+        },
+        {
+            "key": "AE_DROP_ITEM",
             "value": 154
         },
         {
@@ -2637,11 +2637,11 @@
             "value": 157
         },
         {
-            "key": "ACT_GESTURE_FLINCH_HEAD",
+            "key": "AE_WEAPON_SLAM_GROUND",
             "value": 158
         },
         {
-            "key": "AE_WEAPON_SLAM_GROUND",
+            "key": "ACT_GESTURE_FLINCH_HEAD",
             "value": 158
         },
         {
@@ -2653,11 +2653,11 @@
             "value": 159
         },
         {
-            "key": "AE_MANTLE_GRAB",
+            "key": "ACT_GESTURE_FLINCH_STOMACH",
             "value": 160
         },
         {
-            "key": "ACT_GESTURE_FLINCH_STOMACH",
+            "key": "AE_MANTLE_GRAB",
             "value": 160
         },
         {
@@ -2685,11 +2685,11 @@
             "value": 163
         },
         {
-            "key": "ACT_GESTURE_FLINCH_RIGHTLEG",
+            "key": "AE_ACTION_DROP_ITEM",
             "value": 164
         },
         {
-            "key": "AE_ACTION_DROP_ITEM",
+            "key": "ACT_GESTURE_FLINCH_RIGHTLEG",
             "value": 164
         },
         {
@@ -2709,75 +2709,75 @@
             "value": 166
         },
         {
-            "key": "ACT_GESTURE_TURN_LEFT45",
-            "value": 167
-        },
-        {
             "key": "AE_SCRIPT_EVENT_CANINTERRUPT",
             "value": 167
         },
         {
-            "key": "AE_SCRIPT_EVENT_FIREEVENT",
-            "value": 168
+            "key": "ACT_GESTURE_TURN_LEFT45",
+            "value": 167
         },
         {
             "key": "ACT_GESTURE_TURN_RIGHT45",
             "value": 168
         },
         {
-            "key": "ACT_GESTURE_TURN_LEFT90",
-            "value": 169
+            "key": "AE_SCRIPT_EVENT_FIREEVENT",
+            "value": 168
         },
         {
             "key": "AE_SCRIPT_EVENT_DEAD",
             "value": 169
         },
         {
-            "key": "AE_SCRIPT_EVENT_NOT_DEAD",
-            "value": 170
+            "key": "ACT_GESTURE_TURN_LEFT90",
+            "value": 169
         },
         {
             "key": "ACT_GESTURE_TURN_RIGHT90",
             "value": 170
         },
         {
-            "key": "AE_SCRIPT_EVENT_FIRE_INPUT",
-            "value": 171
+            "key": "AE_SCRIPT_EVENT_NOT_DEAD",
+            "value": 170
         },
         {
             "key": "ACT_GESTURE_TURN_LEFT45_FLAT",
             "value": 171
         },
         {
-            "key": "AE_SCRIPT_EVENT_CUSTOMINTERRUPT_START",
-            "value": 172
+            "key": "AE_SCRIPT_EVENT_FIRE_INPUT",
+            "value": 171
         },
         {
             "key": "ACT_GESTURE_TURN_RIGHT45_FLAT",
             "value": 172
         },
         {
-            "key": "ACT_GESTURE_TURN_LEFT90_FLAT",
-            "value": 173
+            "key": "AE_SCRIPT_EVENT_CUSTOMINTERRUPT_START",
+            "value": 172
         },
         {
             "key": "AE_SCRIPT_EVENT_CUSTOMINTERRUPT_END",
             "value": 173
         },
         {
-            "key": "ACT_GESTURE_TURN_RIGHT90_FLAT",
-            "value": 174
+            "key": "ACT_GESTURE_TURN_LEFT90_FLAT",
+            "value": 173
         },
         {
             "key": "AE_NPC_BECOME_TEMPORARY_RAGDOLL",
             "value": 174
         },
         {
-            "key": "ACT_BARNACLE_HIT",
-            "value": 175
+            "key": "ACT_GESTURE_TURN_RIGHT90_FLAT",
+            "value": 174
         },
         {
             "key": "AE_CL_PLAYSOUND_LOOPING",
+            "value": 175
+        },
+        {
+            "key": "ACT_BARNACLE_HIT",
             "value": 175
         },
         {
@@ -2789,11 +2789,11 @@
             "value": 176
         },
         {
-            "key": "AE_IK_ALLOW_PLANE_TILT_NORMAL_UPDATES",
+            "key": "ACT_BARNACLE_CHOMP",
             "value": 177
         },
         {
-            "key": "ACT_BARNACLE_CHOMP",
+            "key": "AE_IK_ALLOW_PLANE_TILT_NORMAL_UPDATES",
             "value": 177
         },
         {
@@ -2829,19 +2829,19 @@
             "value": 181
         },
         {
-            "key": "ACT_VM_RELOAD_EMPTY",
-            "value": 182
-        },
-        {
             "key": "AE_CL_CLOTH_ATTR",
             "value": 182
         },
         {
-            "key": "ACT_VM_DRAW",
-            "value": 183
+            "key": "ACT_VM_RELOAD_EMPTY",
+            "value": 182
         },
         {
             "key": "AE_FOOTSTEP",
+            "value": 183
+        },
+        {
+            "key": "ACT_VM_DRAW",
             "value": 183
         },
         {
@@ -2861,11 +2861,11 @@
             "value": 185
         },
         {
-            "key": "ACT_VM_FIDGET",
+            "key": "AE_NPC_START_POWERED_RAGDOLL",
             "value": 186
         },
         {
-            "key": "AE_NPC_START_POWERED_RAGDOLL",
+            "key": "ACT_VM_FIDGET",
             "value": 186
         },
         {
@@ -2897,19 +2897,19 @@
             "value": 190
         },
         {
-            "key": "ACT_VM_DROP",
-            "value": 191
-        },
-        {
             "key": "AE_CL_DOTA_NPC_CREATE_PARTICLE_EFFECT",
             "value": 191
         },
         {
-            "key": "ACT_VM_PULLPIN",
-            "value": 192
+            "key": "ACT_VM_DROP",
+            "value": 191
         },
         {
             "key": "AE_CL_DOTA_RUBICK_ARCANA_CREATE_PARTICLE_EFFECT",
+            "value": 192
+        },
+        {
+            "key": "ACT_VM_PULLPIN",
             "value": 192
         },
         {
@@ -2921,11 +2921,11 @@
             "value": 193
         },
         {
-            "key": "ACT_VM_SECONDARYATTACK",
+            "key": "AE_DOTA_PLAY_SOUND_ATTACK_SPECIAL",
             "value": 194
         },
         {
-            "key": "AE_DOTA_PLAY_SOUND_ATTACK_SPECIAL",
+            "key": "ACT_VM_SECONDARYATTACK",
             "value": 194
         },
         {
@@ -4205,11 +4205,11 @@
             "value": 511
         },
         {
-            "key": "ACT_MP_SPRINT",
+            "key": "FCVAR_USERINFO",
             "value": 512
         },
         {
-            "key": "FCVAR_USERINFO",
+            "key": "ACT_MP_SPRINT",
             "value": 512
         },
         {
@@ -6261,15 +6261,15 @@
             "value": 1023
         },
         {
+            "key": "FCVAR_PRINTABLEONLY",
+            "value": 1024
+        },
+        {
             "key": "ACT_CSGO_LAND_HEAVY",
             "value": 1024
         },
         {
             "key": "DMG_ENERGYBEAM",
-            "value": 1024
-        },
-        {
-            "key": "FCVAR_PRINTABLEONLY",
             "value": 1024
         },
         {
@@ -7277,51 +7277,51 @@
             "value": 1747
         },
         {
-            "key": "debut_end",
+            "key": "ACT_DOTA_IDLE_STATUE",
             "value": 1748
         },
         {
-            "key": "debut_start",
+            "key": "ACT_DOTA_RUN_STATUE",
             "value": 1749
         },
         {
-            "key": "ACT_DOTA_STORM_ABILITY_4",
+            "key": "ACT_DOTA_ATTACK_STATUE",
             "value": 1750
         },
         {
-            "key": "ACT_DOTA_RUN_STATUE",
+            "key": "ACT_DOTA_FLAIL_STATUE",
             "value": 1751
         },
         {
-            "key": "ACT_DOTA_ATTACK_STATUE",
+            "key": "ACT_DOTA_STUN_STATUE",
             "value": 1752
         },
         {
-            "key": "ACT_DOTA_IDLE_STATUE",
+            "key": "ACT_DOTA_CAST1_STATUE",
             "value": 1753
         },
         {
-            "key": "ACT_DOTA_CAST4_STATUE",
+            "key": "ACT_DOTA_VICTORY_STATUE",
             "value": 1754
         },
         {
-            "key": "ACT_DOTA_STUN_STATUE",
+            "key": "ACT_DOTA_DEFEAT_STATUE",
             "value": 1755
         },
         {
-            "key": "ACT_DOTA_FLAIL_STATUE",
+            "key": "ACT_DOTA_TELEPORT_STATUE",
             "value": 1756
         },
         {
-            "key": "ACT_DOTA_CAST1_STATUE",
+            "key": "ACT_DOTA_FORCESTAFF_STATUE",
             "value": 1757
         },
         {
-            "key": "ACT_DOTA_CAST2_STATUE",
+            "key": "ACT_DOTA_CAST4_STATUE",
             "value": 1758
         },
         {
-            "key": "ACT_DOTA_TELEPORT_STATUE",
+            "key": "ACT_DOTA_SPAWN_STATUE",
             "value": 1759
         },
         {
@@ -7329,92 +7329,88 @@
             "value": 1760
         },
         {
-            "key": "ACT_DOTA_ARCANA_VOTE",
+            "key": "ACT_DOTA_STORM_ABILITY_4",
             "value": 1761
         },
         {
-            "key": "ACT_DOTA_PUNCH",
+            "key": "ACT_DOTA_CAST2_STATUE",
             "value": 1762
         },
         {
-            "key": "ACT_DOTA_SPIRIT_BREAKER_ULT_RUN",
+            "key": "ACT_DOTA_ARCANA_VOTE",
             "value": 1763
         },
         {
-            "key": "ACT_DOTA_CAST_STATUE",
+            "key": "ACT_DOTA_PUNCH",
             "value": 1764
         },
         {
-            "key": "ACT_DOTA_CAST3_STATUE",
+            "key": "ACT_DOTA_SPIRIT_BREAKER_ULT_RUN",
             "value": 1765
         },
         {
-            "key": "ACT_DOTA_VICTORY_STATUE",
+            "key": "ACT_DOTA_CAST_STATUE",
             "value": 1766
         },
         {
-            "key": "ACT_DOTA_STATUE_SEQUENCE",
+            "key": "ACT_DOTA_CAST3_STATUE",
             "value": 1767
         },
         {
-            "key": "ACD_DOTA_IDLE",
+            "key": "ACT_DOTA_STATUE_SEQUENCE",
             "value": 1768
         },
         {
-            "key": "ACT_DOTA_DISABLED_END",
+            "key": "ACD_DOTA_IDLE",
             "value": 1769
         },
         {
-            "key": "ACT_DOTA_RUN_ALT",
+            "key": "ACT_DOTA_DISABLED_END",
             "value": 1770
         },
         {
-            "key": "ACT_DOTA_CYCLONE",
+            "key": "ACT_DOTA_RUN_ALT",
             "value": 1771
         },
         {
-            "key": "ACT_DOTA_IMPALE",
+            "key": "ACT_DOTA_CYCLONE",
             "value": 1772
         },
         {
-            "key": "ACT_DOTA_TORRENT",
+            "key": "ACT_DOTA_IMPALE",
             "value": 1773
         },
         {
-            "key": "ACT_DOTA_RELAX_IN",
+            "key": "ACT_DOTA_TORRENT",
             "value": 1774
         },
         {
-            "key": "ACT_DOTA_RELAX_OUT",
+            "key": "ACT_DOTA_RELAX_IN",
             "value": 1775
         },
         {
-            "key": "ACT_DOTA_CAST_FENCE",
+            "key": "ACT_DOTA_RELAX_OUT",
             "value": 1776
         },
         {
-            "key": "radiant_melee_mars_shieldbash",
+            "key": "ACT_DOTA_CAST_FENCE",
             "value": 1777
         },
         {
-            "key": "ACT_DOTA_RADIANT_CREEP_HAMMER",
+            "key": "radiant_melee_mars_shieldbash",
             "value": 1778
         },
         {
-            "key": "ACT_DOTA_SPWN",
+            "key": "ACT_DOTA_RADIANT_CREEP_HAMMER",
             "value": 1779
         },
         {
-            "key": "ACT_DOTA_SPAWN_STATUE",
+            "key": "ACT_DOTA_SPWN",
             "value": 1780
         },
         {
             "key": "ACT_DOTA_LOADOUT_STATUE",
             "value": 1781
-        },
-        {
-            "key": "ACT_DOTA_TELEPORT_END_STATUE",
-            "value": 1782
         },
         {
             "key": "FCVAR_UNLOGGED",
@@ -7433,27 +7429,27 @@
             "value": 4096
         },
         {
-            "key": "DMG_ALWAYSGIB",
-            "value": 8192
-        },
-        {
             "key": "FCVAR_REPLICATED",
             "value": 8192
         },
         {
-            "key": "FCVAR_CHEAT",
-            "value": 16384
+            "key": "DMG_ALWAYSGIB",
+            "value": 8192
         },
         {
             "key": "DMG_DROWN",
             "value": 16384
         },
         {
-            "key": "DMG_PARALYZE",
-            "value": 32768
+            "key": "FCVAR_CHEAT",
+            "value": 16384
         },
         {
             "key": "FCVAR_SS",
+            "value": 32768
+        },
+        {
+            "key": "DMG_PARALYZE",
             "value": 32768
         },
         {
@@ -7465,11 +7461,11 @@
             "value": 65536
         },
         {
-            "key": "FCVAR_DONTRECORD",
+            "key": "DMG_POISON",
             "value": 131072
         },
         {
-            "key": "DMG_POISON",
+            "key": "FCVAR_DONTRECORD",
             "value": 131072
         },
         {
@@ -7489,11 +7485,11 @@
             "value": 2097152
         },
         {
-            "key": "DMG_REMOVENORAGDOLL",
+            "key": "FCVAR_NOT_CONNECTED",
             "value": 4194304
         },
         {
-            "key": "FCVAR_NOT_CONNECTED",
+            "key": "DMG_REMOVENORAGDOLL",
             "value": 4194304
         },
         {
