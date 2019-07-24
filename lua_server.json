@@ -7702,6 +7702,16 @@
     "CDOTA_Item_Lua": {
         "extends": "CDOTA_Item",
         "functions": {
+            "CanUnitPickUp": {
+                "arg_names": [
+                    "hUnit"
+                ],
+                "args": [
+                    "handle"
+                ],
+                "description": "Returns true if this item can be picked up by the target unit.",
+                "return": "bool"
+            },
             "CastFilterResult": {
                 "args": [],
                 "description": "Determine whether an issued command with no target is valid.",
