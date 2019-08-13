@@ -1937,6 +1937,15 @@
                 ],
                 "return": "void"
             },
+            "SetStealable": {
+                "arg_names": [
+                    "bStealable"
+                ],
+                "args": [
+                    "bool"
+                ],
+                "return": "void"
+            },
             "SetStolen": {
                 "arg_names": [
                     "bStolen"
@@ -2104,6 +2113,16 @@
                 "description": "Get current derived stat value constant.",
                 "return": "float"
             },
+            "GetCustomBackpackCooldownPercent": {
+                "args": [],
+                "description": "Get the current rate cooldown ticks down for items in the backpack.",
+                "return": "float"
+            },
+            "GetCustomBackpackSwapCooldown": {
+                "args": [],
+                "description": "Get the current custom backpack swap cooldown.",
+                "return": "float"
+            },
             "GetCustomBuybackCooldownEnabled": {
                 "args": [],
                 "description": "Turns on capability to define custom buyback cooldowns.",
@@ -2113,6 +2132,11 @@
                 "args": [],
                 "description": "Turns on capability to define custom buyback costs.",
                 "return": "bool"
+            },
+            "GetCustomGlyphCooldown": {
+                "args": [],
+                "description": "Get the current custom glyph cooldown.",
+                "return": "float"
             },
             "GetCustomHeroMaxLevel": {
                 "args": [],
@@ -2355,6 +2379,26 @@
                 "description": "Modify derived stat value constants. ( AttributeDerivedStat eStatType, float flNewValue.",
                 "return": "void"
             },
+            "SetCustomBackpackCooldownPercent": {
+                "arg_names": [
+                    "flPercent"
+                ],
+                "args": [
+                    "float"
+                ],
+                "description": "Set the rate cooldown ticks down for items in the backpack.",
+                "return": "void"
+            },
+            "SetCustomBackpackSwapCooldown": {
+                "arg_names": [
+                    "flCooldown"
+                ],
+                "args": [
+                    "float"
+                ],
+                "description": "Set a custom cooldown for swapping items into the backpack.",
+                "return": "void"
+            },
             "SetCustomBuybackCooldownEnabled": {
                 "arg_names": [
                     "bEnabled"
@@ -2383,6 +2427,16 @@
                     "cstring"
                 ],
                 "description": "Force all players to use the specified hero and disable the normal hero selection process. Must be used before hero selection.",
+                "return": "void"
+            },
+            "SetCustomGlyphCooldown": {
+                "arg_names": [
+                    "flCooldown"
+                ],
+                "args": [
+                    "float"
+                ],
+                "description": "Set a custom cooldown for team Glyph ability.",
                 "return": "void"
             },
             "SetCustomHeroMaxLevel": {
@@ -3526,6 +3580,16 @@
                 "description": "Randoms this player's hero.",
                 "return": "void"
             },
+            "SetAssignedHeroEntity": {
+                "arg_names": [
+                    "hHero"
+                ],
+                "args": [
+                    "handle"
+                ],
+                "description": "Sets this player's hero .",
+                "return": "void"
+            },
             "SetKillCamUnit": {
                 "arg_names": [
                     "hEntity"
@@ -4009,6 +4073,18 @@
                 "description": "Cast time begins (return true for successful cast).",
                 "return": "bool"
             },
+            "OnAbilityPinged": {
+                "arg_names": [
+                    "nPlayerID",
+                    "bCtrlHeld"
+                ],
+                "args": [
+                    "int",
+                    "bool"
+                ],
+                "description": "The ability was pinged (nPlayerID, bCtrlHeld).",
+                "return": "void"
+            },
             "OnChannelFinish": {
                 "arg_names": [
                     "bInterrupted"
@@ -4183,6 +4259,11 @@
             "ProcsMagicStick": {
                 "args": [],
                 "description": "Returns true if this ability will generate magic stick charges for nearby enemies.",
+                "return": "bool"
+            },
+            "ResetToggleOnRespawn": {
+                "args": [],
+                "description": "Returns true if this ability should return to the default toggle state when its parent respawns.",
                 "return": "bool"
             },
             "SpeakTrigger": {
@@ -4704,6 +4785,10 @@
                 ],
                 "return": "float"
             },
+            "GetCastRangeBonus": {
+                "args": [],
+                "return": "float"
+            },
             "GetCloneSource": {
                 "args": [],
                 "description": "Get clone source (Meepo Prime, if this is a Meepo)",
@@ -4712,6 +4797,10 @@
             "GetCollisionPadding": {
                 "args": [],
                 "description": "Returns the size of the collision padding around the hull.",
+                "return": "float"
+            },
+            "GetCooldownReduction": {
+                "args": [],
                 "return": "float"
             },
             "GetCreationTime": {
@@ -4749,6 +4838,11 @@
                 "args": [],
                 "description": "Get the XP bounty on this unit.",
                 "return": "int"
+            },
+            "GetDisplayAttackSpeed": {
+                "args": [],
+                "description": "Attack speed expressed as constant value",
+                "return": "float"
             },
             "GetEvasion": {
                 "args": [],
@@ -5254,6 +5348,18 @@
             },
             "IsIllusion": {
                 "args": [],
+                "return": "bool"
+            },
+            "IsInRangeOfShop": {
+                "arg_names": [
+                    "nShopType",
+                    "bPhysical"
+                ],
+                "args": [
+                    "int",
+                    "bool"
+                ],
+                "description": "Ask whether this unit is in range of the specified shop ( DOTA_SHOP_TYPE shop, bool bMustBePhysicallyNear",
                 "return": "bool"
             },
             "IsInvisible": {
@@ -6044,6 +6150,16 @@
                     "float"
                 ],
                 "description": "Set the mana on this unit.",
+                "return": "void"
+            },
+            "SetMaxMana": {
+                "arg_names": [
+                    "flMaxMana"
+                ],
+                "args": [
+                    "float"
+                ],
+                "description": "Set the maximum mana of this unit.",
                 "return": "void"
             },
             "SetMaximumGoldBounty": {
@@ -7251,6 +7367,10 @@
                 "description": "Returns aura stickiness (default 0.5)",
                 "return": "float"
             },
+            "GetAuraOwner": {
+                "args": [],
+                "return": "handle"
+            },
             "GetCaster": {
                 "args": [],
                 "description": "Get the owner of the ability responsible for the modifier.",
@@ -7293,6 +7413,10 @@
                 "args": [],
                 "return": "float"
             },
+            "GetSerialNumber": {
+                "args": [],
+                "return": "int"
+            },
             "GetStackCount": {
                 "args": [],
                 "return": "int"
@@ -7310,6 +7434,14 @@
                 "args": [],
                 "description": "Increase this modifier's stack count by 1.",
                 "return": "void"
+            },
+            "IsDebuff": {
+                "args": [],
+                "return": "bool"
+            },
+            "IsHexDebuff": {
+                "args": [],
+                "return": "bool"
             },
             "IsStunDebuff": {
                 "args": [],
@@ -7415,6 +7547,10 @@
                 "description": "Get the initial number of charges this item has.",
                 "return": "int"
             },
+            "GetItemSlot": {
+                "args": [],
+                "return": "int"
+            },
             "GetItemState": {
                 "args": [],
                 "description": "Gets whether item is unequipped or ready.",
@@ -7434,6 +7570,11 @@
                 "args": [],
                 "description": "Get the purchaser for this item.",
                 "return": "handle"
+            },
+            "GetSecondaryCharges": {
+                "args": [],
+                "description": "Get the number of secondary charges this item currently has.",
+                "return": "int"
             },
             "GetShareability": {
                 "args": [],
@@ -7608,6 +7749,16 @@
                     "handle"
                 ],
                 "description": "Set the purchaser of record for this item.",
+                "return": "void"
+            },
+            "SetSecondaryCharges": {
+                "arg_names": [
+                    "iCharges"
+                ],
+                "args": [
+                    "int"
+                ],
+                "description": "Set the number of secondary charges on this item",
                 "return": "void"
             },
             "SetSellable": {
@@ -11181,55 +11332,6 @@
             }
         }
     },
-    "CScriptHTTPRequest": {
-        "functions": {
-            "Send": {
-                "args": [
-                    "handle"
-                ],
-                "description": "Send a HTTP request.",
-                "return": "bool"
-            },
-            "SetHTTPRequestAbsoluteTimeoutMS": {
-                "args": [
-                    "uint"
-                ],
-                "description": "Set the total timeout on the request.",
-                "return": "bool"
-            },
-            "SetHTTPRequestGetOrPostParameter": {
-                "args": [
-                    "cstring",
-                    "cstring"
-                ],
-                "description": "Set a POST or GET parameter on the request.",
-                "return": "bool"
-            },
-            "SetHTTPRequestHeaderValue": {
-                "args": [
-                    "cstring",
-                    "cstring"
-                ],
-                "description": "Set a header value on the request.",
-                "return": "bool"
-            },
-            "SetHTTPRequestNetworkActivityTimeout": {
-                "args": [
-                    "uint"
-                ],
-                "description": "Set the network timeout on the request - this timer is reset when any data is received.",
-                "return": "bool"
-            },
-            "SetHTTPRequestRawPostBody": {
-                "args": [
-                    "cstring",
-                    "cstring"
-                ],
-                "description": "Set the literal body of a post - invalid after setting a post parameter.",
-                "return": "bool"
-            }
-        }
-    },
     "CScriptHeroList": {
         "functions": {
             "GetAllHeroes": {
@@ -11888,6 +11990,19 @@
                 ],
                 "description": "Creates a DOTA hero by its dota_npc_units.txt name and sets it as the given player's controlled hero",
                 "return": "handle"
+            },
+            "CreateIllusions": {
+                "args": [
+                    "handle",
+                    "handle",
+                    "handle",
+                    "int",
+                    "int",
+                    "bool",
+                    "bool"
+                ],
+                "description": "Create illusions of the passed hero that belong to passed unit using passed modifier data. ( hOwner, hHeroToCopy, hModiiferKeys, nNumIllusions, nPadding, bScramblePosition, bFindClearSpace ) \nSupported keys: \noutgoing_damage\nincoming_damage\nbounty_base\nbounty_growth\noutgoing_damage_structure\noutgoing_damage_roshan",
+                "return": "table"
             },
             "CreateItem": {
                 "args": [

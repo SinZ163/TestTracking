@@ -293,11 +293,11 @@
             "value": 12
         },
         {
-            "key": "DOTA_TEAM_CUSTOM_MAX",
+            "key": "DOTA_TEAM_CUSTOM_8",
             "value": 13
         },
         {
-            "key": "DOTA_TEAM_CUSTOM_8",
+            "key": "DOTA_TEAM_CUSTOM_MAX",
             "value": 13
         },
         {
@@ -311,7 +311,11 @@
             "value": -2147483648
         },
         {
-            "key": "DOTA_ABILITY_BEHAVIOR_NONE",
+            "key": "DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
+            "value": 0
+        },
+        {
+            "key": "DOTA_ABILITY_BEHAVIOR_UNLOCKED_BY_EFFECT_INDEX",
             "value": 0
         },
         {
@@ -319,15 +323,11 @@
             "value": 0
         },
         {
+            "key": "DOTA_ABILITY_BEHAVIOR_NONE",
+            "value": 0
+        },
+        {
             "key": "DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE",
-            "value": 0
-        },
-        {
-            "key": "DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES",
-            "value": 0
-        },
-        {
-            "key": "DOTA_ABILITY_BEHAVIOR_UNLOCKED_BY_EFFECT_INDEX",
             "value": 0
         },
         {
@@ -1161,15 +1161,7 @@
             "value": -1
         },
         {
-            "key": "DMG_GENERIC",
-            "value": 0
-        },
-        {
-            "key": "ACTIVATE_TYPE_INITIAL_CREATION",
-            "value": 0
-        },
-        {
-            "key": "EMPTY",
+            "key": "ACT_RESET",
             "value": 0
         },
         {
@@ -1177,11 +1169,15 @@
             "value": 0
         },
         {
-            "key": "FIND_ANY_ORDER",
+            "key": "ACTIVATE_TYPE_INITIAL_CREATION",
             "value": 0
         },
         {
-            "key": "ACT_RESET",
+            "key": "DMG_GENERIC",
+            "value": 0
+        },
+        {
+            "key": "FIND_ANY_ORDER",
             "value": 0
         },
         {
@@ -1189,16 +1185,44 @@
             "value": 0
         },
         {
-            "key": "AE_EMPTY",
+            "key": "DOTA_PROJECTILE_ATTACHMENT_NONE",
             "value": 0
         },
         {
-            "key": "DOTA_PROJECTILE_ATTACHMENT_NONE",
+            "key": "EMPTY",
+            "value": 0
+        },
+        {
+            "key": "AE_EMPTY",
             "value": 0
         },
         {
             "key": "NDEBUG_PERSIST_TILL_NEXT_SERVER",
             "value": 0.01023
+        },
+        {
+            "key": "FIND_CLOSEST",
+            "value": 1
+        },
+        {
+            "key": "DMG_CRUSH",
+            "value": 1
+        },
+        {
+            "key": "FCVAR_UNREGISTERED",
+            "value": 1
+        },
+        {
+            "key": "ACT_IDLE",
+            "value": 1
+        },
+        {
+            "key": "CLIENT_DLL",
+            "value": 1
+        },
+        {
+            "key": "DOTA_PROJECTILE_ATTACHMENT_ATTACK_1",
+            "value": 1
         },
         {
             "key": "SINGLE_SHOT",
@@ -1209,7 +1233,7 @@
             "value": 1
         },
         {
-            "key": "FIND_CLOSEST",
+            "key": "AE_NPC_LEFTFOOT",
             "value": 1
         },
         {
@@ -1217,31 +1241,7 @@
             "value": 1
         },
         {
-            "key": "AE_NPC_LEFTFOOT",
-            "value": 1
-        },
-        {
-            "key": "CLIENT_DLL",
-            "value": 1
-        },
-        {
-            "key": "FCVAR_UNREGISTERED",
-            "value": 1
-        },
-        {
-            "key": "DMG_CRUSH",
-            "value": 1
-        },
-        {
-            "key": "ACT_IDLE",
-            "value": 1
-        },
-        {
-            "key": "DOTA_PROJECTILE_ATTACHMENT_ATTACK_1",
-            "value": 1
-        },
-        {
-            "key": "ACT_TRANSITION",
+            "key": "AE_NPC_RIGHTFOOT",
             "value": 2
         },
         {
@@ -1265,20 +1265,16 @@
             "value": 2
         },
         {
-            "key": "AE_NPC_RIGHTFOOT",
+            "key": "DOTA_PROJECTILE_ATTACHMENT_ATTACK_2",
+            "value": 2
+        },
+        {
+            "key": "ACT_TRANSITION",
             "value": 2
         },
         {
             "key": "FIND_FARTHEST",
             "value": 2
-        },
-        {
-            "key": "DOTA_PROJECTILE_ATTACHMENT_ATTACK_2",
-            "value": 2
-        },
-        {
-            "key": "DOUBLE_SHOT",
-            "value": 3
         },
         {
             "key": "DOTA_PROJECTILE_ATTACHMENT_HITLOCATION",
@@ -1289,8 +1285,20 @@
             "value": 3
         },
         {
+            "key": "DOUBLE_SHOT",
+            "value": 3
+        },
+        {
             "key": "AE_NPC_BODYDROP_LIGHT",
             "value": 3
+        },
+        {
+            "key": "DOUBLE_SHOT_NPC",
+            "value": 4
+        },
+        {
+            "key": "DOTA_PROJECTILE_ATTACHMENT_ATTACK_3",
+            "value": 4
         },
         {
             "key": "DMG_SLASH",
@@ -1301,19 +1309,15 @@
             "value": 4
         },
         {
-            "key": "DOTA_PROJECTILE_ATTACHMENT_ATTACK_3",
-            "value": 4
-        },
-        {
             "key": "AE_NPC_BODYDROP_HEAVY",
             "value": 4
         },
         {
-            "key": "DOUBLE_SHOT_NPC",
-            "value": 4
+            "key": "BURST",
+            "value": 5
         },
         {
-            "key": "BURST",
+            "key": "ACT_COVER_LOW",
             "value": 5
         },
         {
@@ -1325,11 +1329,7 @@
             "value": 5
         },
         {
-            "key": "ACT_COVER_LOW",
-            "value": 5
-        },
-        {
-            "key": "ACT_WALK",
+            "key": "AE_NPC_180TURN",
             "value": 6
         },
         {
@@ -1341,16 +1341,12 @@
             "value": 6
         },
         {
-            "key": "AE_NPC_180TURN",
+            "key": "ACT_WALK",
             "value": 6
         },
         {
             "key": "ScriptDebugFirstLine",
             "value": 6
-        },
-        {
-            "key": "AE_NPC_ITEM_PICKUP",
-            "value": 7
         },
         {
             "key": "ACT_WALK_AIM",
@@ -1361,12 +1357,8 @@
             "value": 7
         },
         {
-            "key": "MELEE_MISS",
-            "value": 8
-        },
-        {
-            "key": "ACT_WALK_CROUCH",
-            "value": 8
+            "key": "AE_NPC_ITEM_PICKUP",
+            "value": 7
         },
         {
             "key": "DMG_BURN",
@@ -1377,6 +1369,18 @@
             "value": 8
         },
         {
+            "key": "MELEE_MISS",
+            "value": 8
+        },
+        {
+            "key": "ACT_WALK_CROUCH",
+            "value": 8
+        },
+        {
+            "key": "AE_NPC_WEAPON_SET_SEQUENCE_NAME",
+            "value": 9
+        },
+        {
             "key": "ACT_WALK_CROUCH_AIM",
             "value": 9
         },
@@ -1385,11 +1389,7 @@
             "value": 9
         },
         {
-            "key": "AE_NPC_WEAPON_SET_SEQUENCE_NAME",
-            "value": 9
-        },
-        {
-            "key": "ScriptDebugTextTime",
+            "key": "ACT_RUN",
             "value": 10
         },
         {
@@ -1397,7 +1397,7 @@
             "value": 10
         },
         {
-            "key": "ACT_RUN",
+            "key": "ScriptDebugTextTime",
             "value": 10
         },
         {
@@ -1409,16 +1409,12 @@
             "value": 11
         },
         {
-            "key": "SPECIAL1",
-            "value": 11
-        },
-        {
             "key": "ACT_RUN_AIM",
             "value": 11
         },
         {
-            "key": "SPECIAL2",
-            "value": 12
+            "key": "SPECIAL1",
+            "value": 11
         },
         {
             "key": "AE_NPC_HOLSTER",
@@ -1426,6 +1422,10 @@
         },
         {
             "key": "ACT_RUN_CROUCH",
+            "value": 12
+        },
+        {
+            "key": "SPECIAL2",
             "value": 12
         },
         {
@@ -1441,6 +1441,10 @@
             "value": 13
         },
         {
+            "key": "AE_NPC_WEAPON_FIRE",
+            "value": 14
+        },
+        {
             "key": "ACT_RUN_PROTECTED",
             "value": 14
         },
@@ -1449,11 +1453,7 @@
             "value": 14
         },
         {
-            "key": "AE_NPC_WEAPON_FIRE",
-            "value": 14
-        },
-        {
-            "key": "ACT_SCRIPT_CUSTOM_MOVE",
+            "key": "AE_CL_PLAYSOUND",
             "value": 15
         },
         {
@@ -1461,15 +1461,11 @@
             "value": 15
         },
         {
-            "key": "AE_CL_PLAYSOUND",
+            "key": "ACT_SCRIPT_CUSTOM_MOVE",
             "value": 15
         },
         {
-            "key": "DMG_VEHICLE",
-            "value": 16
-        },
-        {
-            "key": "FCVAR_HIDDEN",
+            "key": "ACT_RANGE_ATTACK1",
             "value": 16
         },
         {
@@ -1477,15 +1473,19 @@
             "value": 16
         },
         {
-            "key": "ACT_RANGE_ATTACK1",
+            "key": "FCVAR_HIDDEN",
             "value": 16
         },
         {
-            "key": "AE_SV_PLAYSOUND",
-            "value": 17
+            "key": "DMG_VEHICLE",
+            "value": 16
         },
         {
             "key": "ACT_RANGE_ATTACK2",
+            "value": 17
+        },
+        {
+            "key": "AE_SV_PLAYSOUND",
             "value": 17
         },
         {
@@ -1497,12 +1497,16 @@
             "value": 18
         },
         {
+            "key": "ACT_RANGE_ATTACK2_LOW",
+            "value": 19
+        },
+        {
             "key": "AE_START_SCRIPTED_EFFECT",
             "value": 19
         },
         {
-            "key": "ACT_RANGE_ATTACK2_LOW",
-            "value": 19
+            "key": "ScriptDebugTextLines",
+            "value": 20
         },
         {
             "key": "AE_STOP_SCRIPTED_EFFECT",
@@ -1513,31 +1517,27 @@
             "value": 20
         },
         {
-            "key": "ScriptDebugTextLines",
-            "value": 20
+            "key": "AE_CLIENT_EFFECT_ATTACH",
+            "value": 21
         },
         {
             "key": "ACT_DIEBACKWARD",
             "value": 21
         },
         {
-            "key": "AE_CLIENT_EFFECT_ATTACH",
-            "value": 21
+            "key": "ACT_DIEFORWARD",
+            "value": 22
         },
         {
             "key": "AE_MUZZLEFLASH",
             "value": 22
         },
         {
-            "key": "ACT_DIEFORWARD",
-            "value": 22
-        },
-        {
-            "key": "ACT_DIEVIOLENT",
+            "key": "AE_NPC_MUZZLEFLASH",
             "value": 23
         },
         {
-            "key": "AE_NPC_MUZZLEFLASH",
+            "key": "ACT_DIEVIOLENT",
             "value": 23
         },
         {
@@ -1557,11 +1557,11 @@
             "value": 25
         },
         {
-            "key": "ScriptDebugWatchFistLine",
+            "key": "ACT_HOVER",
             "value": 26
         },
         {
-            "key": "ACT_HOVER",
+            "key": "ScriptDebugWatchFistLine",
             "value": 26
         },
         {
@@ -1569,19 +1569,19 @@
             "value": 26
         },
         {
-            "key": "AE_NPC_ADDGESTURE",
-            "value": 27
-        },
-        {
             "key": "ACT_GLIDE",
             "value": 27
         },
         {
-            "key": "ACT_SWIM",
-            "value": 28
+            "key": "AE_NPC_ADDGESTURE",
+            "value": 27
         },
         {
             "key": "AE_NPC_RESTARTGESTURE",
+            "value": 28
+        },
+        {
+            "key": "ACT_SWIM",
             "value": 28
         },
         {
@@ -1593,31 +1593,23 @@
             "value": 29
         },
         {
-            "key": "ACT_HOP",
-            "value": 30
-        },
-        {
             "key": "AE_NPC_HURT_INTERACTION_PARTNER",
             "value": 30
         },
         {
-            "key": "ACT_LEAP",
-            "value": 31
+            "key": "ACT_HOP",
+            "value": 30
         },
         {
             "key": "AE_NPC_SET_INTERACTION_CANTDIE",
             "value": 31
         },
         {
-            "key": "ACT_LAND",
-            "value": 32
+            "key": "ACT_LEAP",
+            "value": 31
         },
         {
             "key": "FCVAR_PROTECTED",
-            "value": 32
-        },
-        {
-            "key": "AE_SV_DUSTTRAIL",
             "value": 32
         },
         {
@@ -1625,35 +1617,43 @@
             "value": 32
         },
         {
-            "key": "ACT_CLIMB_UP",
-            "value": 33
+            "key": "AE_SV_DUSTTRAIL",
+            "value": 32
+        },
+        {
+            "key": "ACT_LAND",
+            "value": 32
         },
         {
             "key": "AE_CL_CREATE_PARTICLE_EFFECT",
             "value": 33
         },
         {
-            "key": "ACT_CLIMB_DOWN",
-            "value": 34
+            "key": "ACT_CLIMB_UP",
+            "value": 33
         },
         {
             "key": "AE_CL_STOP_PARTICLE_EFFECT",
             "value": 34
         },
         {
-            "key": "ACT_CLIMB_DISMOUNT",
-            "value": 35
+            "key": "ACT_CLIMB_DOWN",
+            "value": 34
         },
         {
             "key": "AE_CL_ADD_PARTICLE_EFFECT_CP",
             "value": 35
         },
         {
-            "key": "AE_CL_CREATE_PARTICLE_BRASS",
-            "value": 36
+            "key": "ACT_CLIMB_DISMOUNT",
+            "value": 35
         },
         {
             "key": "ACT_SHIPLADDER_UP",
+            "value": 36
+        },
+        {
+            "key": "AE_CL_CREATE_PARTICLE_BRASS",
             "value": 36
         },
         {
@@ -1665,43 +1665,43 @@
             "value": 37
         },
         {
-            "key": "AE_CL_ENABLE_BODYGROUP",
-            "value": 38
-        },
-        {
             "key": "ACT_STRAFE_LEFT",
             "value": 38
         },
         {
-            "key": "AE_CL_DISABLE_BODYGROUP",
-            "value": 39
+            "key": "AE_CL_ENABLE_BODYGROUP",
+            "value": 38
         },
         {
             "key": "ACT_STRAFE_RIGHT",
             "value": 39
         },
         {
-            "key": "AE_CL_BODYGROUP_SET_VALUE",
-            "value": 40
+            "key": "AE_CL_DISABLE_BODYGROUP",
+            "value": 39
         },
         {
             "key": "ACT_ROLL_LEFT",
             "value": 40
         },
         {
-            "key": "AE_CL_BODYGROUP_SET_VALUE_CMODEL_WPN",
-            "value": 41
+            "key": "AE_CL_BODYGROUP_SET_VALUE",
+            "value": 40
         },
         {
             "key": "ACT_ROLL_RIGHT",
             "value": 41
         },
         {
-            "key": "ACT_TURN_LEFT",
-            "value": 42
+            "key": "AE_CL_BODYGROUP_SET_VALUE_CMODEL_WPN",
+            "value": 41
         },
         {
             "key": "AE_WPN_PRIMARYATTACK",
+            "value": 42
+        },
+        {
+            "key": "ACT_TURN_LEFT",
             "value": 42
         },
         {
@@ -1729,11 +1729,11 @@
             "value": 45
         },
         {
-            "key": "AE_WPN_PLAYWPNSOUND",
+            "key": "ACT_STAND",
             "value": 46
         },
         {
-            "key": "ACT_STAND",
+            "key": "AE_WPN_PLAYWPNSOUND",
             "value": 46
         },
         {
@@ -1757,11 +1757,11 @@
             "value": 49
         },
         {
-            "key": "ACT_SIGNAL1",
+            "key": "AE_MARINE_RELOAD_SOUND_B",
             "value": 50
         },
         {
-            "key": "AE_MARINE_RELOAD_SOUND_B",
+            "key": "ACT_SIGNAL1",
             "value": 50
         },
         {
@@ -1781,19 +1781,19 @@
             "value": 52
         },
         {
-            "key": "ACT_SIGNAL_ADVANCE",
-            "value": 53
-        },
-        {
             "key": "AE_FOOTSTEP_LEFT",
             "value": 53
         },
         {
-            "key": "ACT_SIGNAL_FORWARD",
-            "value": 54
+            "key": "ACT_SIGNAL_ADVANCE",
+            "value": 53
         },
         {
             "key": "AE_FOOTSTEP_RIGHT",
+            "value": 54
+        },
+        {
+            "key": "ACT_SIGNAL_FORWARD",
             "value": 54
         },
         {
@@ -1805,11 +1805,11 @@
             "value": 55
         },
         {
-            "key": "ACT_SIGNAL_HALT",
+            "key": "AE_ATTACK_HIT",
             "value": 56
         },
         {
-            "key": "AE_ATTACK_HIT",
+            "key": "ACT_SIGNAL_HALT",
             "value": 56
         },
         {
@@ -1821,51 +1821,51 @@
             "value": 57
         },
         {
-            "key": "AE_OPTIONAL_END",
-            "value": 58
-        },
-        {
             "key": "ACT_SIGNAL_RIGHT",
             "value": 58
         },
         {
-            "key": "ACT_SIGNAL_TAKECOVER",
-            "value": 59
+            "key": "AE_OPTIONAL_END",
+            "value": 58
         },
         {
             "key": "AE_HIDE_WEAPON",
             "value": 59
         },
         {
-            "key": "ACT_LOOKBACK_RIGHT",
-            "value": 60
+            "key": "ACT_SIGNAL_TAKECOVER",
+            "value": 59
         },
         {
             "key": "AE_SHOW_WEAPON",
             "value": 60
         },
         {
-            "key": "ACT_LOOKBACK_LEFT",
-            "value": 61
+            "key": "ACT_LOOKBACK_RIGHT",
+            "value": 60
         },
         {
             "key": "AE_PICKUP_CLIPIN",
             "value": 61
         },
         {
-            "key": "ACT_COWER",
-            "value": 62
+            "key": "ACT_LOOKBACK_LEFT",
+            "value": 61
         },
         {
             "key": "AE_PICKUP_CHARGING",
             "value": 62
         },
         {
-            "key": "ACT_SMALL_FLINCH",
-            "value": 63
+            "key": "ACT_COWER",
+            "value": 62
         },
         {
             "key": "AE_PICKUP_FASSIST",
+            "value": 63
+        },
+        {
+            "key": "ACT_SMALL_FLINCH",
             "value": 63
         },
         {
@@ -1877,11 +1877,11 @@
             "value": 64
         },
         {
-            "key": "DMG_BLAST",
+            "key": "FCVAR_SPONLY",
             "value": 64
         },
         {
-            "key": "FCVAR_SPONLY",
+            "key": "DMG_BLAST",
             "value": 64
         },
         {
@@ -1901,19 +1901,19 @@
             "value": 66
         },
         {
-            "key": "ACT_RELOAD",
-            "value": 67
-        },
-        {
             "key": "AE_RELOAD_EMPTY_CLIPIN",
             "value": 67
         },
         {
-            "key": "AE_RELOAD_EMPTY_CLIPIN2",
-            "value": 68
+            "key": "ACT_RELOAD",
+            "value": 67
         },
         {
             "key": "ACT_RELOAD_START",
+            "value": 68
+        },
+        {
+            "key": "AE_RELOAD_EMPTY_CLIPIN2",
             "value": 68
         },
         {
@@ -1925,11 +1925,11 @@
             "value": 69
         },
         {
-            "key": "AE_RELOAD_PUMPEND",
+            "key": "ACT_RELOAD_LOW",
             "value": 70
         },
         {
-            "key": "ACT_RELOAD_LOW",
+            "key": "AE_RELOAD_PUMPEND",
             "value": 70
         },
         {
@@ -1941,19 +1941,19 @@
             "value": 71
         },
         {
-            "key": "AE_TUG_INCAP",
-            "value": 72
-        },
-        {
             "key": "ACT_DISARM",
             "value": 72
         },
         {
-            "key": "AE_CHARGER_POUND_IMPACT",
-            "value": 73
+            "key": "AE_TUG_INCAP",
+            "value": 72
         },
         {
             "key": "ACT_DROP_WEAPON",
+            "value": 73
+        },
+        {
+            "key": "AE_CHARGER_POUND_IMPACT",
             "value": 73
         },
         {
@@ -1965,11 +1965,11 @@
             "value": 74
         },
         {
-            "key": "ACT_PICKUP_GROUND",
+            "key": "AE_CHARGER_POUND_SOUND",
             "value": 75
         },
         {
-            "key": "AE_CHARGER_POUND_SOUND",
+            "key": "ACT_PICKUP_GROUND",
             "value": 75
         },
         {
@@ -1997,11 +1997,11 @@
             "value": 78
         },
         {
-            "key": "ACT_IDLE_STIMULATED",
+            "key": "AE_HIT_STOMACH",
             "value": 79
         },
         {
-            "key": "AE_HIT_STOMACH",
+            "key": "ACT_IDLE_STIMULATED",
             "value": 79
         },
         {
@@ -2021,11 +2021,11 @@
             "value": 81
         },
         {
-            "key": "AE_HIT_BACK_LOWER",
+            "key": "ACT_IDLE_HURT",
             "value": 82
         },
         {
-            "key": "ACT_IDLE_HURT",
+            "key": "AE_HIT_BACK_LOWER",
             "value": 82
         },
         {
@@ -2037,75 +2037,75 @@
             "value": 83
         },
         {
-            "key": "ACT_WALK_STIMULATED",
-            "value": 84
-        },
-        {
             "key": "AE_HIT_SHOULDER_RIGHT_BACK",
             "value": 84
         },
         {
-            "key": "AE_HIT_SHOULDER_LEFT_FRONT",
-            "value": 85
+            "key": "ACT_WALK_STIMULATED",
+            "value": 84
         },
         {
             "key": "ACT_WALK_AGITATED",
             "value": 85
         },
         {
-            "key": "ACT_WALK_STEALTH",
-            "value": 86
+            "key": "AE_HIT_SHOULDER_LEFT_FRONT",
+            "value": 85
         },
         {
             "key": "AE_HIT_SHOULDER_LEFT_BACK",
             "value": 86
         },
         {
-            "key": "ACT_RUN_RELAXED",
-            "value": 87
+            "key": "ACT_WALK_STEALTH",
+            "value": 86
         },
         {
             "key": "AE_HIT_LEG_RIGHT_FRONT",
             "value": 87
         },
         {
-            "key": "ACT_RUN_STIMULATED",
-            "value": 88
+            "key": "ACT_RUN_RELAXED",
+            "value": 87
         },
         {
             "key": "AE_HIT_LEG_RIGHT_BACK",
             "value": 88
         },
         {
-            "key": "ACT_RUN_AGITATED",
-            "value": 89
+            "key": "ACT_RUN_STIMULATED",
+            "value": 88
         },
         {
             "key": "AE_HIT_LEG_LEFT_FRONT",
             "value": 89
         },
         {
-            "key": "ACT_RUN_STEALTH",
-            "value": 90
+            "key": "ACT_RUN_AGITATED",
+            "value": 89
         },
         {
             "key": "AE_HIT_LEG_LEFT_BACK",
             "value": 90
         },
         {
-            "key": "ACT_IDLE_AIM_RELAXED",
-            "value": 91
+            "key": "ACT_RUN_STEALTH",
+            "value": 90
         },
         {
             "key": "AE_HIT_ARM_RIGHT_SEVERED",
             "value": 91
         },
         {
-            "key": "ACT_IDLE_AIM_STIMULATED",
-            "value": 92
+            "key": "ACT_IDLE_AIM_RELAXED",
+            "value": 91
         },
         {
             "key": "AE_HIT_ARM_LEFT_SEVERED",
+            "value": 92
+        },
+        {
+            "key": "ACT_IDLE_AIM_STIMULATED",
             "value": 92
         },
         {
@@ -2125,27 +2125,27 @@
             "value": 94
         },
         {
-            "key": "ACT_WALK_AIM_RELAXED",
-            "value": 95
-        },
-        {
             "key": "AE_HIT_FRONT",
             "value": 95
         },
         {
-            "key": "AE_HIT_BACK",
-            "value": 96
+            "key": "ACT_WALK_AIM_RELAXED",
+            "value": 95
         },
         {
             "key": "ACT_WALK_AIM_STIMULATED",
             "value": 96
         },
         {
-            "key": "ACT_WALK_AIM_AGITATED",
-            "value": 97
+            "key": "AE_HIT_BACK",
+            "value": 96
         },
         {
             "key": "AE_HIT_LEFT",
+            "value": 97
+        },
+        {
+            "key": "ACT_WALK_AIM_AGITATED",
             "value": 97
         },
         {
@@ -2197,11 +2197,11 @@
             "value": 103
         },
         {
-            "key": "ACT_CROUCHIDLE_AIM_STIMULATED",
+            "key": "AE_CL_MFOOTSTEP_LEFT",
             "value": 104
         },
         {
-            "key": "AE_CL_MFOOTSTEP_LEFT",
+            "key": "ACT_CROUCHIDLE_AIM_STIMULATED",
             "value": 104
         },
         {
@@ -2213,11 +2213,11 @@
             "value": 105
         },
         {
-            "key": "ACT_WALK_HURT",
+            "key": "AE_CL_MFOOTSTEP_LEFT_LOUD",
             "value": 106
         },
         {
-            "key": "AE_CL_MFOOTSTEP_LEFT_LOUD",
+            "key": "ACT_WALK_HURT",
             "value": 106
         },
         {
@@ -2229,27 +2229,27 @@
             "value": 107
         },
         {
-            "key": "ACT_SPECIAL_ATTACK1",
-            "value": 108
-        },
-        {
             "key": "AE_WEAPON_MELEE_HIT",
             "value": 108
         },
         {
-            "key": "ACT_SPECIAL_ATTACK2",
-            "value": 109
+            "key": "ACT_SPECIAL_ATTACK1",
+            "value": 108
         },
         {
             "key": "AE_WEAPON_SMG1",
             "value": 109
         },
         {
-            "key": "ACT_COMBAT_IDLE",
-            "value": 110
+            "key": "ACT_SPECIAL_ATTACK2",
+            "value": 109
         },
         {
             "key": "AE_WEAPON_MELEE_SWISH",
+            "value": 110
+        },
+        {
+            "key": "ACT_COMBAT_IDLE",
             "value": 110
         },
         {
@@ -2285,11 +2285,11 @@
             "value": 114
         },
         {
-            "key": "ACT_DIE_CHESTSHOT",
+            "key": "AE_WEAPON_HMG1",
             "value": 115
         },
         {
-            "key": "AE_WEAPON_HMG1",
+            "key": "ACT_DIE_CHESTSHOT",
             "value": 115
         },
         {
@@ -2301,11 +2301,11 @@
             "value": 116
         },
         {
-            "key": "AE_WEAPON_MISSILE_FIRE",
+            "key": "ACT_DIE_BACKSHOT",
             "value": 117
         },
         {
-            "key": "ACT_DIE_BACKSHOT",
+            "key": "AE_WEAPON_MISSILE_FIRE",
             "value": 117
         },
         {
@@ -2317,11 +2317,11 @@
             "value": 118
         },
         {
-            "key": "ACT_FLINCH_CHEST",
+            "key": "AE_WEAPON_AR2_GRENADE",
             "value": 119
         },
         {
-            "key": "AE_WEAPON_AR2_GRENADE",
+            "key": "ACT_FLINCH_CHEST",
             "value": 119
         },
         {
@@ -2341,43 +2341,43 @@
             "value": 121
         },
         {
-            "key": "ACT_FLINCH_RIGHTARM",
-            "value": 122
-        },
-        {
             "key": "AE_WEAPON_RELOAD",
             "value": 122
         },
         {
-            "key": "ACT_FLINCH_LEFTLEG",
-            "value": 123
+            "key": "ACT_FLINCH_RIGHTARM",
+            "value": 122
         },
         {
             "key": "AE_WEAPON_THROW3",
             "value": 123
         },
         {
-            "key": "AE_WEAPON_RELOAD_SOUND",
-            "value": 124
+            "key": "ACT_FLINCH_LEFTLEG",
+            "value": 123
         },
         {
             "key": "ACT_FLINCH_RIGHTLEG",
             "value": 124
         },
         {
-            "key": "ACT_FLINCH_PHYSICS",
-            "value": 125
+            "key": "AE_WEAPON_RELOAD_SOUND",
+            "value": 124
         },
         {
             "key": "AE_WEAPON_RELOAD_FILL_CLIP",
             "value": 125
         },
         {
-            "key": "ACT_FLINCH_HEAD_BACK",
-            "value": 126
+            "key": "ACT_FLINCH_PHYSICS",
+            "value": 125
         },
         {
             "key": "AE_WEAPON_SMG1_BURST1",
+            "value": 126
+        },
+        {
+            "key": "ACT_FLINCH_HEAD_BACK",
             "value": 126
         },
         {
@@ -2389,11 +2389,11 @@
             "value": 127
         },
         {
-            "key": "DMG_CLUB",
+            "key": "FCVAR_ARCHIVE",
             "value": 128
         },
         {
-            "key": "ACT_FLINCH_STOMACH_BACK",
+            "key": "DMG_CLUB",
             "value": 128
         },
         {
@@ -2401,7 +2401,7 @@
             "value": 128
         },
         {
-            "key": "FCVAR_ARCHIVE",
+            "key": "ACT_FLINCH_STOMACH_BACK",
             "value": 128
         },
         {
@@ -2421,43 +2421,43 @@
             "value": 130
         },
         {
-            "key": "AE_MELEE_START_COLLISION_DAMAGE",
-            "value": 131
-        },
-        {
             "key": "ACT_FLINCH_CROUCH_LEFT",
             "value": 131
         },
         {
-            "key": "AE_MELEE_STOP_COLLISION_DAMAGE",
-            "value": 132
+            "key": "AE_MELEE_START_COLLISION_DAMAGE",
+            "value": 131
         },
         {
             "key": "ACT_FLINCH_CROUCH_RIGHT",
             "value": 132
         },
         {
-            "key": "ACT_IDLE_ON_FIRE",
-            "value": 133
+            "key": "AE_MELEE_STOP_COLLISION_DAMAGE",
+            "value": 132
         },
         {
             "key": "AE_MELEE_FORCE_START_WEAPON_TRAIL",
             "value": 133
         },
         {
-            "key": "AE_MELEE_FORCE_STOP_WEAPON_TRAIL",
-            "value": 134
+            "key": "ACT_IDLE_ON_FIRE",
+            "value": 133
         },
         {
             "key": "ACT_WALK_ON_FIRE",
             "value": 134
         },
         {
-            "key": "ACT_RUN_ON_FIRE",
-            "value": 135
+            "key": "AE_MELEE_FORCE_STOP_WEAPON_TRAIL",
+            "value": 134
         },
         {
             "key": "AE_ACTION_ENTERING_IDLE",
+            "value": 135
+        },
+        {
+            "key": "ACT_RUN_ON_FIRE",
             "value": 135
         },
         {
@@ -2469,19 +2469,19 @@
             "value": 136
         },
         {
-            "key": "ACT_180_LEFT",
-            "value": 137
-        },
-        {
             "key": "AE_ACTION_ALLOW_MOVE_INTERRUPT",
             "value": 137
         },
         {
-            "key": "ACT_180_RIGHT",
-            "value": 138
+            "key": "ACT_180_LEFT",
+            "value": 137
         },
         {
             "key": "AE_ACTION_AVOID_DAMAGE",
+            "value": 138
+        },
+        {
+            "key": "ACT_180_RIGHT",
             "value": 138
         },
         {
@@ -2493,19 +2493,19 @@
             "value": 139
         },
         {
-            "key": "AE_ACTION_SET_TURN_RATE_SCALE",
-            "value": 140
-        },
-        {
             "key": "ACT_90_RIGHT",
             "value": 140
         },
         {
-            "key": "ACT_STEP_LEFT",
-            "value": 141
+            "key": "AE_ACTION_SET_TURN_RATE_SCALE",
+            "value": 140
         },
         {
             "key": "AE_ACTION_ALLOW_COMBO",
+            "value": 141
+        },
+        {
+            "key": "ACT_STEP_LEFT",
             "value": 141
         },
         {
@@ -2517,11 +2517,11 @@
             "value": 142
         },
         {
-            "key": "ACT_STEP_BACK",
+            "key": "AE_ACTION_ALLOW_DODGE",
             "value": 143
         },
         {
-            "key": "AE_ACTION_ALLOW_DODGE",
+            "key": "ACT_STEP_BACK",
             "value": 143
         },
         {
@@ -2565,11 +2565,11 @@
             "value": 148
         },
         {
-            "key": "ACT_GESTURE_RANGE_ATTACK1_LOW",
+            "key": "AE_ACTION_END_TURN",
             "value": 149
         },
         {
-            "key": "AE_ACTION_END_TURN",
+            "key": "ACT_GESTURE_RANGE_ATTACK1_LOW",
             "value": 149
         },
         {
@@ -2605,19 +2605,19 @@
             "value": 153
         },
         {
-            "key": "ACT_GESTURE_FLINCH_BLAST",
-            "value": 154
-        },
-        {
             "key": "AE_DROP_ITEM",
             "value": 154
         },
         {
-            "key": "AE_TOSS_ITEM",
-            "value": 155
+            "key": "ACT_GESTURE_FLINCH_BLAST",
+            "value": 154
         },
         {
             "key": "ACT_GESTURE_FLINCH_BLAST_SHOTGUN",
+            "value": 155
+        },
+        {
+            "key": "AE_TOSS_ITEM",
             "value": 155
         },
         {
@@ -2637,27 +2637,27 @@
             "value": 157
         },
         {
-            "key": "AE_WEAPON_SLAM_GROUND",
-            "value": 158
-        },
-        {
             "key": "ACT_GESTURE_FLINCH_HEAD",
             "value": 158
         },
         {
-            "key": "ACT_GESTURE_FLINCH_CHEST",
-            "value": 159
+            "key": "AE_WEAPON_SLAM_GROUND",
+            "value": 158
         },
         {
             "key": "AE_MANTLE_LEAP",
             "value": 159
         },
         {
-            "key": "ACT_GESTURE_FLINCH_STOMACH",
-            "value": 160
+            "key": "ACT_GESTURE_FLINCH_CHEST",
+            "value": 159
         },
         {
             "key": "AE_MANTLE_GRAB",
+            "value": 160
+        },
+        {
+            "key": "ACT_GESTURE_FLINCH_STOMACH",
             "value": 160
         },
         {
@@ -2677,27 +2677,27 @@
             "value": 162
         },
         {
-            "key": "ACT_GESTURE_FLINCH_LEFTLEG",
-            "value": 163
-        },
-        {
             "key": "AE_KEYFIELD_SOUND",
             "value": 163
         },
         {
-            "key": "AE_ACTION_DROP_ITEM",
-            "value": 164
+            "key": "ACT_GESTURE_FLINCH_LEFTLEG",
+            "value": 163
         },
         {
             "key": "ACT_GESTURE_FLINCH_RIGHTLEG",
             "value": 164
         },
         {
-            "key": "ACT_GESTURE_TURN_LEFT",
-            "value": 165
+            "key": "AE_ACTION_DROP_ITEM",
+            "value": 164
         },
         {
             "key": "AE_SOUND_EMITTED",
+            "value": 165
+        },
+        {
+            "key": "ACT_GESTURE_TURN_LEFT",
             "value": 165
         },
         {
@@ -2709,43 +2709,43 @@
             "value": 166
         },
         {
-            "key": "AE_SCRIPT_EVENT_CANINTERRUPT",
-            "value": 167
-        },
-        {
             "key": "ACT_GESTURE_TURN_LEFT45",
             "value": 167
         },
         {
-            "key": "ACT_GESTURE_TURN_RIGHT45",
-            "value": 168
+            "key": "AE_SCRIPT_EVENT_CANINTERRUPT",
+            "value": 167
         },
         {
             "key": "AE_SCRIPT_EVENT_FIREEVENT",
             "value": 168
         },
         {
-            "key": "AE_SCRIPT_EVENT_DEAD",
-            "value": 169
+            "key": "ACT_GESTURE_TURN_RIGHT45",
+            "value": 168
         },
         {
             "key": "ACT_GESTURE_TURN_LEFT90",
             "value": 169
         },
         {
-            "key": "ACT_GESTURE_TURN_RIGHT90",
-            "value": 170
+            "key": "AE_SCRIPT_EVENT_DEAD",
+            "value": 169
         },
         {
             "key": "AE_SCRIPT_EVENT_NOT_DEAD",
             "value": 170
         },
         {
-            "key": "ACT_GESTURE_TURN_LEFT45_FLAT",
-            "value": 171
+            "key": "ACT_GESTURE_TURN_RIGHT90",
+            "value": 170
         },
         {
             "key": "AE_SCRIPT_EVENT_FIRE_INPUT",
+            "value": 171
+        },
+        {
+            "key": "ACT_GESTURE_TURN_LEFT45_FLAT",
             "value": 171
         },
         {
@@ -2757,19 +2757,19 @@
             "value": 172
         },
         {
-            "key": "AE_SCRIPT_EVENT_CUSTOMINTERRUPT_END",
-            "value": 173
-        },
-        {
             "key": "ACT_GESTURE_TURN_LEFT90_FLAT",
             "value": 173
         },
         {
-            "key": "AE_NPC_BECOME_TEMPORARY_RAGDOLL",
-            "value": 174
+            "key": "AE_SCRIPT_EVENT_CUSTOMINTERRUPT_END",
+            "value": 173
         },
         {
             "key": "ACT_GESTURE_TURN_RIGHT90_FLAT",
+            "value": 174
+        },
+        {
+            "key": "AE_NPC_BECOME_TEMPORARY_RAGDOLL",
             "value": 174
         },
         {
@@ -2781,11 +2781,11 @@
             "value": 175
         },
         {
-            "key": "AE_IK_SET_LOCK_ROTATION_ALPHA",
+            "key": "ACT_BARNACLE_PULL",
             "value": 176
         },
         {
-            "key": "ACT_BARNACLE_PULL",
+            "key": "AE_IK_SET_LOCK_ROTATION_ALPHA",
             "value": 176
         },
         {
@@ -2805,11 +2805,11 @@
             "value": 178
         },
         {
-            "key": "ACT_DO_NOT_DISTURB",
+            "key": "AE_IK_SET_CHAIN_BLEND_AMOUNT",
             "value": 179
         },
         {
-            "key": "AE_IK_SET_CHAIN_BLEND_AMOUNT",
+            "key": "ACT_DO_NOT_DISTURB",
             "value": 179
         },
         {
@@ -2821,11 +2821,11 @@
             "value": 180
         },
         {
-            "key": "ACT_VM_DEPLOY",
+            "key": "AE_CL_CREATE_ANIM_SCOPE_PROP",
             "value": 181
         },
         {
-            "key": "AE_CL_CREATE_ANIM_SCOPE_PROP",
+            "key": "ACT_VM_DEPLOY",
             "value": 181
         },
         {
@@ -2853,11 +2853,11 @@
             "value": 184
         },
         {
-            "key": "ACT_VM_IDLE",
+            "key": "AE_HAPTIC_PULSE",
             "value": 185
         },
         {
-            "key": "AE_HAPTIC_PULSE",
+            "key": "ACT_VM_IDLE",
             "value": 185
         },
         {
@@ -2869,11 +2869,11 @@
             "value": 186
         },
         {
-            "key": "ACT_VM_PULLBACK",
+            "key": "AE_NPC_END_POWERED_RAGDOLL",
             "value": 187
         },
         {
-            "key": "AE_NPC_END_POWERED_RAGDOLL",
+            "key": "ACT_VM_PULLBACK",
             "value": 187
         },
         {
@@ -2889,11 +2889,11 @@
             "value": 189
         },
         {
-            "key": "AE_CL_DOTA_STOP_STATUS_EFFECT",
+            "key": "ACT_VM_THROW",
             "value": 190
         },
         {
-            "key": "ACT_VM_THROW",
+            "key": "AE_CL_DOTA_STOP_STATUS_EFFECT",
             "value": 190
         },
         {
@@ -2905,19 +2905,19 @@
             "value": 191
         },
         {
-            "key": "AE_CL_DOTA_RUBICK_ARCANA_CREATE_PARTICLE_EFFECT",
-            "value": 192
-        },
-        {
             "key": "ACT_VM_PULLPIN",
             "value": 192
         },
         {
-            "key": "AE_DOTA_SUPPRESS_CONSTANT_LAYER",
-            "value": 193
+            "key": "AE_CL_DOTA_RUBICK_ARCANA_CREATE_PARTICLE_EFFECT",
+            "value": 192
         },
         {
             "key": "ACT_VM_PRIMARYATTACK",
+            "value": 193
+        },
+        {
+            "key": "AE_DOTA_SUPPRESS_CONSTANT_LAYER",
             "value": 193
         },
         {
@@ -3173,15 +3173,15 @@
             "value": 255
         },
         {
-            "key": "DMG_SHOCK",
-            "value": 256
-        },
-        {
             "key": "ACT_SLAM_DETONATOR_IDLE",
             "value": 256
         },
         {
             "key": "FCVAR_NOTIFY",
+            "value": 256
+        },
+        {
+            "key": "DMG_SHOCK",
             "value": 256
         },
         {
@@ -6261,7 +6261,7 @@
             "value": 1023
         },
         {
-            "key": "FCVAR_PRINTABLEONLY",
+            "key": "DMG_ENERGYBEAM",
             "value": 1024
         },
         {
@@ -6269,7 +6269,7 @@
             "value": 1024
         },
         {
-            "key": "DMG_ENERGYBEAM",
+            "key": "FCVAR_PRINTABLEONLY",
             "value": 1024
         },
         {
@@ -7277,35 +7277,35 @@
             "value": 1747
         },
         {
-            "key": "ACT_DOTA_IDLE_STATUE",
+            "key": "ACT_DOTA_DISABLED_END",
             "value": 1748
         },
         {
-            "key": "ACT_DOTA_RUN_STATUE",
+            "key": "ACT_DOTA_ARCANA_VOTE",
             "value": 1749
         },
         {
-            "key": "ACT_DOTA_ATTACK_STATUE",
+            "key": "ACT_DOTA_PUNCH",
             "value": 1750
         },
         {
-            "key": "ACT_DOTA_FLAIL_STATUE",
+            "key": "ACT_DOTA_SPIRIT_BREAKER_ULT_RUN",
             "value": 1751
         },
         {
-            "key": "ACT_DOTA_STUN_STATUE",
+            "key": "ACT_DOTA_CAST_STATUE",
             "value": 1752
         },
         {
-            "key": "ACT_DOTA_CAST1_STATUE",
+            "key": "ACT_DOTA_ATTACK_STATUE",
             "value": 1753
         },
         {
-            "key": "ACT_DOTA_VICTORY_STATUE",
+            "key": "ACT_DOTA_CAST3_STATUE",
             "value": 1754
         },
         {
-            "key": "ACT_DOTA_DEFEAT_STATUE",
+            "key": "ACT_DOTA_CAST1_STATUE",
             "value": 1755
         },
         {
@@ -7313,135 +7313,115 @@
             "value": 1756
         },
         {
-            "key": "ACT_DOTA_FORCESTAFF_STATUE",
+            "key": "ACT_DOTA_VICTORY_STATUE",
             "value": 1757
         },
         {
-            "key": "ACT_DOTA_CAST4_STATUE",
+            "key": "ACT_DOTA_TAUNT_STATUE",
             "value": 1758
         },
         {
-            "key": "ACT_DOTA_SPAWN_STATUE",
+            "key": "ACT_DOTA_STATUE_SEQUENCE",
             "value": 1759
         },
         {
-            "key": "ACT_DOTA_TAUNT_STATUE",
+            "key": "ACT_DOTA_STORM_ABILITY_4",
             "value": 1760
         },
         {
-            "key": "ACT_DOTA_ARCANA_VOTE",
+            "key": "ACT_DOTA_RUN_STATUE",
             "value": 1761
         },
         {
-            "key": "ACT_DOTA_PUNCH",
+            "key": "ACT_DOTA_IDLE_STATUE",
             "value": 1762
         },
         {
-            "key": "ACT_DOTA_SPIRIT_BREAKER_ULT_RUN",
+            "key": "ACT_DOTA_CAST4_STATUE",
             "value": 1763
         },
         {
-            "key": "ACT_DOTA_CAST_STATUE",
+            "key": "ACT_DOTA_STUN_STATUE",
             "value": 1764
         },
         {
-            "key": "ACT_DOTA_CAST3_STATUE",
+            "key": "ACT_DOTA_FLAIL_STATUE",
             "value": 1765
         },
         {
-            "key": "ACT_DOTA_STATUE_SEQUENCE",
+            "key": "ACT_DOTA_CAST2_STATUE",
             "value": 1766
         },
         {
-            "key": "ACT_DOTA_STORM_ABILITY_4",
+            "key": "ACD_DOTA_IDLE",
             "value": 1767
         },
         {
-            "key": "ACT_DOTA_CAST2_STATUE",
+            "key": "ACT_DOTA_RUN_ALT",
             "value": 1768
         },
         {
-            "key": "ACD_DOTA_IDLE",
+            "key": "ACT_DOTA_CYCLONE",
             "value": 1769
         },
         {
-            "key": "ACT_DOTA_DISABLED_END",
+            "key": "ACT_DOTA_IMPALE",
             "value": 1770
         },
         {
-            "key": "ACT_DOTA_RUN_ALT",
+            "key": "ACT_DOTA_TORRENT",
             "value": 1771
         },
         {
-            "key": "ACT_DOTA_CYCLONE",
+            "key": "ACT_DOTA_RELAX_IN",
             "value": 1772
         },
         {
-            "key": "ACT_DOTA_IMPALE",
+            "key": "ACT_DOTA_RELAX_OUT",
             "value": 1773
         },
         {
-            "key": "ACT_DOTA_TORRENT",
+            "key": "ACT_DOTA_CAST_FENCE",
             "value": 1774
         },
         {
-            "key": "ACT_DOTA_RELAX_IN",
+            "key": "radiant_melee_mars_shieldbash",
             "value": 1775
         },
         {
-            "key": "ACT_DOTA_RELAX_OUT",
-            "value": 1776
-        },
-        {
-            "key": "ACT_DOTA_CAST_FENCE",
-            "value": 1777
-        },
-        {
-            "key": "radiant_melee_mars_shieldbash",
-            "value": 1778
-        },
-        {
             "key": "ACT_DOTA_RADIANT_CREEP_HAMMER",
-            "value": 1779
-        },
-        {
-            "key": "ACT_DOTA_SPWN",
-            "value": 1780
-        },
-        {
-            "key": "ACT_DOTA_LOADOUT_STATUE",
-            "value": 1781
-        },
-        {
-            "key": "FCVAR_UNLOGGED",
-            "value": 2048
+            "value": 1776
         },
         {
             "key": "DMG_PREVENT_PHYSICS_FORCE",
             "value": 2048
         },
         {
-            "key": "FCVAR_NEVER_AS_STRING",
-            "value": 4096
+            "key": "FCVAR_UNLOGGED",
+            "value": 2048
         },
         {
             "key": "DMG_NEVERGIB",
             "value": 4096
         },
         {
-            "key": "FCVAR_REPLICATED",
-            "value": 8192
+            "key": "FCVAR_NEVER_AS_STRING",
+            "value": 4096
         },
         {
             "key": "DMG_ALWAYSGIB",
             "value": 8192
         },
         {
-            "key": "DMG_DROWN",
-            "value": 16384
+            "key": "FCVAR_REPLICATED",
+            "value": 8192
         },
         {
             "key": "FCVAR_CHEAT",
+            "value": 16384
+        },
+        {
+            "key": "DMG_DROWN",
             "value": 16384
         },
         {
@@ -7461,11 +7441,11 @@
             "value": 65536
         },
         {
-            "key": "DMG_POISON",
+            "key": "FCVAR_DONTRECORD",
             "value": 131072
         },
         {
-            "key": "FCVAR_DONTRECORD",
+            "key": "DMG_POISON",
             "value": 131072
         },
         {
@@ -7485,11 +7465,11 @@
             "value": 2097152
         },
         {
-            "key": "FCVAR_NOT_CONNECTED",
+            "key": "DMG_REMOVENORAGDOLL",
             "value": 4194304
         },
         {
-            "key": "DMG_REMOVENORAGDOLL",
+            "key": "FCVAR_NOT_CONNECTED",
             "value": 4194304
         },
         {
@@ -7812,747 +7792,752 @@
             "value": 56
         },
         {
+            "description": "GetModifierPhysicalArmorBase_Percentage",
+            "key": "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BASE_PERCENTAGE",
+            "value": 57
+        },
+        {
             "description": "GetModifierPhysicalArmorBonus",
             "key": "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS",
-            "value": 57
+            "value": 58
         },
         {
             "description": "GetModifierPhysicalArmorBonusUnique",
             "key": "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE",
-            "value": 58
+            "value": 59
         },
         {
             "description": "GetModifierPhysicalArmorBonusUniqueActive",
             "key": "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE_ACTIVE",
-            "value": 59
+            "value": 60
         },
         {
             "description": "GetModifierIgnorePhysicalArmor",
             "key": "MODIFIER_PROPERTY_IGNORE_PHYSICAL_ARMOR",
-            "value": 60
+            "value": 61
         },
         {
             "description": "GetModifierMagicalResistanceDirectModification",
             "key": "MODIFIER_PROPERTY_MAGICAL_RESISTANCE_DIRECT_MODIFICATION",
-            "value": 61
+            "value": 62
         },
         {
             "description": "GetModifierMagicalResistanceBonus",
             "key": "MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS",
-            "value": 62
+            "value": 63
         },
         {
             "description": "GetModifierMagicalResistanceDecrepifyUnique",
             "key": "MODIFIER_PROPERTY_MAGICAL_RESISTANCE_DECREPIFY_UNIQUE",
-            "value": 63
+            "value": 64
         },
         {
             "description": "GetModifierBaseRegen",
             "key": "MODIFIER_PROPERTY_BASE_MANA_REGEN",
-            "value": 64
+            "value": 65
         },
         {
             "description": "GetModifierConstantManaRegen",
             "key": "MODIFIER_PROPERTY_MANA_REGEN_CONSTANT",
-            "value": 65
+            "value": 66
         },
         {
             "description": "GetModifierConstantManaRegenUnique",
             "key": "MODIFIER_PROPERTY_MANA_REGEN_CONSTANT_UNIQUE",
-            "value": 66
+            "value": 67
         },
         {
             "description": "GetModifierTotalPercentageManaRegen",
             "key": "MODIFIER_PROPERTY_MANA_REGEN_TOTAL_PERCENTAGE",
-            "value": 67
+            "value": 68
         },
         {
             "description": "GetModifierConstantHealthRegen",
             "key": "MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT",
-            "value": 68
+            "value": 69
         },
         {
             "description": "GetModifierHealthRegenPercentage",
             "key": "MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE",
-            "value": 69
+            "value": 70
         },
         {
             "description": "GetModifierHealthRegenPercentageUnique",
             "key": "MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE_UNIQUE",
-            "value": 70
+            "value": 71
         },
         {
             "description": "GetModifierHealthBonus",
             "key": "MODIFIER_PROPERTY_HEALTH_BONUS",
-            "value": 71
+            "value": 72
         },
         {
             "description": "GetModifierManaBonus",
             "key": "MODIFIER_PROPERTY_MANA_BONUS",
-            "value": 72
+            "value": 73
         },
         {
             "description": "GetModifierExtraStrengthBonus",
             "key": "MODIFIER_PROPERTY_EXTRA_STRENGTH_BONUS",
-            "value": 73
+            "value": 74
         },
         {
             "description": "GetModifierExtraHealthBonus",
             "key": "MODIFIER_PROPERTY_EXTRA_HEALTH_BONUS",
-            "value": 74
+            "value": 75
         },
         {
             "description": "GetModifierExtraManaBonus",
             "key": "MODIFIER_PROPERTY_EXTRA_MANA_BONUS",
-            "value": 75
+            "value": 76
         },
         {
             "description": "GetModifierExtraHealthPercentage",
             "key": "MODIFIER_PROPERTY_EXTRA_HEALTH_PERCENTAGE",
-            "value": 76
+            "value": 77
         },
         {
             "description": "GetModifierBonusStats_Strength",
             "key": "MODIFIER_PROPERTY_STATS_STRENGTH_BONUS",
-            "value": 77
+            "value": 78
         },
         {
             "description": "GetModifierBonusStats_Agility",
             "key": "MODIFIER_PROPERTY_STATS_AGILITY_BONUS",
-            "value": 78
+            "value": 79
         },
         {
             "description": "GetModifierBonusStats_Intellect",
             "key": "MODIFIER_PROPERTY_STATS_INTELLECT_BONUS",
-            "value": 79
+            "value": 80
         },
         {
             "description": "GetModifierCastRangeBonus",
             "key": "MODIFIER_PROPERTY_CAST_RANGE_BONUS",
-            "value": 80
+            "value": 81
         },
         {
             "description": "GetModifierCastRangeBonusTarget",
             "key": "MODIFIER_PROPERTY_CAST_RANGE_BONUS_TARGET",
-            "value": 81
+            "value": 82
         },
         {
             "description": "GetModifierCastRangeBonusStacking",
             "key": "MODIFIER_PROPERTY_CAST_RANGE_BONUS_STACKING",
-            "value": 82
+            "value": 83
         },
         {
             "description": "GetModifierAttackRangeOverride",
             "key": "MODIFIER_PROPERTY_ATTACK_RANGE_BASE_OVERRIDE",
-            "value": 83
+            "value": 84
         },
         {
             "description": "GetModifierAttackRangeBonus",
             "key": "MODIFIER_PROPERTY_ATTACK_RANGE_BONUS",
-            "value": 84
+            "value": 85
         },
         {
             "description": "GetModifierAttackRangeBonusUnique",
             "key": "MODIFIER_PROPERTY_ATTACK_RANGE_BONUS_UNIQUE",
-            "value": 85
+            "value": 86
         },
         {
             "description": "GetModifierAttackRangeBonusPercentage",
             "key": "MODIFIER_PROPERTY_ATTACK_RANGE_BONUS_PERCENTAGE",
-            "value": 86
+            "value": 87
         },
         {
             "description": "GetModifierMaxAttackRange",
             "key": "MODIFIER_PROPERTY_MAX_ATTACK_RANGE",
-            "value": 87
+            "value": 88
         },
         {
             "description": "GetModifierProjectileSpeedBonus",
             "key": "MODIFIER_PROPERTY_PROJECTILE_SPEED_BONUS",
-            "value": 88
+            "value": 89
         },
         {
             "description": "GetModifierProjectileName",
             "key": "MODIFIER_PROPERTY_PROJECTILE_NAME",
-            "value": 89
+            "value": 90
         },
         {
             "description": "ReincarnateTime",
             "key": "MODIFIER_PROPERTY_REINCARNATION",
-            "value": 90
+            "value": 91
         },
         {
             "description": "GetModifierConstantRespawnTime",
             "key": "MODIFIER_PROPERTY_RESPAWNTIME",
-            "value": 91
+            "value": 92
         },
         {
             "description": "GetModifierPercentageRespawnTime",
             "key": "MODIFIER_PROPERTY_RESPAWNTIME_PERCENTAGE",
-            "value": 92
+            "value": 93
         },
         {
             "description": "GetModifierStackingRespawnTime",
             "key": "MODIFIER_PROPERTY_RESPAWNTIME_STACKING",
-            "value": 93
+            "value": 94
         },
         {
             "description": "GetModifierPercentageCooldown",
             "key": "MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE",
-            "value": 94
+            "value": 95
         },
         {
             "description": "GetModifierPercentageCooldownStacking",
             "key": "MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE_STACKING",
-            "value": 95
+            "value": 96
         },
         {
             "description": "GetModifierPercentageCasttime",
             "key": "MODIFIER_PROPERTY_CASTTIME_PERCENTAGE",
-            "value": 96
+            "value": 97
         },
         {
             "description": "GetModifierPercentageManacost",
             "key": "MODIFIER_PROPERTY_MANACOST_PERCENTAGE",
-            "value": 97
+            "value": 98
         },
         {
             "description": "GetModifierPercentageManacostStacking",
             "key": "MODIFIER_PROPERTY_MANACOST_PERCENTAGE_STACKING",
-            "value": 98
+            "value": 99
         },
         {
             "description": "GetModifierConstantDeathGoldCost",
             "key": "MODIFIER_PROPERTY_DEATHGOLDCOST",
-            "value": 99
+            "value": 100
         },
         {
             "description": "GetModifierPercentageExpRateBoost",
             "key": "MODIFIER_PROPERTY_EXP_RATE_BOOST",
-            "value": 100
+            "value": 101
         },
         {
             "description": "GetModifierPreAttack_CriticalStrike",
             "key": "MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE",
-            "value": 101
+            "value": 102
         },
         {
             "description": "GetModifierPreAttack_Target_CriticalStrike",
             "key": "MODIFIER_PROPERTY_PREATTACK_TARGET_CRITICALSTRIKE",
-            "value": 102
+            "value": 103
         },
         {
             "description": "GetModifierMagical_ConstantBlock",
             "key": "MODIFIER_PROPERTY_MAGICAL_CONSTANT_BLOCK",
-            "value": 103
+            "value": 104
         },
         {
             "description": "GetModifierPhysical_ConstantBlock",
             "key": "MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK",
-            "value": 104
+            "value": 105
         },
         {
             "description": "GetModifierPhysical_ConstantBlockSpecial",
             "key": "MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK_SPECIAL",
-            "value": 105
+            "value": 106
         },
         {
             "description": "GetModifierPhysical_ConstantBlockUnavoidablePreArmor",
             "key": "MODIFIER_PROPERTY_TOTAL_CONSTANT_BLOCK_UNAVOIDABLE_PRE_ARMOR",
-            "value": 106
+            "value": 107
         },
         {
             "description": "GetModifierTotal_ConstantBlock",
             "key": "MODIFIER_PROPERTY_TOTAL_CONSTANT_BLOCK",
-            "value": 107
+            "value": 108
         },
         {
             "description": "GetOverrideAnimation",
             "key": "MODIFIER_PROPERTY_OVERRIDE_ANIMATION",
-            "value": 108
+            "value": 109
         },
         {
             "description": "GetOverrideAnimationWeight",
             "key": "MODIFIER_PROPERTY_OVERRIDE_ANIMATION_WEIGHT",
-            "value": 109
+            "value": 110
         },
         {
             "description": "GetOverrideAnimationRate",
             "key": "MODIFIER_PROPERTY_OVERRIDE_ANIMATION_RATE",
-            "value": 110
+            "value": 111
         },
         {
             "description": "GetAbsorbSpell",
             "key": "MODIFIER_PROPERTY_ABSORB_SPELL",
-            "value": 111
+            "value": 112
         },
         {
             "description": "GetReflectSpell",
             "key": "MODIFIER_PROPERTY_REFLECT_SPELL",
-            "value": 112
+            "value": 113
         },
         {
             "description": "GetDisableAutoAttack",
             "key": "MODIFIER_PROPERTY_DISABLE_AUTOATTACK",
-            "value": 113
+            "value": 114
         },
         {
             "description": "GetBonusDayVision",
             "key": "MODIFIER_PROPERTY_BONUS_DAY_VISION",
-            "value": 114
+            "value": 115
         },
         {
             "description": "GetBonusNightVision",
             "key": "MODIFIER_PROPERTY_BONUS_NIGHT_VISION",
-            "value": 115
+            "value": 116
         },
         {
             "description": "GetBonusNightVisionUnique",
             "key": "MODIFIER_PROPERTY_BONUS_NIGHT_VISION_UNIQUE",
-            "value": 116
+            "value": 117
         },
         {
             "description": "GetBonusVisionPercentage",
             "key": "MODIFIER_PROPERTY_BONUS_VISION_PERCENTAGE",
-            "value": 117
+            "value": 118
         },
         {
             "description": "GetFixedDayVision",
             "key": "MODIFIER_PROPERTY_FIXED_DAY_VISION",
-            "value": 118
+            "value": 119
         },
         {
             "description": "GetFixedNightVision",
             "key": "MODIFIER_PROPERTY_FIXED_NIGHT_VISION",
-            "value": 119
+            "value": 120
         },
         {
             "description": "GetMinHealth",
             "key": "MODIFIER_PROPERTY_MIN_HEALTH",
-            "value": 120
+            "value": 121
         },
         {
             "description": "GetAbsoluteNoDamagePhysical",
             "key": "MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PHYSICAL",
-            "value": 121
+            "value": 122
         },
         {
             "description": "GetAbsoluteNoDamageMagical",
             "key": "MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_MAGICAL",
-            "value": 122
+            "value": 123
         },
         {
             "description": "GetAbsoluteNoDamagePure",
             "key": "MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PURE",
-            "value": 123
+            "value": 124
         },
         {
             "description": "GetIsIllusion",
             "key": "MODIFIER_PROPERTY_IS_ILLUSION",
-            "value": 124
+            "value": 125
         },
         {
             "description": "GetModifierIllusionLabel",
             "key": "MODIFIER_PROPERTY_ILLUSION_LABEL",
-            "value": 125
+            "value": 126
         },
         {
             "description": "GetModifierSuperIllusion",
             "key": "MODIFIER_PROPERTY_SUPER_ILLUSION",
-            "value": 126
+            "value": 127
         },
         {
             "description": "GetModifierSuperIllusionWithUltimate",
             "key": "MODIFIER_PROPERTY_SUPER_ILLUSION_WITH_ULTIMATE",
-            "value": 127
+            "value": 128
         },
         {
             "description": "GetModifierTurnRate_Percentage",
             "key": "MODIFIER_PROPERTY_TURN_RATE_PERCENTAGE",
-            "value": 128
+            "value": 129
         },
         {
             "description": "GetModifierTurnRate_Override",
             "key": "MODIFIER_PROPERTY_TURN_RATE_OVERRIDE",
-            "value": 129
+            "value": 130
         },
         {
             "description": "GetDisableHealing",
             "key": "MODIFIER_PROPERTY_DISABLE_HEALING",
-            "value": 130
+            "value": 131
         },
         {
             "description": "GetAlwaysAllowAttack",
             "key": "MODIFIER_PROPERTY_ALWAYS_ALLOW_ATTACK",
-            "value": 131
+            "value": 132
         },
         {
             "description": "GetOverrideAttackMagical",
             "key": "MODIFIER_PROPERTY_OVERRIDE_ATTACK_MAGICAL",
-            "value": 132
+            "value": 133
         },
         {
             "description": "GetModifierUnitStatsNeedsRefresh",
             "key": "MODIFIER_PROPERTY_UNIT_STATS_NEEDS_REFRESH",
-            "value": 133
-        },
-        {
-            "description": "Unused",
-            "key": "MODIFIER_PROPERTY_BOUNTY_CREEP_MULTIPLIER",
             "value": 134
         },
         {
             "description": "Unused",
-            "key": "MODIFIER_PROPERTY_BOUNTY_OTHER_MULTIPLIER",
+            "key": "MODIFIER_PROPERTY_BOUNTY_CREEP_MULTIPLIER",
             "value": 135
+        },
+        {
+            "description": "Unused",
+            "key": "MODIFIER_PROPERTY_BOUNTY_OTHER_MULTIPLIER",
+            "value": 136
         },
         {
             "description": "GetModifierUnitDisllowUpgrading",
             "key": "MODIFIER_PROPERTY_UNIT_DISALLOW_UPGRADING",
-            "value": 136
+            "value": 137
         },
         {
             "description": "GetModifierDodgeProjectile",
             "key": "MODIFIER_PROPERTY_DODGE_PROJECTILE",
-            "value": 137
+            "value": 138
         },
         {
             "description": "GetTriggerCosmeticAndEndAttack",
             "key": "MODIFIER_PROPERTY_TRIGGER_COSMETIC_AND_END_ATTACK",
-            "value": 138
+            "value": 139
         },
         {
             "description": "OnSpellTargetReady",
             "key": "MODIFIER_EVENT_ON_SPELL_TARGET_READY",
-            "value": 139
+            "value": 140
         },
         {
             "description": "OnAttackRecord",
             "key": "MODIFIER_EVENT_ON_ATTACK_RECORD",
-            "value": 140
+            "value": 141
         },
         {
             "description": "OnAttackStart",
             "key": "MODIFIER_EVENT_ON_ATTACK_START",
-            "value": 141
+            "value": 142
         },
         {
             "description": "OnAttack",
             "key": "MODIFIER_EVENT_ON_ATTACK",
-            "value": 142
+            "value": 143
         },
         {
             "description": "OnAttackLanded",
             "key": "MODIFIER_EVENT_ON_ATTACK_LANDED",
-            "value": 143
+            "value": 144
         },
         {
             "description": "OnAttackFail",
             "key": "MODIFIER_EVENT_ON_ATTACK_FAIL",
-            "value": 144
+            "value": 145
         },
         {
             "description": "OnAttackAllied",
             "key": "MODIFIER_EVENT_ON_ATTACK_ALLIED",
-            "value": 145
+            "value": 146
         },
         {
             "description": "OnProjectileDodge",
             "key": "MODIFIER_EVENT_ON_PROJECTILE_DODGE",
-            "value": 146
+            "value": 147
         },
         {
             "description": "OnOrder",
             "key": "MODIFIER_EVENT_ON_ORDER",
-            "value": 147
+            "value": 148
         },
         {
             "description": "OnUnitMoved",
             "key": "MODIFIER_EVENT_ON_UNIT_MOVED",
-            "value": 148
+            "value": 149
         },
         {
             "description": "OnAbilityStart",
             "key": "MODIFIER_EVENT_ON_ABILITY_START",
-            "value": 149
+            "value": 150
         },
         {
             "description": "OnAbilityExecuted",
             "key": "MODIFIER_EVENT_ON_ABILITY_EXECUTED",
-            "value": 150
+            "value": 151
         },
         {
             "description": "OnAbilityFullyCast",
             "key": "MODIFIER_EVENT_ON_ABILITY_FULLY_CAST",
-            "value": 151
+            "value": 152
         },
         {
             "description": "OnBreakInvisibility",
             "key": "MODIFIER_EVENT_ON_BREAK_INVISIBILITY",
-            "value": 152
+            "value": 153
         },
         {
             "description": "OnAbilityEndChannel",
             "key": "MODIFIER_EVENT_ON_ABILITY_END_CHANNEL",
-            "value": 153
-        },
-        {
-            "description": "Unused",
-            "key": "MODIFIER_EVENT_ON_PROCESS_UPGRADE",
             "value": 154
         },
         {
             "description": "Unused",
-            "key": "MODIFIER_EVENT_ON_REFRESH",
+            "key": "MODIFIER_EVENT_ON_PROCESS_UPGRADE",
             "value": 155
+        },
+        {
+            "description": "Unused",
+            "key": "MODIFIER_EVENT_ON_REFRESH",
+            "value": 156
         },
         {
             "description": "OnTakeDamage",
             "key": "MODIFIER_EVENT_ON_TAKEDAMAGE",
-            "value": 156
+            "value": 157
         },
         {
             "description": "OnStateChanged",
             "key": "MODIFIER_EVENT_ON_STATE_CHANGED",
-            "value": 157
+            "value": 158
         },
         {
             "description": "Unused",
             "key": "MODIFIER_EVENT_ON_ORB_EFFECT",
-            "value": 158
+            "value": 159
         },
         {
             "description": "OnProcessCleave",
             "key": "MODIFIER_EVENT_ON_PROCESS_CLEAVE",
-            "value": 159
+            "value": 160
         },
         {
             "description": "OnDamageCalculated",
             "key": "MODIFIER_EVENT_ON_DAMAGE_CALCULATED",
-            "value": 160
+            "value": 161
         },
         {
             "description": "OnAttacked",
             "key": "MODIFIER_EVENT_ON_ATTACKED",
-            "value": 161
+            "value": 162
         },
         {
             "description": "OnDeath",
             "key": "MODIFIER_EVENT_ON_DEATH",
-            "value": 162
+            "value": 163
         },
         {
             "description": "OnRespawn",
             "key": "MODIFIER_EVENT_ON_RESPAWN",
-            "value": 163
+            "value": 164
         },
         {
             "description": "OnSpentMana",
             "key": "MODIFIER_EVENT_ON_SPENT_MANA",
-            "value": 164
+            "value": 165
         },
         {
             "description": "OnTeleporting",
             "key": "MODIFIER_EVENT_ON_TELEPORTING",
-            "value": 165
+            "value": 166
         },
         {
             "description": "OnTeleported",
             "key": "MODIFIER_EVENT_ON_TELEPORTED",
-            "value": 166
+            "value": 167
         },
         {
             "description": "OnSetLocation",
             "key": "MODIFIER_EVENT_ON_SET_LOCATION",
-            "value": 167
+            "value": 168
         },
         {
             "description": "OnHealthGained",
             "key": "MODIFIER_EVENT_ON_HEALTH_GAINED",
-            "value": 168
+            "value": 169
         },
         {
             "description": "OnManaGained",
             "key": "MODIFIER_EVENT_ON_MANA_GAINED",
-            "value": 169
+            "value": 170
         },
         {
             "description": "OnTakeDamageKillCredit",
             "key": "MODIFIER_EVENT_ON_TAKEDAMAGE_KILLCREDIT",
-            "value": 170
+            "value": 171
         },
         {
             "description": "OnHeroKilled",
             "key": "MODIFIER_EVENT_ON_HERO_KILLED",
-            "value": 171
+            "value": 172
         },
         {
             "description": "OnHealReceived",
             "key": "MODIFIER_EVENT_ON_HEAL_RECEIVED",
-            "value": 172
+            "value": 173
         },
         {
             "description": "OnBuildingKilled",
             "key": "MODIFIER_EVENT_ON_BUILDING_KILLED",
-            "value": 173
+            "value": 174
         },
         {
             "description": "OnModelChanged",
             "key": "MODIFIER_EVENT_ON_MODEL_CHANGED",
-            "value": 174
+            "value": 175
         },
         {
             "description": "OnModifierAdded",
             "key": "MODIFIER_EVENT_ON_MODIFIER_ADDED",
-            "value": 175
+            "value": 176
         },
         {
             "description": "OnTooltip",
             "key": "MODIFIER_PROPERTY_TOOLTIP",
-            "value": 176
+            "value": 177
         },
         {
             "description": "GetModifierModelChange",
             "key": "MODIFIER_PROPERTY_MODEL_CHANGE",
-            "value": 177
+            "value": 178
         },
         {
             "description": "GetModifierModelScale",
             "key": "MODIFIER_PROPERTY_MODEL_SCALE",
-            "value": 178
+            "value": 179
         },
         {
             "description": "GetModifierScepter",
             "key": "MODIFIER_PROPERTY_IS_SCEPTER",
-            "value": 179
+            "value": 180
         },
         {
             "description": "GetActivityTranslationModifiers",
             "key": "MODIFIER_PROPERTY_TRANSLATE_ACTIVITY_MODIFIERS",
-            "value": 180
+            "value": 181
         },
         {
             "description": "GetAttackSound",
             "key": "MODIFIER_PROPERTY_TRANSLATE_ATTACK_SOUND",
-            "value": 181
+            "value": 182
         },
         {
             "description": "GetUnitLifetimeFraction",
             "key": "MODIFIER_PROPERTY_LIFETIME_FRACTION",
-            "value": 182
+            "value": 183
         },
         {
             "description": "GetModifierProvidesFOWVision",
             "key": "MODIFIER_PROPERTY_PROVIDES_FOW_POSITION",
-            "value": 183
+            "value": 184
         },
         {
             "description": "GetModifierSpellsRequireHP",
             "key": "MODIFIER_PROPERTY_SPELLS_REQUIRE_HP",
-            "value": 184
+            "value": 185
         },
         {
             "description": "GetForceDrawOnMinimap",
             "key": "MODIFIER_PROPERTY_FORCE_DRAW_MINIMAP",
-            "value": 185
+            "value": 186
         },
         {
             "description": "GetModifierDisableTurning",
             "key": "MODIFIER_PROPERTY_DISABLE_TURNING",
-            "value": 186
+            "value": 187
         },
         {
             "description": "GetModifierIgnoreCastAngle",
             "key": "MODIFIER_PROPERTY_IGNORE_CAST_ANGLE",
-            "value": 187
+            "value": 188
         },
         {
             "description": "GetModifierChangeAbilityValue",
             "key": "MODIFIER_PROPERTY_CHANGE_ABILITY_VALUE",
-            "value": 188
+            "value": 189
         },
         {
             "description": "GetModifierAbilityLayout",
             "key": "MODIFIER_PROPERTY_ABILITY_LAYOUT",
-            "value": 189
+            "value": 190
         },
         {
             "description": "OnDominated",
             "key": "MODIFIER_EVENT_ON_DOMINATED",
-            "value": 190
+            "value": 191
         },
         {
             "description": "GetModifierTempestDouble",
             "key": "MODIFIER_PROPERTY_TEMPEST_DOUBLE",
-            "value": 191
+            "value": 192
         },
         {
             "description": "PreserveParticlesOnModelChanged",
             "key": "MODIFIER_PROPERTY_PRESERVE_PARTICLES_ON_MODEL_CHANGE",
-            "value": 192
+            "value": 193
         },
         {
             "description": "OnAttackFinished",
             "key": "MODIFIER_EVENT_ON_ATTACK_FINISHED",
-            "value": 193
+            "value": 194
         },
         {
             "description": "GetModifierIgnoreCooldown",
             "key": "MODIFIER_PROPERTY_IGNORE_COOLDOWN",
-            "value": 194
+            "value": 195
         },
         {
             "description": "GetModifierCanAttackTrees",
             "key": "MODIFIER_PROPERTY_CAN_ATTACK_TREES",
-            "value": 195
+            "value": 196
         },
         {
             "description": "GetVisualZDelta",
             "key": "MODIFIER_PROPERTY_VISUAL_Z_DELTA",
-            "value": 196
+            "value": 197
         },
         {
             "key": "MODIFIER_PROPERTY_INCOMING_DAMAGE_ILLUSION",
-            "value": 197
+            "value": 198
         },
         {
             "description": "GetModifierNoVisionOfAttacker",
             "key": "MODIFIER_PROPERTY_DONT_GIVE_VISION_OF_ATTACKER",
-            "value": 198
+            "value": 199
         },
         {
             "description": "OnTooltip2",
             "key": "MODIFIER_PROPERTY_TOOLTIP2",
-            "value": 199
+            "value": 200
         },
         {
             "description": "OnAttackRecordDestroy",
             "key": "MODIFIER_EVENT_ON_ATTACK_RECORD_DESTROY",
-            "value": 200
+            "value": 201
         },
         {
             "description": "OnProjectileObstructionHit",
             "key": "MODIFIER_EVENT_ON_PROJECTILE_OBSTRUCTION_HIT",
-            "value": 201
+            "value": 202
         },
         {
             "description": "GetSuppressTeleport",
             "key": "MODIFIER_PROPERTY_SUPPRESS_TELEPORT",
-            "value": 202
+            "value": 203
         },
         {
             "description": "OnAttackCancelled",
             "key": "MODIFIER_EVENT_ON_ATTACK_CANCELLED",
-            "value": 203
+            "value": 204
         },
         {
             "description": "GetSuppressCleave",
             "key": "MODIFIER_PROPERTY_SUPPRESS_CLEAVE",
-            "value": 204
+            "value": 205
         },
         {
             "key": "MODIFIER_FUNCTION_LAST",
-            "value": 205
+            "value": 206
         },
         {
             "key": "MODIFIER_FUNCTION_INVALID",
