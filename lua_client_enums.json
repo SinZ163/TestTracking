@@ -7377,19 +7377,19 @@
             "value": 1772
         },
         {
-            "key": "ACT_DOTA_RUN_ALT",
+            "key": "ACT_DOTA_SPWN",
             "value": 1773
         },
         {
-            "key": "ACT_DOTA_CYCLONE",
+            "key": "ACT_DOTA_RUN_ALT",
             "value": 1774
         },
         {
-            "key": "ACT_DOTA_IMPALE",
+            "key": "ACT_DOTA_CYCLONE",
             "value": 1775
         },
         {
-            "key": "ACT_DOTA_TORRENT",
+            "key": "ACT_DOTA_IMPALE",
             "value": 1776
         },
         {
