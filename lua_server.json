@@ -17,6 +17,16 @@
                 "description": "Get the attachment id's angles as a p,y,r vector.",
                 "return": "vector"
             },
+            "GetAttachmentForward": {
+                "arg_names": [
+                    "iAttachment"
+                ],
+                "args": [
+                    "int"
+                ],
+                "description": "Get the attachment id's forward vector.",
+                "return": "vector"
+            },
             "GetAttachmentOrigin": {
                 "arg_names": [
                     "iAttachment"
@@ -228,9 +238,11 @@
             },
             "ShootPosition": {
                 "arg_names": [
-                    "nHand"
+                    "nHand",
+                    "nMuzzle"
                 ],
                 "args": [
+                    "int",
                     "int"
                 ],
                 "description": "Returns the shoot position eyes (or hand in VR).",
@@ -910,6 +922,26 @@
                 ],
                 "description": "Apply damage to this entity. Use CreateDamageInfo() to create a damageinfo object.",
                 "return": "int"
+            },
+            "TransformPointEntityToWorld": {
+                "arg_names": [
+                    "vPoint"
+                ],
+                "args": [
+                    "vector"
+                ],
+                "description": "Returns the input Vector transformed from entity to world space",
+                "return": "vector"
+            },
+            "TransformPointWorldToEntity": {
+                "arg_names": [
+                    "vPoint"
+                ],
+                "args": [
+                    "vector"
+                ],
+                "description": "Returns the input Vector transformed from world to entity space",
+                "return": "vector"
             },
             "Trigger": {
                 "args": [],
@@ -1639,6 +1671,10 @@
                 "args": [],
                 "return": "bool"
             },
+            "GetUpgradeRecommended": {
+                "args": [],
+                "return": "bool"
+            },
             "HeroXPChange": {
                 "arg_names": [
                     "flXP"
@@ -1955,6 +1991,15 @@
                 ],
                 "return": "void"
             },
+            "SetUpgradeRecommended": {
+                "arg_names": [
+                    "bUpgradeRecommended"
+                ],
+                "args": [
+                    "bool"
+                ],
+                "return": "void"
+            },
             "ShouldUseResources": {
                 "args": [],
                 "return": "bool"
@@ -2016,6 +2061,20 @@
     "CDOTABaseGameMode": {
         "extends": "CBaseEntity",
         "functions": {
+            "AddRealTimeCombatAnalyzerQuery": {
+                "arg_names": [
+                    "hQueryTable",
+                    "hPlayer",
+                    "pszQueryName"
+                ],
+                "args": [
+                    "handle",
+                    "handle",
+                    "cstring"
+                ],
+                "description": "Begin tracking a sequence of events using the real time combat analyzer.",
+                "return": "int"
+            },
             "AreWeatherEffectsDisabled": {
                 "args": [],
                 "description": "Get if weather effects are disabled on the client.",
@@ -2232,6 +2291,52 @@
                 "args": [],
                 "description": "Is the day/night cycle disabled?",
                 "return": "bool"
+            },
+            "ListenForQueryFailed": {
+                "arg_names": [
+                    "hFunction",
+                    "hContext"
+                ],
+                "args": [
+                    "handle",
+                    "handle"
+                ],
+                "description": "Set function and context for real time combat analyzer query failed.",
+                "return": "void"
+            },
+            "ListenForQueryProgressChanged": {
+                "arg_names": [
+                    "hFunction",
+                    "hContext"
+                ],
+                "args": [
+                    "handle",
+                    "handle"
+                ],
+                "description": "Set function and context for real time combat analyzer query progress changed.",
+                "return": "void"
+            },
+            "ListenForQuerySucceeded": {
+                "arg_names": [
+                    "hFunction",
+                    "hContext"
+                ],
+                "args": [
+                    "handle",
+                    "handle"
+                ],
+                "description": "Set function and context for real time combat analyzer query succeeded.",
+                "return": "void"
+            },
+            "RemoveRealTimeCombatAnalyzerQuery": {
+                "arg_names": [
+                    "nQueryID"
+                ],
+                "args": [
+                    "int"
+                ],
+                "description": "Stop tracking a combat analyzer query.",
+                "return": "void"
             },
             "SetAbilityTuningValueFilter": {
                 "arg_names": [
@@ -2994,6 +3099,16 @@
     },
     "CDOTAGamerules": {
         "functions": {
+            "AddBotPlayerWithEntityScript": {
+                "args": [
+                    "cstring",
+                    "cstring",
+                    "int",
+                    "cstring"
+                ],
+                "description": "Spawn a bot player of the passed hero name, player name, and team.",
+                "return": "handle"
+            },
             "AddEventMetadataLeaderboardEntry": {
                 "args": [
                     "cstring",
@@ -3008,6 +3123,13 @@
                 ],
                 "description": "Event-only ( string szNameSuffix, int nStars, int nMaxStars, int nExtraData1, int nExtraData2 )",
                 "return": "bool"
+            },
+            "AddItemToWhiteList": {
+                "args": [
+                    "cstring"
+                ],
+                "description": "Add an item to the whitelist",
+                "return": "void"
             },
             "AddMinimapDebugPoint": {
                 "args": [
@@ -3075,6 +3197,16 @@
             "FinishCustomGameSetup": {
                 "args": [],
                 "description": "Indicate that the custom game setup phase is complete, and advance to the game.",
+                "return": "void"
+            },
+            "ForceCreepSpawn": {
+                "args": [],
+                "description": "Spawn the next wave of creeps.",
+                "return": "void"
+            },
+            "ForceGameStart": {
+                "args": [],
+                "description": "Transition game state to DOTA_GAMERULES_STATE_GAME_IN_PROGRESS",
                 "return": "void"
             },
             "GetCustomGameDifficulty": {
@@ -3194,6 +3326,13 @@
                 "description": "Are we in the ban phase of hero pick?",
                 "return": "bool"
             },
+            "IsItemInWhiteList": {
+                "args": [
+                    "cstring"
+                ],
+                "description": "Query an item in the whitelist",
+                "return": "bool"
+            },
             "IsNightstalkerNight": {
                 "args": [],
                 "description": "Is it night stalker night-time?",
@@ -3235,9 +3374,33 @@
                 "description": "Updates custom hero, unit and ability KeyValues in memory with the latest values from disk",
                 "return": "void"
             },
+            "PrepareSpawners": {
+                "args": [
+                    "float"
+                ],
+                "description": "Prepare Dota lane style spawners with a given interval",
+                "return": "void"
+            },
+            "RemoveItemFromWhiteList": {
+                "args": [
+                    "cstring"
+                ],
+                "description": "Remove an item from the whitelist",
+                "return": "void"
+            },
             "ResetDefeated": {
                 "args": [],
                 "description": "Restart after killing the ancient, etc.",
+                "return": "void"
+            },
+            "ResetGameTime": {
+                "args": [],
+                "description": "Restart gametime from 0",
+                "return": "void"
+            },
+            "ResetToCustomGameSetup": {
+                "args": [],
+                "description": "Restart at custom game setup.",
                 "return": "void"
             },
             "ResetToHeroSelection": {
@@ -3552,6 +3715,18 @@
                     "vector"
                 ],
                 "description": "Set Weather Wind Direction Vector",
+                "return": "void"
+            },
+            "SetWhiteListEnabled": {
+                "args": [
+                    "bool"
+                ],
+                "description": "Item whitelist functionality enable/disable",
+                "return": "void"
+            },
+            "SpawnAndReleaseCreeps": {
+                "args": [],
+                "description": "Spawn and release the next creep wave from Dota lane style spawners.",
                 "return": "void"
             },
             "State_Get": {
@@ -9909,13 +10084,7 @@
     },
     "CDOTA_Unit_Courier": {
         "extends": "CDOTA_BaseNPC",
-        "functions": {
-            "UpgradeToFlyingCourier": {
-                "args": [],
-                "description": "Upgrade to a flying courier",
-                "return": "bool"
-            }
-        }
+        "functions": {}
     },
     "CDOTA_Unit_Nian": {
         "extends": "CDOTA_BaseNPC_Creature",
@@ -11329,6 +11498,55 @@
                 ],
                 "description": "Start scene playback, takes activatorEntity as param",
                 "return": "void"
+            }
+        }
+    },
+    "CScriptHTTPRequest": {
+        "functions": {
+            "Send": {
+                "args": [
+                    "handle"
+                ],
+                "description": "Send a HTTP request.",
+                "return": "bool"
+            },
+            "SetHTTPRequestAbsoluteTimeoutMS": {
+                "args": [
+                    "uint"
+                ],
+                "description": "Set the total timeout on the request.",
+                "return": "bool"
+            },
+            "SetHTTPRequestGetOrPostParameter": {
+                "args": [
+                    "cstring",
+                    "cstring"
+                ],
+                "description": "Set a POST or GET parameter on the request.",
+                "return": "bool"
+            },
+            "SetHTTPRequestHeaderValue": {
+                "args": [
+                    "cstring",
+                    "cstring"
+                ],
+                "description": "Set a header value on the request.",
+                "return": "bool"
+            },
+            "SetHTTPRequestNetworkActivityTimeout": {
+                "args": [
+                    "uint"
+                ],
+                "description": "Set the network timeout on the request - this timer is reset when any data is received.",
+                "return": "bool"
+            },
+            "SetHTTPRequestRawPostBody": {
+                "args": [
+                    "cstring",
+                    "cstring"
+                ],
+                "description": "Set the literal body of a post - invalid after setting a post parameter.",
+                "return": "bool"
             }
         }
     },
