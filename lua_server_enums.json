@@ -4065,6 +4065,10 @@
             "value": 37
         },
         {
+            "key": "DOTA_UNIT_ORDER_DROP_ITEM_AT_FOUNTAIN",
+            "value": 37
+        },
+        {
             "key": "ACT_STRAFE_LEFT",
             "value": 38
         },
@@ -8697,48 +8701,52 @@
             "value": 1028
         },
         {
-            "key": "ACT_DOTA_CHANNEL_STATUE",
+            "key": "ACT_DOTA_IDLE_STATUE",
             "value": 1751
         },
         {
-            "key": "ACT_DOTA_SPAWN_STATUE",
+            "key": "ACT_DOTA_RUN_STATUE",
             "value": 1752
         },
         {
-            "key": "ACT_DOTA_FORCESTAFF_STATUE",
+            "key": "ACT_DOTA_ATTACK_STATUE",
             "value": 1753
         },
         {
-            "key": "ACT_DOTA_STUN_STATUE",
+            "key": "ACT_DOTA_FLAIL_STATUE",
             "value": 1754
         },
         {
-            "key": "ACT_DOTA_FLAIL_STATUE",
+            "key": "ACT_DOTA_STUN_STATUE",
             "value": 1755
         },
         {
-            "key": "ACT_DOTA_CAST3_STATUE",
+            "key": "ACT_DOTA_CAST1_STATUE",
             "value": 1756
         },
         {
-            "key": "ACT_DOTA_TELEPORT_STATUE",
+            "key": "ACT_DOTA_VICTORY_STATUE",
             "value": 1757
         },
         {
-            "key": "ACT_DOTA_RUN_STATUE",
+            "key": "ACT_DOTA_DEFEAT_STATUE",
             "value": 1758
         },
         {
-            "key": "ACT_DOTA_DEFEAT_STATUE",
+            "key": "ACT_DOTA_TELEPORT_STATUE",
             "value": 1759
         },
         {
-            "key": "ACT_DOTA_VICTORY_STATUE",
+            "key": "ACT_DOTA_FORCESTAFF_STATUE",
             "value": 1760
         },
         {
-            "key": "ACT_DOTA_IDLE_STATUE",
+            "key": "ACT_DOTA_CAST4_STATUE",
             "value": 1761
+        },
+        {
+            "key": "ACT_DOTA_SPAWN_STATUE",
+            "value": 1762
         },
         {
             "key": "DMG_PREVENT_PHYSICS_FORCE",
