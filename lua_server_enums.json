@@ -5337,15 +5337,7 @@
             "value": 195
         },
         {
-            "key": "AE_CL_DOTA_RUBICK_ARCANA_CREATE_PARTICLE_EFFECT",
-            "value": 195
-        },
-        {
             "key": "ACT_VM_DRYFIRE",
-            "value": 196
-        },
-        {
-            "key": "AE_DOTA_SUPPRESS_CONSTANT_LAYER",
             "value": 196
         },
         {
@@ -8699,54 +8691,6 @@
         {
             "key": "ACT_CSGO_TAUNT",
             "value": 1028
-        },
-        {
-            "key": "ACT_DOTA_IDLE_STATUE",
-            "value": 1751
-        },
-        {
-            "key": "ACT_DOTA_RUN_STATUE",
-            "value": 1752
-        },
-        {
-            "key": "ACT_DOTA_ATTACK_STATUE",
-            "value": 1753
-        },
-        {
-            "key": "ACT_DOTA_FLAIL_STATUE",
-            "value": 1754
-        },
-        {
-            "key": "ACT_DOTA_STUN_STATUE",
-            "value": 1755
-        },
-        {
-            "key": "ACT_DOTA_CAST1_STATUE",
-            "value": 1756
-        },
-        {
-            "key": "ACT_DOTA_VICTORY_STATUE",
-            "value": 1757
-        },
-        {
-            "key": "ACT_DOTA_DEFEAT_STATUE",
-            "value": 1758
-        },
-        {
-            "key": "ACT_DOTA_TELEPORT_STATUE",
-            "value": 1759
-        },
-        {
-            "key": "ACT_DOTA_FORCESTAFF_STATUE",
-            "value": 1760
-        },
-        {
-            "key": "ACT_DOTA_CAST4_STATUE",
-            "value": 1761
-        },
-        {
-            "key": "ACT_DOTA_SPAWN_STATUE",
-            "value": 1762
         },
         {
             "key": "DMG_PREVENT_PHYSICS_FORCE",
