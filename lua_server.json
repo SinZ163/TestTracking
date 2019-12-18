@@ -2699,6 +2699,16 @@
                 "description": "Set the percentage rate that the fountain will regen mana. (-1 for default)",
                 "return": "void"
             },
+            "SetFreeCourierModeEnabled": {
+                "arg_names": [
+                    "bEnabled"
+                ],
+                "args": [
+                    "bool"
+                ],
+                "description": "If set to true, enable 7.23 free courier mode.",
+                "return": "void"
+            },
             "SetFriendlyBuildingMoveToEnabled": {
                 "arg_names": [
                     "bEnabled"
@@ -3744,6 +3754,16 @@
     "CDOTAPlayer": {
         "extends": "CBaseAnimating",
         "functions": {
+            "CheckForCourierSpawning": {
+                "arg_names": [
+                    "hHero"
+                ],
+                "args": [
+                    "handle"
+                ],
+                "description": "Attempt to spawn the appropriate couriers for this mode.",
+                "return": "void"
+            },
             "GetAssignedHero": {
                 "args": [],
                 "description": "Get the player's hero.",

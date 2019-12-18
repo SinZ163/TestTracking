@@ -1109,6 +1109,10 @@
             "value": 0
         },
         {
+            "key": "DOTA_ABILITY_BEHAVIOR_FREE_DRAW_TARGETING",
+            "value": 0
+        },
+        {
             "key": "DOTA_ABILITY_BEHAVIOR_NONE",
             "value": 0
         },
