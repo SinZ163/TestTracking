@@ -1,9 +1,4 @@
 {
-    "ModDotaScience": {
-        "description": "Testing that this still writess",
-        "panelEvent": false,
-        "args": []
-    },
     "AddStyle": {
         "description": "Add a CSS class to a panel.",
         "panelEvent": true,

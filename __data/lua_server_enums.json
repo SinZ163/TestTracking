@@ -1,10 +1,4 @@
 {
-    "MODDOTA": [
-        {
-            "key": "MODDOTA_SCIENCE",
-            "value": 1
-        }
-    ],
     "ABILITY_TYPES": [
         {
             "key": "ABILITY_TYPE_BASIC",

@@ -1,13 +1,4 @@
 {
-    "ModDota": {
-        "functions": {
-            "Exists": {
-                "args": [],
-                "description": "Testing that this file is still writing",
-                "return": "void"
-            }
-        }
-    },
     "CBaseAnimating": {
         "extends": "CBaseModelEntity",
         "functions": {
