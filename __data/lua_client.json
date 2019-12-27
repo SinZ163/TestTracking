@@ -1,4 +1,13 @@
 {
+    "ModDota": {
+        "functions": {
+            "Exists": {
+                "args": [],
+                "description": "Testing that this file is still writing",
+                "return": "void"
+            }
+        }
+    },
     "CBodyComponent": {
         "functions": {
             "AddImpulseAtPosition": {

@@ -3,6 +3,10 @@
 ! Panel Event
 ! Description
 |-
+| <code>ModDotaScience()</code>
+| No
+| Testing that this still writess
+|-
 | <code>AddStyle(string class)</code>
 | Yes
 | Add a CSS class to a panel.
