@@ -1,8 +1,8 @@
 import assert = require("assert");
 
-import override_server from "../__data/override_lua_server.json";
-import lua_server from "../__data/lua_server.json";
-import lua_server_enums from "../__data/lua_server_enums.json";
+import override_server from "../_data/override_lua_server.json";
+import lua_server from "../_data/lua_server.json";
+import lua_server_enums from "../_data/lua_server_enums.json";
 
 const primitives = [
     "cstring",
